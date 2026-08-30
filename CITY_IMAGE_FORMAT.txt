@@ -1,0 +1,1 @@
+All city images are bundled locally as PNG files under assets/cities. No external image URL is used.
