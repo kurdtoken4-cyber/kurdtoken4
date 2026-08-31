@@ -76,3 +76,14 @@
 .local-city-note{margin:10px 0 14px;padding:10px 14px;border-radius:12px;background:#0b0b0b;border:1px solid rgba(218,165,43,.25);color:#cbb98f;font-size:13px;line-height:1.8}
 .bannerCountdown .bc-title,.bannerCountdown .bc-time small,.bannerCountdown .bc-note{direction:ltr;unicode-bidi:isolate}
 @media(max-width:700px){.four-parts-buttons{grid-template-columns:repeat(2,1fr)}.four-part-btn{padding:10px 6px}.four-parts-detail p{font-size:14px}}
+
+/* 2026 CONTENT ROADMAP ENHANCEMENTS */
+.civilization-grid,.sources-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+.civilization-grid>div,.sources-grid>a{display:block;padding:20px;border:1px solid #333;border-radius:14px;background:rgba(255,255,255,.02)}
+.sources-grid a{color:inherit;text-decoration:none}
+.sources-grid a:hover{border-color:#ffcc00}
+.four-parts-widget{margin:20px 0;padding:18px;border:1px solid #333;border-radius:16px;background:rgba(0,0,0,.18)}
+.four-parts-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.four-part-btn{cursor:pointer}
+.four-parts-detail{margin-top:14px;padding:14px;border-radius:12px;background:rgba(255,204,0,.06)}
+@media(max-width:600px){.four-parts-buttons{display:grid;grid-template-columns:1fr 1fr}.four-part-btn{width:100%}.civilization-grid,.sources-grid{grid-template-columns:1fr}}
