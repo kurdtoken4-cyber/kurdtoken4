@@ -30,6 +30,7 @@
     if (select) select.value = lang;
     refreshFourParts();
     if (activePart) renderPart(activePart, false);
+    if (Array.isArray(window.KURD_CITIES)) initWeeklyCity();
   }
 
   function refreshFourParts() {
@@ -80,6 +81,98 @@
     tr:{population:'Nüfus',crafts:'El sanatları',customs:'Gelenekler',income:'Başlıca gelir kaynakları',history:'Tarih',attractions:'Tarihî yerler',source:'Görsel kaynağı'},
     ar:{population:'السكان',crafts:'الحرف اليدوية',customs:'العادات والتقاليد',income:'مصادر الدخل',history:'التاريخ',attractions:'المواقع التاريخية',source:'مصدر الصورة'}
   };
+  const weeklyText = {
+    ku:{week:'هەفتە',next:'نوێکردنەوەی داهاتوو',preview:'پێشبینینی پێش لانچ',region:'بەش',history:'مێژوو',population:'دانیشتووان',crafts:'پیشە و دەستکاری',customs:'نەریت',income:'داهات',attractions:'شوێنە مێژووییەکان',details:'زانیاری تەواو',nextCity:'شاری داهاتوو',loading:'وێنەی شار…',source:'سەرچاوەی وێنە',note:'ئەم بەشە بەرواری هەفتانە بە شێوەی خۆکار نوێ دەکاتەوە؛ هیچ ئاپلۆدێکی هەفتانە پێویست نییە.'},
+    fa:{week:'هفته',next:'به‌روزرسانی بعدی',preview:'پیش‌نمایش پیش از لانچ',region:'بخش',history:'تاریخ',population:'جمعیت',crafts:'صنایع دستی',customs:'آداب و رسوم',income:'منابع درآمد',attractions:'مکان‌های تاریخی',details:'اطلاعات کامل',nextCity:'شهر بعدی',loading:'تصویر شهر…',source:'منبع تصویر',note:'این بخش بر اساس تاریخ، هر هفته به‌صورت خودکار به‌روزرسانی می‌شود و نیازی به آپلود هفتگی نیست.'},
+    en:{week:'Week',next:'Next update',preview:'Pre-launch preview',region:'Region',history:'History',population:'Population',crafts:'Handicrafts',customs:'Customs',income:'Income',attractions:'Historic places',details:'Full details',nextCity:'Next city',loading:'City image…',source:'Image source',note:'This section rotates automatically every week based on the date; no weekly upload is required.'},
+    tr:{week:'Hafta',next:'Sonraki güncelleme',preview:'Lansman öncesi önizleme',region:'Bölge',history:'Tarih',population:'Nüfus',crafts:'El sanatları',customs:'Gelenekler',income:'Gelir',attractions:'Tarihî yerler',details:'Tam bilgi',nextCity:'Sonraki şehir',loading:'Şehir görseli…',source:'Görsel kaynağı',note:'Bu bölüm tarihe göre her hafta otomatik değişir; haftalık yükleme gerekmez.'},
+    ar:{week:'الأسبوع',next:'التحديث التالي',preview:'معاينة قبل الإطلاق',region:'المنطقة',history:'التاريخ',population:'السكان',crafts:'الحرف اليدوية',customs:'العادات',income:'الدخل',attractions:'المواقع التاريخية',details:'التفاصيل الكاملة',nextCity:'المدينة التالية',loading:'صورة المدينة…',source:'مصدر الصورة',note:'يتغير هذا القسم تلقائياً كل أسبوع حسب التاريخ؛ ولا يحتاج إلى رفع أسبوعي.'}
+  };
+
+  function weeklyRegionKey(part){ return ({'ڕۆژهەڵات':'east','باکوور':'north','باشوور':'south','ڕۆژئاوا':'west'})[part] || 'south'; }
+  function buildWeeklyOrder(){
+    if(!Array.isArray(window.KURD_CITIES)) return [];
+    const groups={east:[],north:[],south:[],west:[]};
+    window.KURD_CITIES.forEach(c=>{ const k=weeklyRegionKey(c.part); if(groups[k]) groups[k].push(c); });
+    const erbilIndex=groups.south.findIndex(c=>c.names?.en==='Erbil' || c.name==='هەولێر');
+    if(erbilIndex>0){ const [erbil]=groups.south.splice(erbilIndex,1); groups.south.unshift(erbil); }
+    const order=[]; const rotation=['south','east','north','west']; let cursor=0;
+    while(Object.values(groups).some(a=>a.length)){
+      for(const region of rotation){ if(groups[region].length) order.push(groups[region].shift()); }
+      cursor++; if(cursor>2000) break;
+    }
+    return order;
+  }
+  function weeklyInfoText(city){
+    const rich=getRich(city);
+    return {
+      history:rich.history?.[lang]||rich.history||'—',
+      population:rich.population?.[lang]||rich.population||'—',
+      crafts:rich.crafts?.[lang]||rich.crafts||'—',
+      customs:rich.customs?.[lang]||rich.customs||'—',
+      income:rich.income?.[lang]||rich.income||'—',
+      attractions:rich.attractions?.[lang]||rich.attractions||'—'
+    };
+  }
+  function weeklyDateLabel(date){
+    try{
+      const opts={year:'numeric',month:'long',day:'numeric'};
+      const locale={ku:'ku',fa:'fa-IR',en:'en-US',tr:'tr-TR',ar:'ar' }[lang]||'en-US';
+      return new Intl.DateTimeFormat(locale,opts).format(date);
+    }catch(_){return date.toLocaleDateString();}
+  }
+  async function initWeeklyCity(){
+    const section=document.getElementById('weekly-city');
+    const image=document.getElementById('weekly-city-image');
+    if(!section || !Array.isArray(window.KURD_CITIES) || !window.KURD_CITIES.length) return;
+    const order=buildWeeklyOrder(); if(!order.length) return;
+    const launch=Date.parse('2027-03-11T00:00:00+03:30');
+    const now=Date.now();
+    let index=0, preview=true;
+    if(now>=launch){ index=Math.floor((now-launch)/(7*86400000)); preview=false; }
+    index=index%order.length;
+    const city=order[index];
+    const nextBoundary=preview?new Date(launch):new Date(launch+(Math.floor((now-launch)/(7*86400000))+1)*7*86400000);
+    const key=weeklyRegionKey(city.part);
+    const info=weeklyInfoText(city);
+    const set=(id,text)=>{const el=document.getElementById(id);if(el)el.textContent=text;};
+    set('weekly-city-badge',preview?weeklyText[lang].preview:'CITY OF THE WEEK');
+    set('weekly-week-label',weeklyText[lang].week);
+    set('weekly-week-number',String(index+1));
+    set('weekly-region-label',`${weeklyText[lang].region}: ${regionNames[key]?.[lang]||city.part}`);
+    set('weekly-next-update',`${weeklyText[lang].next}: ${weeklyDateLabel(nextBoundary)}`);
+    set('weekly-city-name',cityName(city));
+    set('weekly-city-description',city.description?.[lang]||city.description?.en||'');
+    set('weekly-note',weeklyText[lang].note);
+    const facts=document.getElementById('weekly-facts');
+    if(facts){
+      const rows=[['history',info.history],['population',info.population],['crafts',info.crafts],['customs',info.customs],['income',info.income],['attractions',info.attractions]];
+      facts.innerHTML=rows.map(([k,v])=>`<div class="weekly-fact"><b>${weeklyText[lang][k]}</b><span>${String(v).replace(/</g,'&lt;').replace(/>/g,'&gt;')}</span></div>`).join('');
+    }
+    const open=document.getElementById('weekly-open-city');
+    if(open){open.textContent=weeklyText[lang].details;open.onclick=()=>{window.__showKurdPart?.(city.part,true); setTimeout(()=>{const names=[...document.querySelectorAll('.city-name')]; const target=names.find(b=>b.textContent===cityName(city)); if(target) target.click();},350);};}
+    const next=document.getElementById('weekly-next-city');
+    if(next){next.textContent=weeklyText[lang].nextCity;next.onclick=()=>{const nextIndex=(index+1)%order.length; renderWeeklyCityByIndex(nextIndex,order,launch);};}
+    await loadWeeklyImage(city,image);
+    section.classList.remove('is-loading'); section.classList.add('flash'); setTimeout(()=>section.classList.remove('flash'),500);
+    section.dataset.weeklyIndex=String(index); section.dataset.weeklyCity=city.names?.en||city.name;
+  }
+  async function renderWeeklyCityByIndex(index,order,launch){
+    const section=document.getElementById('weekly-city'); const city=order[index%order.length]; const image=document.getElementById('weekly-city-image'); const key=weeklyRegionKey(city.part); const info=weeklyInfoText(city); const set=(id,text)=>{const el=document.getElementById(id);if(el)el.textContent=text;};
+    set('weekly-city-badge','CITY OF THE WEEK');set('weekly-week-label',weeklyText[lang].week);set('weekly-week-number',String(index%order.length+1));set('weekly-region-label',`${weeklyText[lang].region}: ${regionNames[key]?.[lang]||city.part}`);set('weekly-city-name',cityName(city));set('weekly-city-description',city.description?.[lang]||city.description?.en||'');
+    const facts=document.getElementById('weekly-facts'); if(facts) facts.innerHTML=[['history',info.history],['population',info.population],['crafts',info.crafts],['customs',info.customs],['income',info.income],['attractions',info.attractions]].map(([k,v])=>`<div class="weekly-fact"><b>${weeklyText[lang][k]}</b><span>${String(v).replace(/</g,'&lt;').replace(/>/g,'&gt;')}</span></div>`).join('');
+    const open=document.getElementById('weekly-open-city');if(open)open.onclick=()=>{window.__showKurdPart?.(city.part,true);setTimeout(()=>{const b=[...document.querySelectorAll('.city-name')].find(x=>x.textContent===cityName(city));if(b)b.click();},350)};
+    const next=document.getElementById('weekly-next-city');if(next)next.onclick=()=>renderWeeklyCityByIndex((index+1)%order.length,order,launch);
+    await loadWeeklyImage(city,image); section.classList.add('flash');setTimeout(()=>section.classList.remove('flash'),500);
+  }
+  async function loadWeeklyImage(city,image){
+    const loading=document.getElementById('weekly-photo-loading'),credit=document.getElementById('weekly-photo-credit');
+    if(loading) loading.textContent=weeklyText[lang].loading; if(credit) credit.textContent=''; if(image){image.hidden=true;image.removeAttribute('src');}
+    let photos=[]; try{if(window.KURDTOKEN_COMMONS) photos=await window.KURDTOKEN_COMMONS.searchMany(city,1);}catch(_){photos=[];}
+    if(photos.length && image){image.src=photos[0].url;image.alt=`${weeklyText[lang].week}: ${cityName(city)}`;image.hidden=false;image.onerror=()=>{image.onerror=null;image.src=localFallback(city);image.hidden=false;};if(credit)credit.innerHTML=window.KURDTOKEN_COMMONS.attribution(photos[0]);if(loading)loading.style.display='none';}
+    else if(image){image.src=localFallback(city);image.hidden=false;image.onerror=()=>{image.onerror=null;image.src=genericFallback();};if(loading)loading.style.display='none';if(credit)credit.textContent=`${weeklyText[lang].source}: KURDTOKEN local fallback`;}
+  }
+
   function getRich(city){
     if(city.name==='هەولێر' || city.names?.en==='Erbil') return {
       population:{ku:'نزیکەی ٨٤٦ هەزار (ئاماری ٢٠١٥؛ ژمارەکە بە پێی سنووری ئاماری جیاواز دەگۆڕێت)',fa:'حدود ۸۴۶ هزار نفر (رقم شهری ۲۰۱۵؛ بسته به محدوده آماری متفاوت است)',en:'About 846,000 (2015 city figure; varies by statistical boundary)',tr:'Yaklaşık 846.000 (2015 şehir verisi; istatistiksel sınıra göre değişebilir)',ar:'نحو 846 ألف نسمة (رقم مديني لعام 2015؛ يختلف حسب الحدود الإحصائية)'},
@@ -149,6 +242,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     const select=document.getElementById('language');
     if(select) select.addEventListener('change',e=>applyLanguage(e.target.value));
-    initCities(); initCountdown(); applyLanguage(lang);
+    initCities(); initWeeklyCity(); initCountdown(); applyLanguage(lang);
   });
 })();

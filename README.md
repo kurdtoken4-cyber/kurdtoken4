@@ -37,3 +37,9 @@ The city gallery now attempts to load up to two real photographs from Wikimedia 
 - `assets/kurd-logo.png` برای لوگوی واقعی هدر استفاده می‌شود.
 - تصاویر شهرها در صورت دسترسی شبکه از Wikimedia Commons بارگذاری می‌شوند و نام فایل/پدیدآورنده/مجوز کنار تصویر نمایش داده می‌شود؛ در صورت قطع شبکه، تصویر محلی جایگزین می‌شود.
 - شهر هەولێر دارای اطلاعات اختصاصی: تاریخ، جمعیت با سال، صنایع دستی، آداب، منابع درآمد و مکان‌های تاریخی.
+
+
+## Automatic City of the Week
+The City of the Week is date-driven and requires no weekly upload. The rotation starts on the official launch date (11 March 2027 / 20 Esfand 1405 / 20 Rêşemê 2726), starts with Hewlêr/Erbil, then rotates through the four regions in a balanced round-robin order using the 96-city dataset. It refreshes automatically when the 7-day period changes.
+
+Images are fetched from Wikimedia Commons when available and fall back to the local city artwork or placeholder.
