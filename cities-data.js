@@ -1,2022 +1,2402 @@
-window.KURDTOKEN_CITIES = [
-  {
-    "id": 1,
-    "name_ku": "Hewlêr",
-    "name_en": "Erbil",
-    "part": "باشوور",
-    "lat": 36.191,
-    "lng": 44.009,
-    "desc_ku": "Hewlêr — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/erbil/1.jpg",
-      "assets/cities/erbil/2.jpg",
-      "assets/cities/erbil/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 2,
-    "name_ku": "Silêmanî",
-    "name_en": "Sulaymaniyah",
-    "part": "باشوور",
-    "lat": 35.565,
-    "lng": 45.433,
-    "desc_ku": "Silêmanî — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/sulaymaniyah/1.jpg",
-      "assets/cities/sulaymaniyah/2.jpg",
-      "assets/cities/sulaymaniyah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 3,
-    "name_ku": "Duhok",
-    "name_en": "Duhok",
-    "part": "باشوور",
-    "lat": 36.867,
-    "lng": 42.988,
-    "desc_ku": "Duhok — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/duhok/1.jpg",
-      "assets/cities/duhok/2.jpg",
-      "assets/cities/duhok/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 4,
-    "name_ku": "Zaxo",
-    "name_en": "Zakho",
-    "part": "باشوور",
-    "lat": 37.145,
-    "lng": 42.688,
-    "desc_ku": "Zaxo — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/zakho/1.jpg",
-      "assets/cities/zakho/2.jpg",
-      "assets/cities/zakho/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 5,
-    "name_ku": "Amedi",
-    "name_en": "Amedi",
-    "part": "باشوور",
-    "lat": 37.092,
-    "lng": 43.488,
-    "desc_ku": "Amedi — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/amedi/1.jpg",
-      "assets/cities/amedi/2.jpg",
-      "assets/cities/amedi/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 6,
-    "name_ku": "Aqrah",
-    "name_en": "Akre",
-    "part": "باشوور",
-    "lat": 36.761,
-    "lng": 43.894,
-    "desc_ku": "Aqrah — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/akre/1.jpg",
-      "assets/cities/akre/2.jpg",
-      "assets/cities/akre/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 7,
-    "name_ku": "Şeqlawe",
-    "name_en": "Shaqlawa",
-    "part": "باشوور",
-    "lat": 36.404,
-    "lng": 44.326,
-    "desc_ku": "Şeqlawe — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/shaqlawa/1.jpg",
-      "assets/cities/shaqlawa/2.jpg",
-      "assets/cities/shaqlawa/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 8,
-    "name_ku": "Soran",
-    "name_en": "Soran",
-    "part": "باشوور",
-    "lat": 36.654,
-    "lng": 44.544,
-    "desc_ku": "Soran — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/soran/1.jpg",
-      "assets/cities/soran/2.jpg",
-      "assets/cities/soran/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 9,
-    "name_ku": "Rewandiz",
-    "name_en": "Rawanduz",
-    "part": "باشوور",
-    "lat": 36.617,
-    "lng": 44.535,
-    "desc_ku": "Rewandiz — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/rawanduz/1.jpg",
-      "assets/cities/rawanduz/2.jpg",
-      "assets/cities/rawanduz/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 10,
-    "name_ku": "Koye",
-    "name_en": "Koya",
-    "part": "باشوور",
-    "lat": 36.082,
-    "lng": 44.629,
-    "desc_ku": "Koye — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/koya/1.jpg",
-      "assets/cities/koya/2.jpg",
-      "assets/cities/koya/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 11,
-    "name_ku": "Ranya",
-    "name_en": "Ranya",
-    "part": "باشوور",
-    "lat": 36.26,
-    "lng": 44.883,
-    "desc_ku": "Ranya — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/ranya/1.jpg",
-      "assets/cities/ranya/2.jpg",
-      "assets/cities/ranya/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 12,
-    "name_ku": "Çemçemal",
-    "name_en": "Chamchamal",
-    "part": "باشوور",
-    "lat": 35.533,
-    "lng": 44.829,
-    "desc_ku": "Çemçemal — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/chamchamal/1.jpg",
-      "assets/cities/chamchamal/2.jpg",
-      "assets/cities/chamchamal/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 13,
-    "name_ku": "Kelar",
-    "name_en": "Kalar",
-    "part": "باشوور",
-    "lat": 34.628,
-    "lng": 45.321,
-    "desc_ku": "Kelar — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/kalar/1.jpg",
-      "assets/cities/kalar/2.jpg",
-      "assets/cities/kalar/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 14,
-    "name_ku": "Helebce",
-    "name_en": "Halabja",
-    "part": "باشوور",
-    "lat": 35.178,
-    "lng": 45.986,
-    "desc_ku": "Helebce — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/halabja/1.jpg",
-      "assets/cities/halabja/2.jpg",
-      "assets/cities/halabja/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 15,
-    "name_ku": "Darbendixan",
-    "name_en": "Darbandikhan",
-    "part": "باشوور",
-    "lat": 35.119,
-    "lng": 45.678,
-    "desc_ku": "Darbendixan — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/darbandikhan/1.jpg",
-      "assets/cities/darbandikhan/2.jpg",
-      "assets/cities/darbandikhan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 16,
-    "name_ku": "Penjwin",
-    "name_en": "Penjwin",
-    "part": "باشوور",
-    "lat": 35.618,
-    "lng": 45.948,
-    "desc_ku": "Penjwin — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/penjwin/1.jpg",
-      "assets/cities/penjwin/2.jpg",
-      "assets/cities/penjwin/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 17,
-    "name_ku": "Seyîdsadiq",
-    "name_en": "Said Sadiq",
-    "part": "باشوور",
-    "lat": 35.353,
-    "lng": 45.865,
-    "desc_ku": "Seyîdsadiq — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/said-sadiq/1.jpg",
-      "assets/cities/said-sadiq/2.jpg",
-      "assets/cities/said-sadiq/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 18,
-    "name_ku": "Qeladizê",
-    "name_en": "Qaladiza",
-    "part": "باشوور",
-    "lat": 36.078,
-    "lng": 45.069,
-    "desc_ku": "Qeladizê — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/qaladiza/1.jpg",
-      "assets/cities/qaladiza/2.jpg",
-      "assets/cities/qaladiza/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 19,
-    "name_ku": "Çoman",
-    "name_en": "Choman",
-    "part": "باشوور",
-    "lat": 36.632,
-    "lng": 44.893,
-    "desc_ku": "Çoman — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/choman/1.jpg",
-      "assets/cities/choman/2.jpg",
-      "assets/cities/choman/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 20,
-    "name_ku": "Mergasûr",
-    "name_en": "Mergasur",
-    "part": "باشوور",
-    "lat": 36.762,
-    "lng": 44.548,
-    "desc_ku": "Mergasûr — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/mergasur/1.jpg",
-      "assets/cities/mergasur/2.jpg",
-      "assets/cities/mergasur/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 21,
-    "name_ku": "Barzan",
-    "name_en": "Barzan",
-    "part": "باشوور",
-    "lat": 36.671,
-    "lng": 44.543,
-    "desc_ku": "Barzan — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/barzan/1.jpg",
-      "assets/cities/barzan/2.jpg",
-      "assets/cities/barzan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 22,
-    "name_ku": "Ankawa",
-    "name_en": "Ankawa",
-    "part": "باشوور",
-    "lat": 36.229,
-    "lng": 44.01,
-    "desc_ku": "Ankawa — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/ankawa/1.jpg",
-      "assets/cities/ankawa/2.jpg",
-      "assets/cities/ankawa/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 23,
-    "name_ku": "Kifrî",
-    "name_en": "Kifri",
-    "part": "باشوور",
-    "lat": 34.699,
-    "lng": 44.966,
-    "desc_ku": "Kifrî — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/kifri/1.jpg",
-      "assets/cities/kifri/2.jpg",
-      "assets/cities/kifri/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 24,
-    "name_ku": "Xaneqîn",
-    "name_en": "Khanaqin",
-    "part": "باشوور",
-    "lat": 34.349,
-    "lng": 45.386,
-    "desc_ku": "Xaneqîn — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/khanaqin/1.jpg",
-      "assets/cities/khanaqin/2.jpg",
-      "assets/cities/khanaqin/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 25,
-    "name_ku": "Dokan",
-    "name_en": "Dukan",
-    "part": "باشوور",
-    "lat": 35.946,
-    "lng": 44.962,
-    "desc_ku": "Dokan — شارێکی دیار و گرنگ لە ناوچەی باشوور.",
-    "images": [
-      "assets/cities/dukan/1.jpg",
-      "assets/cities/dukan/2.jpg",
-      "assets/cities/dukan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 26,
-    "name_ku": "Amed",
-    "name_en": "Diyarbakir",
-    "part": "باکوور",
-    "lat": 37.925,
-    "lng": 40.211,
-    "desc_ku": "Amed — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/diyarbakir/1.jpg",
-      "assets/cities/diyarbakir/2.jpg",
-      "assets/cities/diyarbakir/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 27,
-    "name_ku": "Mêrdîn",
-    "name_en": "Mardin",
-    "part": "باکوور",
-    "lat": 37.313,
-    "lng": 40.735,
-    "desc_ku": "Mêrdîn — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/mardin/1.jpg",
-      "assets/cities/mardin/2.jpg",
-      "assets/cities/mardin/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 28,
-    "name_ku": "Êlih",
-    "name_en": "Batman",
-    "part": "باکوور",
-    "lat": 37.881,
-    "lng": 41.129,
-    "desc_ku": "Êlih — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/batman/1.jpg",
-      "assets/cities/batman/2.jpg",
-      "assets/cities/batman/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 29,
-    "name_ku": "Wan",
-    "name_en": "Van",
-    "part": "باکوور",
-    "lat": 38.501,
-    "lng": 43.374,
-    "desc_ku": "Wan — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/van/1.jpg",
-      "assets/cities/van/2.jpg",
-      "assets/cities/van/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 30,
-    "name_ku": "Colemerg",
-    "name_en": "Hakkari",
-    "part": "باکوور",
-    "lat": 37.574,
-    "lng": 43.74,
-    "desc_ku": "Colemerg — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/hakkari/1.jpg",
-      "assets/cities/hakkari/2.jpg",
-      "assets/cities/hakkari/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 31,
-    "name_ku": "Bedlîs",
-    "name_en": "Bitlis",
-    "part": "باکوور",
-    "lat": 38.401,
-    "lng": 42.108,
-    "desc_ku": "Bedlîs — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/bitlis/1.jpg",
-      "assets/cities/bitlis/2.jpg",
-      "assets/cities/bitlis/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 32,
-    "name_ku": "Sêrt",
-    "name_en": "Siirt",
-    "part": "باکوور",
-    "lat": 37.933,
-    "lng": 41.95,
-    "desc_ku": "Sêrt — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/siirt/1.jpg",
-      "assets/cities/siirt/2.jpg",
-      "assets/cities/siirt/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 33,
-    "name_ku": "Çewlîg",
-    "name_en": "Bingöl",
-    "part": "باکوور",
-    "lat": 38.885,
-    "lng": 40.498,
-    "desc_ku": "Çewlîg — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/bing-l/1.jpg",
-      "assets/cities/bing-l/2.jpg",
-      "assets/cities/bing-l/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 34,
-    "name_ku": "Mûş",
-    "name_en": "Mus",
-    "part": "باکوور",
-    "lat": 38.946,
-    "lng": 41.753,
-    "desc_ku": "Mûş — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/mus/1.jpg",
-      "assets/cities/mus/2.jpg",
-      "assets/cities/mus/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 35,
-    "name_ku": "Agirî",
-    "name_en": "Agri",
-    "part": "باکوور",
-    "lat": 39.719,
-    "lng": 43.051,
-    "desc_ku": "Agirî — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/agri/1.jpg",
-      "assets/cities/agri/2.jpg",
-      "assets/cities/agri/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 36,
-    "name_ku": "Dersim",
-    "name_en": "Tunceli",
-    "part": "باکوور",
-    "lat": 39.108,
-    "lng": 39.548,
-    "desc_ku": "Dersim — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/tunceli/1.jpg",
-      "assets/cities/tunceli/2.jpg",
-      "assets/cities/tunceli/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 37,
-    "name_ku": "Xarpêt",
-    "name_en": "Elazig",
-    "part": "باکوور",
-    "lat": 38.674,
-    "lng": 39.222,
-    "desc_ku": "Xarpêt — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/elazig/1.jpg",
-      "assets/cities/elazig/2.jpg",
-      "assets/cities/elazig/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 38,
-    "name_ku": "Erzîrom",
-    "name_en": "Erzurum",
-    "part": "باکوور",
-    "lat": 39.905,
-    "lng": 41.265,
-    "desc_ku": "Erzîrom — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/erzurum/1.jpg",
-      "assets/cities/erzurum/2.jpg",
-      "assets/cities/erzurum/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 39,
-    "name_ku": "Erzîngan",
-    "name_en": "Erzincan",
-    "part": "باکوور",
-    "lat": 39.75,
-    "lng": 39.5,
-    "desc_ku": "Erzîngan — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/erzincan/1.jpg",
-      "assets/cities/erzincan/2.jpg",
-      "assets/cities/erzincan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 40,
-    "name_ku": "Şirnex",
-    "name_en": "Sirnak",
-    "part": "باکوور",
-    "lat": 37.519,
-    "lng": 42.461,
-    "desc_ku": "Şirnex — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/sirnak/1.jpg",
-      "assets/cities/sirnak/2.jpg",
-      "assets/cities/sirnak/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 41,
-    "name_ku": "Cizîr",
-    "name_en": "Cizre",
-    "part": "باکوور",
-    "lat": 37.328,
-    "lng": 42.19,
-    "desc_ku": "Cizîr — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/cizre/1.jpg",
-      "assets/cities/cizre/2.jpg",
-      "assets/cities/cizre/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 42,
-    "name_ku": "Nisêbîn",
-    "name_en": "Nusaybin",
-    "part": "باکوور",
-    "lat": 37.07,
-    "lng": 41.214,
-    "desc_ku": "Nisêbîn — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/nusaybin/1.jpg",
-      "assets/cities/nusaybin/2.jpg",
-      "assets/cities/nusaybin/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 43,
-    "name_ku": "Midyad",
-    "name_en": "Midyat",
-    "part": "باکوور",
-    "lat": 37.418,
-    "lng": 41.342,
-    "desc_ku": "Midyad — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/midyat/1.jpg",
-      "assets/cities/midyat/2.jpg",
-      "assets/cities/midyat/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 44,
-    "name_ku": "Qoser",
-    "name_en": "Kiziltepe",
-    "part": "باکوور",
-    "lat": 37.193,
-    "lng": 40.586,
-    "desc_ku": "Qoser — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/kiziltepe/1.jpg",
-      "assets/cities/kiziltepe/2.jpg",
-      "assets/cities/kiziltepe/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 45,
-    "name_ku": "Farqîn",
-    "name_en": "Silvan",
-    "part": "باکوور",
-    "lat": 38.137,
-    "lng": 41.009,
-    "desc_ku": "Farqîn — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/silvan/1.jpg",
-      "assets/cities/silvan/2.jpg",
-      "assets/cities/silvan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 46,
-    "name_ku": "Licê",
-    "name_en": "Lice",
-    "part": "باکوور",
-    "lat": 38.458,
-    "lng": 40.65,
-    "desc_ku": "Licê — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/lice/1.jpg",
-      "assets/cities/lice/2.jpg",
-      "assets/cities/lice/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 47,
-    "name_ku": "Dixan",
-    "name_en": "Ergani",
-    "part": "باکوور",
-    "lat": 38.269,
-    "lng": 39.763,
-    "desc_ku": "Dixan — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/ergani/1.jpg",
-      "assets/cities/ergani/2.jpg",
-      "assets/cities/ergani/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 48,
-    "name_ku": "Girê Sor",
-    "name_en": "Siverek",
-    "part": "باکوور",
-    "lat": 37.756,
-    "lng": 39.317,
-    "desc_ku": "Girê Sor — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/siverek/1.jpg",
-      "assets/cities/siverek/2.jpg",
-      "assets/cities/siverek/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 49,
-    "name_ku": "Wêranşar",
-    "name_en": "Viransehir",
-    "part": "باکوور",
-    "lat": 37.236,
-    "lng": 39.764,
-    "desc_ku": "Wêranşar — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/viransehir/1.jpg",
-      "assets/cities/viransehir/2.jpg",
-      "assets/cities/viransehir/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 50,
-    "name_ku": "Riha",
-    "name_en": "Sanliurfa",
-    "part": "باکوور",
-    "lat": 37.167,
-    "lng": 38.796,
-    "desc_ku": "Riha — شارێکی دیار و گرنگ لە ناوچەی باکوور.",
-    "images": [
-      "assets/cities/sanliurfa/1.jpg",
-      "assets/cities/sanliurfa/2.jpg",
-      "assets/cities/sanliurfa/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 51,
-    "name_ku": "Sine",
-    "name_en": "Sanandaj",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.315,
-    "lng": 46.998,
-    "desc_ku": "Sine — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/sanandaj/1.jpg",
-      "assets/cities/sanandaj/2.jpg",
-      "assets/cities/sanandaj/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 52,
-    "name_ku": "Kirmaşan",
-    "name_en": "Kermanshah",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.314,
-    "lng": 47.065,
-    "desc_ku": "Kirmaşan — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/kermanshah/1.jpg",
-      "assets/cities/kermanshah/2.jpg",
-      "assets/cities/kermanshah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 53,
-    "name_ku": "Mehabad",
-    "name_en": "Mahabad",
-    "part": "ڕۆژهەڵات",
-    "lat": 36.764,
-    "lng": 45.722,
-    "desc_ku": "Mehabad — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/mahabad/1.jpg",
-      "assets/cities/mahabad/2.jpg",
-      "assets/cities/mahabad/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 54,
-    "name_ku": "Urmiye",
-    "name_en": "Urmia",
-    "part": "ڕۆژهەڵات",
-    "lat": 37.552,
-    "lng": 45.076,
-    "desc_ku": "Urmiye — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/urmia/1.jpg",
-      "assets/cities/urmia/2.jpg",
-      "assets/cities/urmia/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 55,
-    "name_ku": "Bokan",
-    "name_en": "Bukan",
-    "part": "ڕۆژهەڵات",
-    "lat": 36.522,
-    "lng": 46.208,
-    "desc_ku": "Bokan — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/bukan/1.jpg",
-      "assets/cities/bukan/2.jpg",
-      "assets/cities/bukan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 56,
-    "name_ku": "Saqiz",
-    "name_en": "Saqqez",
-    "part": "ڕۆژهەڵات",
-    "lat": 36.24,
-    "lng": 46.273,
-    "desc_ku": "Saqiz — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/saqqez/1.jpg",
-      "assets/cities/saqqez/2.jpg",
-      "assets/cities/saqqez/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 57,
-    "name_ku": "Marîwan",
-    "name_en": "Marivan",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.521,
-    "lng": 46.177,
-    "desc_ku": "Marîwan — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/marivan/1.jpg",
-      "assets/cities/marivan/2.jpg",
-      "assets/cities/marivan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 58,
-    "name_ku": "Baneh",
-    "name_en": "Baneh",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.998,
-    "lng": 45.886,
-    "desc_ku": "Baneh — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/baneh/1.jpg",
-      "assets/cities/baneh/2.jpg",
-      "assets/cities/baneh/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 59,
-    "name_ku": "Qorwe",
-    "name_en": "Qorveh",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.167,
-    "lng": 47.804,
-    "desc_ku": "Qorwe — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/qorveh/1.jpg",
-      "assets/cities/qorveh/2.jpg",
-      "assets/cities/qorveh/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 60,
-    "name_ku": "Kamyaran",
-    "name_en": "Kamyaran",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.796,
-    "lng": 46.936,
-    "desc_ku": "Kamyaran — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/kamyaran/1.jpg",
-      "assets/cities/kamyaran/2.jpg",
-      "assets/cities/kamyaran/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 61,
-    "name_ku": "Bîcar",
-    "name_en": "Bijar",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.866,
-    "lng": 47.605,
-    "desc_ku": "Bîcar — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/bijar/1.jpg",
-      "assets/cities/bijar/2.jpg",
-      "assets/cities/bijar/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 62,
-    "name_ku": "Dîwandere",
-    "name_en": "Divandarreh",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.913,
-    "lng": 47.024,
-    "desc_ku": "Dîwandere — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/divandarreh/1.jpg",
-      "assets/cities/divandarreh/2.jpg",
-      "assets/cities/divandarreh/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 63,
-    "name_ku": "Dehgolan",
-    "name_en": "Dehgolan",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.278,
-    "lng": 47.419,
-    "desc_ku": "Dehgolan — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/dehgolan/1.jpg",
-      "assets/cities/dehgolan/2.jpg",
-      "assets/cities/dehgolan/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 64,
-    "name_ku": "Sarbawad",
-    "name_en": "Sarvabad",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.314,
-    "lng": 46.366,
-    "desc_ku": "Sarbawad — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/sarvabad/1.jpg",
-      "assets/cities/sarvabad/2.jpg",
-      "assets/cities/sarvabad/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 65,
-    "name_ku": "Pawê",
-    "name_en": "Paveh",
-    "part": "ڕۆژهەڵات",
-    "lat": 35.043,
-    "lng": 46.356,
-    "desc_ku": "Pawê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/paveh/1.jpg",
-      "assets/cities/paveh/2.jpg",
-      "assets/cities/paveh/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 66,
-    "name_ku": "Ravansar",
-    "name_en": "Ravansar",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.714,
-    "lng": 46.651,
-    "desc_ku": "Ravansar — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/ravansar/1.jpg",
-      "assets/cities/ravansar/2.jpg",
-      "assets/cities/ravansar/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 67,
-    "name_ku": "Javanrud",
-    "name_en": "Javanrud",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.806,
-    "lng": 46.489,
-    "desc_ku": "Javanrud — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/javanrud/1.jpg",
-      "assets/cities/javanrud/2.jpg",
-      "assets/cities/javanrud/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 68,
-    "name_ku": "Dalaho",
-    "name_en": "Dalahu",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.293,
-    "lng": 46.242,
-    "desc_ku": "Dalaho — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/dalahu/1.jpg",
-      "assets/cities/dalahu/2.jpg",
-      "assets/cities/dalahu/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 69,
-    "name_ku": "Eslamabad",
-    "name_en": "Eslamabad-e Gharb",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.111,
-    "lng": 46.527,
-    "desc_ku": "Eslamabad — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/eslamabad-e-gharb/1.jpg",
-      "assets/cities/eslamabad-e-gharb/2.jpg",
-      "assets/cities/eslamabad-e-gharb/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 70,
-    "name_ku": "Kangawar",
-    "name_en": "Kangavar",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.504,
-    "lng": 47.965,
-    "desc_ku": "Kangawar — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/kangavar/1.jpg",
-      "assets/cities/kangavar/2.jpg",
-      "assets/cities/kangavar/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 71,
-    "name_ku": "Sehne",
-    "name_en": "Sahneh",
-    "part": "ڕۆژهەڵات",
-    "lat": 34.481,
-    "lng": 47.69,
-    "desc_ku": "Sehne — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/sahneh/1.jpg",
-      "assets/cities/sahneh/2.jpg",
-      "assets/cities/sahneh/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 72,
-    "name_ku": "Pîranşar",
-    "name_en": "Piranshahr",
-    "part": "ڕۆژهەڵات",
-    "lat": 36.694,
-    "lng": 45.141,
-    "desc_ku": "Pîranşar — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/piranshahr/1.jpg",
-      "assets/cities/piranshahr/2.jpg",
-      "assets/cities/piranshahr/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 73,
-    "name_ku": "Sardeşt",
-    "name_en": "Sardasht",
-    "part": "ڕۆژهەڵات",
-    "lat": 36.155,
-    "lng": 45.478,
-    "desc_ku": "Sardeşt — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/sardasht/1.jpg",
-      "assets/cities/sardasht/2.jpg",
-      "assets/cities/sardasht/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 74,
-    "name_ku": "Şino",
-    "name_en": "Oshnavieh",
-    "part": "ڕۆژهەڵات",
-    "lat": 37.039,
-    "lng": 45.098,
-    "desc_ku": "Şino — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/oshnavieh/1.jpg",
-      "assets/cities/oshnavieh/2.jpg",
-      "assets/cities/oshnavieh/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 75,
-    "name_ku": "Selmas",
-    "name_en": "Salmas",
-    "part": "ڕۆژهەڵات",
-    "lat": 38.197,
-    "lng": 44.766,
-    "desc_ku": "Selmas — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/salmas/1.jpg",
-      "assets/cities/salmas/2.jpg",
-      "assets/cities/salmas/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 76,
-    "name_ku": "Xoy",
-    "name_en": "Khoy",
-    "part": "ڕۆژهەڵات",
-    "lat": 38.55,
-    "lng": 44.953,
-    "desc_ku": "Xoy — شارێکی دیار و گرنگ لە ناوچەی ڕۆژهەڵات.",
-    "images": [
-      "assets/cities/khoy/1.jpg",
-      "assets/cities/khoy/2.jpg",
-      "assets/cities/khoy/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 77,
-    "name_ku": "Qamişlo",
-    "name_en": "Qamishli",
-    "part": "ڕۆژئاوا",
-    "lat": 37.052,
-    "lng": 41.232,
-    "desc_ku": "Qamişlo — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/qamishli/1.jpg",
-      "assets/cities/qamishli/2.jpg",
-      "assets/cities/qamishli/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 78,
-    "name_ku": "Amûdê",
-    "name_en": "Amuda",
-    "part": "ڕۆژئاوا",
-    "lat": 37.102,
-    "lng": 40.93,
-    "desc_ku": "Amûdê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/amuda/1.jpg",
-      "assets/cities/amuda/2.jpg",
-      "assets/cities/amuda/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 79,
-    "name_ku": "Dêrik",
-    "name_en": "Al-Malikiyah",
-    "part": "ڕۆژئاوا",
-    "lat": 37.18,
-    "lng": 42.14,
-    "desc_ku": "Dêrik — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-malikiyah/1.jpg",
-      "assets/cities/al-malikiyah/2.jpg",
-      "assets/cities/al-malikiyah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 80,
-    "name_ku": "Hesekê",
-    "name_en": "Hasakah",
-    "part": "ڕۆژئاوا",
-    "lat": 36.502,
-    "lng": 40.747,
-    "desc_ku": "Hesekê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/hasakah/1.jpg",
-      "assets/cities/hasakah/2.jpg",
-      "assets/cities/hasakah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 81,
-    "name_ku": "Kobanî",
-    "name_en": "Kobani",
-    "part": "ڕۆژئاوا",
-    "lat": 36.891,
-    "lng": 38.355,
-    "desc_ku": "Kobanî — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/kobani/1.jpg",
-      "assets/cities/kobani/2.jpg",
-      "assets/cities/kobani/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 82,
-    "name_ku": "Efrîn",
-    "name_en": "Afrin",
-    "part": "ڕۆژئاوا",
-    "lat": 36.51,
-    "lng": 36.87,
-    "desc_ku": "Efrîn — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/afrin/1.jpg",
-      "assets/cities/afrin/2.jpg",
-      "assets/cities/afrin/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 83,
-    "name_ku": "Minbic",
-    "name_en": "Manbij",
-    "part": "ڕۆژئاوا",
-    "lat": 36.528,
-    "lng": 37.954,
-    "desc_ku": "Minbic — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/manbij/1.jpg",
-      "assets/cities/manbij/2.jpg",
-      "assets/cities/manbij/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 84,
-    "name_ku": "Reqa",
-    "name_en": "Raqqa",
-    "part": "ڕۆژئاوا",
-    "lat": 35.95,
-    "lng": 39.01,
-    "desc_ku": "Reqa — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/raqqa/1.jpg",
-      "assets/cities/raqqa/2.jpg",
-      "assets/cities/raqqa/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 85,
-    "name_ku": "Til Temir",
-    "name_en": "Tal Tamr",
-    "part": "ڕۆژئاوا",
-    "lat": 36.655,
-    "lng": 40.37,
-    "desc_ku": "Til Temir — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/tal-tamr/1.jpg",
-      "assets/cities/tal-tamr/2.jpg",
-      "assets/cities/tal-tamr/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 86,
-    "name_ku": "Serê Kaniyê",
-    "name_en": "Ras al-Ayn",
-    "part": "ڕۆژئاوا",
-    "lat": 36.849,
-    "lng": 40.071,
-    "desc_ku": "Serê Kaniyê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/ras-al-ayn/1.jpg",
-      "assets/cities/ras-al-ayn/2.jpg",
-      "assets/cities/ras-al-ayn/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 87,
-    "name_ku": "Dirbêsiyê",
-    "name_en": "Al-Darbasiyah",
-    "part": "ڕۆژئاوا",
-    "lat": 37.072,
-    "lng": 40.652,
-    "desc_ku": "Dirbêsiyê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-darbasiyah/1.jpg",
-      "assets/cities/al-darbasiyah/2.jpg",
-      "assets/cities/al-darbasiyah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 88,
-    "name_ku": "Tirbespiyê",
-    "name_en": "Al-Qahtaniyah",
-    "part": "ڕۆژئاوا",
-    "lat": 37.007,
-    "lng": 41.568,
-    "desc_ku": "Tirbespiyê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-qahtaniyah/1.jpg",
-      "assets/cities/al-qahtaniyah/2.jpg",
-      "assets/cities/al-qahtaniyah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 89,
-    "name_ku": "Girkê Legê",
-    "name_en": "Al-Maabadah",
-    "part": "ڕۆژئاوا",
-    "lat": 36.792,
-    "lng": 41.944,
-    "desc_ku": "Girkê Legê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-maabadah/1.jpg",
-      "assets/cities/al-maabadah/2.jpg",
-      "assets/cities/al-maabadah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 90,
-    "name_ku": "Çilaxa",
-    "name_en": "Al-Jawadiyah",
-    "part": "ڕۆژئاوا",
-    "lat": 37.023,
-    "lng": 41.717,
-    "desc_ku": "Çilaxa — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-jawadiyah/1.jpg",
-      "assets/cities/al-jawadiyah/2.jpg",
-      "assets/cities/al-jawadiyah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 91,
-    "name_ku": "Tewil",
-    "name_en": "Al-Tawil",
-    "part": "ڕۆژئاوا",
-    "lat": 36.76,
-    "lng": 40.52,
-    "desc_ku": "Tewil — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-tawil/1.jpg",
-      "assets/cities/al-tawil/2.jpg",
-      "assets/cities/al-tawil/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 92,
-    "name_ku": "Hol",
-    "name_en": "Al-Hawl",
-    "part": "ڕۆژئاوا",
-    "lat": 36.383,
-    "lng": 41.141,
-    "desc_ku": "Hol — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-hawl/1.jpg",
-      "assets/cities/al-hawl/2.jpg",
-      "assets/cities/al-hawl/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 93,
-    "name_ku": "Şedadê",
-    "name_en": "Al-Shaddadi",
-    "part": "ڕۆژئاوا",
-    "lat": 36.056,
-    "lng": 40.731,
-    "desc_ku": "Şedadê — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-shaddadi/1.jpg",
-      "assets/cities/al-shaddadi/2.jpg",
-      "assets/cities/al-shaddadi/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 94,
-    "name_ku": "Eyn Îsa",
-    "name_en": "Ayn Issa",
-    "part": "ڕۆژئاوا",
-    "lat": 36.384,
-    "lng": 38.901,
-    "desc_ku": "Eyn Îsa — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/ayn-issa/1.jpg",
-      "assets/cities/ayn-issa/2.jpg",
-      "assets/cities/ayn-issa/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 95,
-    "name_ku": "Girê Spî",
-    "name_en": "Tal Abyad",
-    "part": "ڕۆژئاوا",
-    "lat": 36.696,
-    "lng": 38.953,
-    "desc_ku": "Girê Spî — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/tal-abyad/1.jpg",
-      "assets/cities/tal-abyad/2.jpg",
-      "assets/cities/tal-abyad/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 96,
-    "name_ku": "Tabaqa",
-    "name_en": "Tabqa",
-    "part": "ڕۆژئاوا",
-    "lat": 35.84,
-    "lng": 38.55,
-    "desc_ku": "Tabaqa — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/tabqa/1.jpg",
-      "assets/cities/tabqa/2.jpg",
-      "assets/cities/tabqa/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 97,
-    "name_ku": "Til Koçer",
-    "name_en": "Al-Yarubiyah",
-    "part": "ڕۆژئاوا",
-    "lat": 36.816,
-    "lng": 41.975,
-    "desc_ku": "Til Koçer — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/al-yarubiyah/1.jpg",
-      "assets/cities/al-yarubiyah/2.jpg",
-      "assets/cities/al-yarubiyah/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 98,
-    "name_ku": "Şêx Meqsûd",
-    "name_en": "Aleppo - Sheikh Maqsoud",
-    "part": "ڕۆژئاوا",
-    "lat": 36.223,
-    "lng": 37.16,
-    "desc_ku": "Şêx Meqsûd — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/aleppo-sheikh-maqsoud/1.jpg",
-      "assets/cities/aleppo-sheikh-maqsoud/2.jpg",
-      "assets/cities/aleppo-sheikh-maqsoud/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 99,
-    "name_ku": "Şehba",
-    "name_en": "Shahba",
-    "part": "ڕۆژئاوا",
-    "lat": 35.775,
-    "lng": 37.04,
-    "desc_ku": "Şehba — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/shahba/1.jpg",
-      "assets/cities/shahba/2.jpg",
-      "assets/cities/shahba/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 100,
-    "name_ku": "Dêrazor",
-    "name_en": "Deir ez-Zor",
-    "part": "ڕۆژئاوا",
-    "lat": 35.335,
-    "lng": 40.14,
-    "desc_ku": "Dêrazor — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/deir-ez-zor/1.jpg",
-      "assets/cities/deir-ez-zor/2.jpg",
-      "assets/cities/deir-ez-zor/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
-  },
-  {
-    "id": 101,
-    "name_ku": "Kobanê Reş",
-    "name_en": "Kobani Countryside",
-    "part": "ڕۆژئاوا",
-    "lat": 36.85,
-    "lng": 38.43,
-    "desc_ku": "Kobanê Reş — شارێکی دیار و گرنگ لە ناوچەی ڕۆژئاوا.",
-    "images": [
-      "assets/cities/kobani-countryside/1.jpg",
-      "assets/cities/kobani-countryside/2.jpg",
-      "assets/cities/kobani-countryside/3.jpg"
-    ],
-    "culture": {
-      "food": "خواردنی ناوخۆیی و رسوماتی خواردن",
-      "clothing": "جل و بەرگی کوردی",
-      "music": "مۆسیقا و هونەری ناوخۆیی",
-      "history": "مێژوو و شوێنەوارەکانی شار"
-    }
+window.KURD_CITIES= [
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سنه",
+  "attraction": "عمارت آصف، بازار و مۆسیقا",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sanandaj.svg"
+  ],
+  "description": {
+   "ku": "سنه لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sanandaj از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sanandaj is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sanandaj, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sanandaj مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سنه",
+   "fa": "Sanandaj",
+   "en": "Sanandaj",
+   "tr": "Sanandaj",
+   "ar": "Sanandaj"
   }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "کرماشان",
+  "attraction": "طاقی بستان، بیستون",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kermanshah.svg"
+  ],
+  "description": {
+   "ku": "کرماشان لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kermanshah از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kermanshah is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kermanshah, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kermanshah مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کرماشان",
+   "fa": "Kermanshah",
+   "en": "Kermanshah",
+   "tr": "Kermanshah",
+   "ar": "Kermanshah"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "مەهاباد",
+  "attraction": "مۆزەخانەی مەهاباد، شوێنە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/mahabad.svg"
+  ],
+  "description": {
+   "ku": "مەهاباد لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Mahabad از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Mahabad is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Mahabad, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Mahabad مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "مەهاباد",
+   "fa": "Mahabad",
+   "en": "Mahabad",
+   "tr": "Mahabad",
+   "ar": "Mahabad"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "بۆکان",
+  "attraction": "دەرەی بۆکان و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/bukan.svg"
+  ],
+  "description": {
+   "ku": "بۆکان لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Bukan از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Bukan is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Bukan, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Bukan مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "بۆکان",
+   "fa": "Bukan",
+   "en": "Bukan",
+   "tr": "Bukan",
+   "ar": "Bukan"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سەقز",
+  "attraction": "بازاڕی کۆن و ناوچە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/saqqez.svg"
+  ],
+  "description": {
+   "ku": "سەقز لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Saqqez از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Saqqez is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Saqqez, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Saqqez مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سەقز",
+   "fa": "Saqqez",
+   "en": "Saqqez",
+   "tr": "Saqqez",
+   "ar": "Saqqez"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "بانە",
+  "attraction": "بازاڕ و شاخەکانی بانە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/baneh.svg"
+  ],
+  "description": {
+   "ku": "بانە لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Baneh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Baneh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Baneh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Baneh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "بانە",
+   "fa": "Baneh",
+   "en": "Baneh",
+   "tr": "Baneh",
+   "ar": "Baneh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "مریوان",
+  "attraction": "دەریاچەی زریبار",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/marivan.svg"
+  ],
+  "description": {
+   "ku": "مریوان لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Marivan از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Marivan is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Marivan, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Marivan مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "مریوان",
+   "fa": "Marivan",
+   "en": "Marivan",
+   "tr": "Marivan",
+   "ar": "Marivan"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "پاوە",
+  "attraction": "شارە پلەکانی پاوە، دەرەی هەورامان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/paveh.svg"
+  ],
+  "description": {
+   "ku": "پاوە لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Paveh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Paveh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Paveh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Paveh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "پاوە",
+   "fa": "Paveh",
+   "en": "Paveh",
+   "tr": "Paveh",
+   "ar": "Paveh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "جوانڕۆ",
+  "attraction": "بازاڕ و دەرەکانی جوانڕۆ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/javanrud.svg"
+  ],
+  "description": {
+   "ku": "جوانڕۆ لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Javanrud از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Javanrud is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Javanrud, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Javanrud مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "جوانڕۆ",
+   "fa": "Javanrud",
+   "en": "Javanrud",
+   "tr": "Javanrud",
+   "ar": "Javanrud"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "ڕەوانسەر",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/ravansar.svg"
+  ],
+  "description": {
+   "ku": "ڕەوانسەر لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Ravansar از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Ravansar is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Ravansar, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Ravansar مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ڕەوانسەر",
+   "fa": "Ravansar",
+   "en": "Ravansar",
+   "tr": "Ravansar",
+   "ar": "Ravansar"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "پیرانشار",
+  "attraction": "دەرە و شاخەکانی پیرانشار",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/piranshahr.svg"
+  ],
+  "description": {
+   "ku": "پیرانشار لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Piranshahr از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Piranshahr is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Piranshahr, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Piranshahr مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "پیرانشار",
+   "fa": "Piranshahr",
+   "en": "Piranshahr",
+   "tr": "Piranshahr",
+   "ar": "Piranshahr"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "شنۆ",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/oshnavieh.svg"
+  ],
+  "description": {
+   "ku": "شنۆ لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Oshnavieh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Oshnavieh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Oshnavieh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Oshnavieh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "شنۆ",
+   "fa": "Oshnavieh",
+   "en": "Oshnavieh",
+   "tr": "Oshnavieh",
+   "ar": "Oshnavieh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سەردەشت",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sardasht.svg"
+  ],
+  "description": {
+   "ku": "سەردەشت لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sardasht از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sardasht is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sardasht, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sardasht مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سەردەشت",
+   "fa": "Sardasht",
+   "en": "Sardasht",
+   "tr": "Sardasht",
+   "ar": "Sardasht"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "نەغەدە",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/naqadeh.svg"
+  ],
+  "description": {
+   "ku": "نەغەدە لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Naqadeh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Naqadeh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Naqadeh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Naqadeh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "نەغەدە",
+   "fa": "Naqadeh",
+   "en": "Naqadeh",
+   "tr": "Naqadeh",
+   "ar": "Naqadeh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "ورمێ",
+  "attraction": "دەریاچەی ورمێ و مۆزەخانەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/urmia.svg"
+  ],
+  "description": {
+   "ku": "ورمێ لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Urmia از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Urmia is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Urmia, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Urmia مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ورمێ",
+   "fa": "Urmia",
+   "en": "Urmia",
+   "tr": "Urmia",
+   "ar": "Urmia"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "خۆی",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/khoy.svg"
+  ],
+  "description": {
+   "ku": "خۆی لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Khoy از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Khoy is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Khoy, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Khoy مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "خۆی",
+   "fa": "Khoy",
+   "en": "Khoy",
+   "tr": "Khoy",
+   "ar": "Khoy"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سلماس",
+  "attraction": "ناوچە مێژووییەکان و دەرەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/salmas.svg"
+  ],
+  "description": {
+   "ku": "سلماس لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Salmas از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Salmas is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Salmas, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Salmas مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سلماس",
+   "fa": "Salmas",
+   "en": "Salmas",
+   "tr": "Salmas",
+   "ar": "Salmas"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "ماکو",
+  "attraction": "پارکی ماکو و شاخەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/maku.svg"
+  ],
+  "description": {
+   "ku": "ماکو لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Maku از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Maku is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Maku, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Maku مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ماکو",
+   "fa": "Maku",
+   "en": "Maku",
+   "tr": "Maku",
+   "ar": "Maku"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "بیجار",
+  "attraction": "قەڵای بیجار و ناوچە شاخاوییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/bijar.svg"
+  ],
+  "description": {
+   "ku": "بیجار لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Bijar از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Bijar is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Bijar, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Bijar مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "بیجار",
+   "fa": "Bijar",
+   "en": "Bijar",
+   "tr": "Bijar",
+   "ar": "Bijar"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "قوروە",
+  "attraction": "دەرە و چاوەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/qorveh.svg"
+  ],
+  "description": {
+   "ku": "قوروە لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Qorveh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Qorveh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Qorveh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Qorveh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "قوروە",
+   "fa": "Qorveh",
+   "en": "Qorveh",
+   "tr": "Qorveh",
+   "ar": "Qorveh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "کامیاران",
+  "attraction": "هەورامان و دەرەکانی کامیاران",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kamyaran.svg"
+  ],
+  "description": {
+   "ku": "کامیاران لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kamyaran از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kamyaran is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kamyaran, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kamyaran مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کامیاران",
+   "fa": "Kamyaran",
+   "en": "Kamyaran",
+   "tr": "Kamyaran",
+   "ar": "Kamyaran"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "دیواندەرە",
+  "attraction": "شاخ و دەرەکانی ناوچەکە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/divandarreh.svg"
+  ],
+  "description": {
+   "ku": "دیواندەرە لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Divandarreh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Divandarreh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Divandarreh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Divandarreh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دیواندەرە",
+   "fa": "Divandarreh",
+   "en": "Divandarreh",
+   "tr": "Divandarreh",
+   "ar": "Divandarreh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "دەگۆڵان",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/dehgolan.svg"
+  ],
+  "description": {
+   "ku": "دەگۆڵان لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Dehgolan از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Dehgolan is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Dehgolan, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Dehgolan مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دەگۆڵان",
+   "fa": "Dehgolan",
+   "en": "Dehgolan",
+   "tr": "Dehgolan",
+   "ar": "Dehgolan"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سروئاباد",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sarvabad.svg"
+  ],
+  "description": {
+   "ku": "سروئاباد لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sarvabad از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sarvabad is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sarvabad, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sarvabad مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سروئاباد",
+   "fa": "Sarvabad",
+   "en": "Sarvabad",
+   "tr": "Sarvabad",
+   "ar": "Sarvabad"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "ئیلام",
+  "attraction": "دەرەی ئارغوان، ناوچە شاخاوییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/ilam.svg"
+  ],
+  "description": {
+   "ku": "ئیلام لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Ilam از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Ilam is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Ilam, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Ilam مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئیلام",
+   "fa": "Ilam",
+   "en": "Ilam",
+   "tr": "Ilam",
+   "ar": "Ilam"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "ئیسڵامئاباد",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/islamabad-e-gharb.svg"
+  ],
+  "description": {
+   "ku": "ئیسڵامئاباد لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Islamabad-e Gharb از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Islamabad-e Gharb is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Islamabad-e Gharb, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Islamabad-e Gharb مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئیسڵامئاباد",
+   "fa": "Islamabad-e Gharb",
+   "en": "Islamabad-e Gharb",
+   "tr": "Islamabad-e Gharb",
+   "ar": "Islamabad-e Gharb"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سەرپێڵی زەهاو",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sarpol-e-zahab.svg"
+  ],
+  "description": {
+   "ku": "سەرپێڵی زەهاو لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sarpol-e Zahab از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sarpol-e Zahab is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sarpol-e Zahab, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sarpol-e Zahab مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سەرپێڵی زەهاو",
+   "fa": "Sarpol-e Zahab",
+   "en": "Sarpol-e Zahab",
+   "tr": "Sarpol-e Zahab",
+   "ar": "Sarpol-e Zahab"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "قەسری شیرین",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/qasr-e-shirin.svg"
+  ],
+  "description": {
+   "ku": "قەسری شیرین لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Qasr-e Shirin از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Qasr-e Shirin is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Qasr-e Shirin, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Qasr-e Shirin مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "قەسری شیرین",
+   "fa": "Qasr-e Shirin",
+   "en": "Qasr-e Shirin",
+   "tr": "Qasr-e Shirin",
+   "ar": "Qasr-e Shirin"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "گیلان‌غرب",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/gilan-e-gharb.svg"
+  ],
+  "description": {
+   "ku": "گیلان‌غرب لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Gilan-e Gharb از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Gilan-e Gharb is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Gilan-e Gharb, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Gilan-e Gharb مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "گیلان‌غرب",
+   "fa": "Gilan-e Gharb",
+   "en": "Gilan-e Gharb",
+   "tr": "Gilan-e Gharb",
+   "ar": "Gilan-e Gharb"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "هەرسین",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/harsin.svg"
+  ],
+  "description": {
+   "ku": "هەرسین لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Harsin از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Harsin is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Harsin, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Harsin مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "هەرسین",
+   "fa": "Harsin",
+   "en": "Harsin",
+   "tr": "Harsin",
+   "ar": "Harsin"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "سەحنە",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sahneh.svg"
+  ],
+  "description": {
+   "ku": "سەحنە لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sahneh از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sahneh is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sahneh, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sahneh مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سەحنە",
+   "fa": "Sahneh",
+   "en": "Sahneh",
+   "tr": "Sahneh",
+   "ar": "Sahneh"
+  }
+ },
+ {
+  "part": "ڕۆژهەڵات",
+  "country": "ئێران",
+  "name": "کنگاوەر",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kangavar.svg"
+  ],
+  "description": {
+   "ku": "کنگاوەر لە ناوچەی ڕۆژهەڵات دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kangavar از شهرهای بخش ڕۆژهەڵات است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kangavar is a city in ڕۆژهەڵات and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kangavar, ڕۆژهەڵات bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kangavar مدينة في ڕۆژهەڵات، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کنگاوەر",
+   "fa": "Kangavar",
+   "en": "Kangavar",
+   "tr": "Kangavar",
+   "ar": "Kangavar"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئامەد",
+  "attraction": "دیوارە کۆنەکانی ئامەد، قەڵای ئامەد",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/diyarbakir.svg"
+  ],
+  "description": {
+   "ku": "ئامەد لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Diyarbakir از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Diyarbakir is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Diyarbakir, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Diyarbakir مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئامەد",
+   "fa": "Diyarbakir",
+   "en": "Diyarbakir",
+   "tr": "Diyarbakir",
+   "ar": "Diyarbakir"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "وان",
+  "attraction": "قەڵای وان، دەریاچەی وان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/van.svg"
+  ],
+  "description": {
+   "ku": "وان لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Van از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Van is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Van, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Van مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "وان",
+   "fa": "Van",
+   "en": "Van",
+   "tr": "Van",
+   "ar": "Van"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "مێردین",
+  "attraction": "قەڵای مێردین، شاری کۆن",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/mardin.svg"
+  ],
+  "description": {
+   "ku": "مێردین لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Mardin از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Mardin is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Mardin, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Mardin مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "مێردین",
+   "fa": "Mardin",
+   "en": "Mardin",
+   "tr": "Mardin",
+   "ar": "Mardin"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "هەکاری",
+  "attraction": "شاخەکانی هەکاری و دەرەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/hakkari.svg"
+  ],
+  "description": {
+   "ku": "هەکاری لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Hakkari از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Hakkari is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Hakkari, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Hakkari مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "هەکاری",
+   "fa": "Hakkari",
+   "en": "Hakkari",
+   "tr": "Hakkari",
+   "ar": "Hakkari"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "شرناخ",
+  "attraction": "شاخ و دەرەکانی شرناخ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sirnak.svg"
+  ],
+  "description": {
+   "ku": "شرناخ لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sirnak از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sirnak is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sirnak, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sirnak مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "شرناخ",
+   "fa": "Sirnak",
+   "en": "Sirnak",
+   "tr": "Sirnak",
+   "ar": "Sirnak"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "سێرت",
+  "attraction": "ناوچە شاخاوییەکان و شوێنە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/siirt.svg"
+  ],
+  "description": {
+   "ku": "سێرت لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Siirt از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Siirt is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Siirt, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Siirt مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سێرت",
+   "fa": "Siirt",
+   "en": "Siirt",
+   "tr": "Siirt",
+   "ar": "Siirt"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئێلیح",
+  "attraction": "شارە کۆنەکان و پلە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/batman.svg"
+  ],
+  "description": {
+   "ku": "ئێلیح لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Batman از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Batman is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Batman, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Batman مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئێلیح",
+   "fa": "Batman",
+   "en": "Batman",
+   "tr": "Batman",
+   "ar": "Batman"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "بیتلیس",
+  "attraction": "قەڵای بیتلیس و کۆڵانە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/bitlis.svg"
+  ],
+  "description": {
+   "ku": "بیتلیس لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Bitlis از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Bitlis is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Bitlis, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Bitlis مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "بیتلیس",
+   "fa": "Bitlis",
+   "en": "Bitlis",
+   "tr": "Bitlis",
+   "ar": "Bitlis"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "موش",
+  "attraction": "قەڵای موش و شاخەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/mus.svg"
+  ],
+  "description": {
+   "ku": "موش لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Mus از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Mus is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Mus, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Mus مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "موش",
+   "fa": "Mus",
+   "en": "Mus",
+   "tr": "Mus",
+   "ar": "Mus"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "بینگۆڵ",
+  "attraction": "شاخ و دەرەکانی بینگۆڵ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/bingol.svg"
+  ],
+  "description": {
+   "ku": "بینگۆڵ لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Bingol از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Bingol is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Bingol, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Bingol مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "بینگۆڵ",
+   "fa": "Bingol",
+   "en": "Bingol",
+   "tr": "Bingol",
+   "ar": "Bingol"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "دێرسیم",
+  "attraction": "دەرەی مۆنزور و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/tunceli.svg"
+  ],
+  "description": {
+   "ku": "دێرسیم لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Tunceli از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Tunceli is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Tunceli, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Tunceli مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دێرسیم",
+   "fa": "Tunceli",
+   "en": "Tunceli",
+   "tr": "Tunceli",
+   "ar": "Tunceli"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئەرزروم",
+  "attraction": "قەڵای ئەرزروم و شوێنە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/erzurum.svg"
+  ],
+  "description": {
+   "ku": "ئەرزروم لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Erzurum از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Erzurum is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Erzurum, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Erzurum مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئەرزروم",
+   "fa": "Erzurum",
+   "en": "Erzurum",
+   "tr": "Erzurum",
+   "ar": "Erzurum"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئەرزنجان",
+  "attraction": "شوێنە کۆنەکان و دەرەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/erzincan.svg"
+  ],
+  "description": {
+   "ku": "ئەرزنجان لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Erzincan از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Erzincan is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Erzincan, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Erzincan مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئەرزنجان",
+   "fa": "Erzincan",
+   "en": "Erzincan",
+   "tr": "Erzincan",
+   "ar": "Erzincan"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئاگری",
+  "attraction": "کۆهی ئاگری و ناوچەکانی دەوروبەر",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/agri.svg"
+  ],
+  "description": {
+   "ku": "ئاگری لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Agri از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Agri is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Agri, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Agri مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئاگری",
+   "fa": "Agri",
+   "en": "Agri",
+   "tr": "Agri",
+   "ar": "Agri"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "قەرس",
+  "attraction": "قەڵای قەرس و شوێنە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kars.svg"
+  ],
+  "description": {
+   "ku": "قەرس لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kars از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kars is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kars, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kars مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "قەرس",
+   "fa": "Kars",
+   "en": "Kars",
+   "tr": "Kars",
+   "ar": "Kars"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئیدیر",
+  "attraction": "دشت و ناوچە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/igdir.svg"
+  ],
+  "description": {
+   "ku": "ئیدیر لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Igdir از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Igdir is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Igdir, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Igdir مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئیدیر",
+   "fa": "Igdir",
+   "en": "Igdir",
+   "tr": "Igdir",
+   "ar": "Igdir"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ئەلازیغ",
+  "attraction": "قەڵای خەربەرپێرت و ناوچەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/elazig.svg"
+  ],
+  "description": {
+   "ku": "ئەلازیغ لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Elazig از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Elazig is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Elazig, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Elazig مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئەلازیغ",
+   "fa": "Elazig",
+   "en": "Elazig",
+   "tr": "Elazig",
+   "ar": "Elazig"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "خەربەت",
+  "attraction": "شوێنە کۆنەکان و دیوارەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/harput.svg"
+  ],
+  "description": {
+   "ku": "خەربەت لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Harput از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Harput is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Harput, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Harput مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "خەربەت",
+   "fa": "Harput",
+   "en": "Harput",
+   "tr": "Harput",
+   "ar": "Harput"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ڕیحا",
+  "attraction": "قەڵای ڕیحا و شوێنە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sanliurfa.svg"
+  ],
+  "description": {
+   "ku": "ڕیحا لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sanliurfa از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sanliurfa is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sanliurfa, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sanliurfa مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ڕیحا",
+   "fa": "Sanliurfa",
+   "en": "Sanliurfa",
+   "tr": "Sanliurfa",
+   "ar": "Sanliurfa"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "سمسور",
+  "attraction": "قەڵای سمسور و ناوچە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/adiyaman.svg"
+  ],
+  "description": {
+   "ku": "سمسور لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Adiyaman از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Adiyaman is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Adiyaman, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Adiyaman مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سمسور",
+   "fa": "Adiyaman",
+   "en": "Adiyaman",
+   "tr": "Adiyaman",
+   "ar": "Adiyaman"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "ملەتی",
+  "attraction": "قەڵای ملەتی و شوێنە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/malatya.svg"
+  ],
+  "description": {
+   "ku": "ملەتی لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Malatya از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Malatya is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Malatya, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Malatya مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ملەتی",
+   "fa": "Malatya",
+   "en": "Malatya",
+   "tr": "Malatya",
+   "ar": "Malatya"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "غازی عەنتاب",
+  "attraction": "قەڵای غازی عەنتاب و مۆزەخانەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/gaziantep.svg"
+  ],
+  "description": {
+   "ku": "غازی عەنتاب لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Gaziantep از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Gaziantep is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Gaziantep, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Gaziantep مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "غازی عەنتاب",
+   "fa": "Gaziantep",
+   "en": "Gaziantep",
+   "tr": "Gaziantep",
+   "ar": "Gaziantep"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "سیڤەرەک",
+  "attraction": "شوێنە کۆنەکان و دەرەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/siverek.svg"
+  ],
+  "description": {
+   "ku": "سیڤەرەک لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Siverek از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Siverek is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Siverek, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Siverek مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سیڤەرەک",
+   "fa": "Siverek",
+   "en": "Siverek",
+   "tr": "Siverek",
+   "ar": "Siverek"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "سێلوان",
+  "attraction": "پل و شوێنە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/silvan.svg"
+  ],
+  "description": {
+   "ku": "سێلوان لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Silvan از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Silvan is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Silvan, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Silvan مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سێلوان",
+   "fa": "Silvan",
+   "en": "Silvan",
+   "tr": "Silvan",
+   "ar": "Silvan"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "نسیبین",
+  "attraction": "دیر و شوێنە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/nusaybin.svg"
+  ],
+  "description": {
+   "ku": "نسیبین لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Nusaybin از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Nusaybin is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Nusaybin, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Nusaybin مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "نسیبین",
+   "fa": "Nusaybin",
+   "en": "Nusaybin",
+   "tr": "Nusaybin",
+   "ar": "Nusaybin"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "کزلتەپە",
+  "attraction": "ناوچە کۆنەکان و بازار",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kiziltepe.svg"
+  ],
+  "description": {
+   "ku": "کزلتەپە لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kiziltepe از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kiziltepe is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kiziltepe, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kiziltepe مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کزلتەپە",
+   "fa": "Kiziltepe",
+   "en": "Kiziltepe",
+   "tr": "Kiziltepe",
+   "ar": "Kiziltepe"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "میدیات",
+  "attraction": "قەڵای میدیات و کۆڵانە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/midyat.svg"
+  ],
+  "description": {
+   "ku": "میدیات لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Midyat از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Midyat is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Midyat, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Midyat مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "میدیات",
+   "fa": "Midyat",
+   "en": "Midyat",
+   "tr": "Midyat",
+   "ar": "Midyat"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "جزیرە",
+  "attraction": "قەڵای جزیرە و شوێنە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/cizre.svg"
+  ],
+  "description": {
+   "ku": "جزیرە لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Cizre از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Cizre is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Cizre, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Cizre مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "جزیرە",
+   "fa": "Cizre",
+   "en": "Cizre",
+   "tr": "Cizre",
+   "ar": "Cizre"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "گەڤەر",
+  "attraction": "دەرەکانی گەڤەر",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/yuksekova.svg"
+  ],
+  "description": {
+   "ku": "گەڤەر لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Yuksekova از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Yuksekova is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Yuksekova, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Yuksekova مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "گەڤەر",
+   "fa": "Yuksekova",
+   "en": "Yuksekova",
+   "tr": "Yuksekova",
+   "ar": "Yuksekova"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "شەمزینان",
+  "attraction": "شاخەکانی شەمزینان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/semdinli.svg"
+  ],
+  "description": {
+   "ku": "شەمزینان لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Semdinli از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Semdinli is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Semdinli, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Semdinli مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "شەمزینان",
+   "fa": "Semdinli",
+   "en": "Semdinli",
+   "tr": "Semdinli",
+   "ar": "Semdinli"
+  }
+ },
+ {
+  "part": "باکوور",
+  "country": "تورکیا",
+  "name": "بەشکەلە",
+  "attraction": "دەریاچە و شاخەکانی بەشکەلە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/baskale.svg"
+  ],
+  "description": {
+   "ku": "بەشکەلە لە ناوچەی باکوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Baskale از شهرهای بخش باکوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Baskale is a city in باکوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Baskale, باکوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Baskale مدينة في باکوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "بەشکەلە",
+   "fa": "Baskale",
+   "en": "Baskale",
+   "tr": "Baskale",
+   "ar": "Baskale"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "هەولێر",
+  "attraction": "قەڵای هەولێر، بازاڕی قیصەری",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/erbil.svg"
+  ],
+  "description": {
+   "ku": "هەولێر لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Erbil از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Erbil is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Erbil, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Erbil مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "هەولێر",
+   "fa": "Erbil",
+   "en": "Erbil",
+   "tr": "Erbil",
+   "ar": "Erbil"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "سلێمانی",
+  "attraction": "مۆزەخانەی سلێمانی، ئازمر و گۆیژە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/sulaymaniyah.svg"
+  ],
+  "description": {
+   "ku": "سلێمانی لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Sulaymaniyah از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Sulaymaniyah is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Sulaymaniyah, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Sulaymaniyah مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سلێمانی",
+   "fa": "Sulaymaniyah",
+   "en": "Sulaymaniyah",
+   "tr": "Sulaymaniyah",
+   "ar": "Sulaymaniyah"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "دهۆک",
+  "attraction": "پارکی زەواوی، گەشتی شاخی زاوە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/duhok.svg"
+  ],
+  "description": {
+   "ku": "دهۆک لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Duhok از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Duhok is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Duhok, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Duhok مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دهۆک",
+   "fa": "Duhok",
+   "en": "Duhok",
+   "tr": "Duhok",
+   "ar": "Duhok"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "کەرکووک",
+  "attraction": "قەڵای کەرکووک، بابا گوڕگوڕ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kirkuk.svg"
+  ],
+  "description": {
+   "ku": "کەرکووک لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kirkuk از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kirkuk is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kirkuk, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kirkuk مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کەرکووک",
+   "fa": "Kirkuk",
+   "en": "Kirkuk",
+   "tr": "Kirkuk",
+   "ar": "Kirkuk"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "هەڵەبجە",
+  "attraction": "یادگاری هەڵەبجە، ئەحمەد ئاوا",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/halabja.svg"
+  ],
+  "description": {
+   "ku": "هەڵەبجە لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Halabja از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Halabja is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Halabja, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Halabja مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "هەڵەبجە",
+   "fa": "Halabja",
+   "en": "Halabja",
+   "tr": "Halabja",
+   "ar": "Halabja"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "زاخۆ",
+  "attraction": "پەلی دەلەڵ، گۆمی زاخۆ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/zakho.svg"
+  ],
+  "description": {
+   "ku": "زاخۆ لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Zakho از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Zakho is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Zakho, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Zakho مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "زاخۆ",
+   "fa": "Zakho",
+   "en": "Zakho",
+   "tr": "Zakho",
+   "ar": "Zakho"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "ئاکرێ",
+  "attraction": "قەڵای ئاکرێ، شاخی ئاکرێ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/akre.svg"
+  ],
+  "description": {
+   "ku": "ئاکرێ لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Akre از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Akre is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Akre, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Akre مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئاکرێ",
+   "fa": "Akre",
+   "en": "Akre",
+   "tr": "Akre",
+   "ar": "Akre"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "ئامێدی",
+  "attraction": "شارە کۆنەکەی ئامێدی، پەلی زەوا",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/amedi.svg"
+  ],
+  "description": {
+   "ku": "ئامێدی لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Amedi از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Amedi is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Amedi, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Amedi مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ئامێدی",
+   "fa": "Amedi",
+   "en": "Amedi",
+   "tr": "Amedi",
+   "ar": "Amedi"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "سۆران",
+  "attraction": "دەرەی ڕەواندز، کۆڕەک",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/soran.svg"
+  ],
+  "description": {
+   "ku": "سۆران لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Soran از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Soran is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Soran, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Soran مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سۆران",
+   "fa": "Soran",
+   "en": "Soran",
+   "tr": "Soran",
+   "ar": "Soran"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "ڕانیە",
+  "attraction": "دەریاچەی دوکان، گوندەکانی ڕانیە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/ranya.svg"
+  ],
+  "description": {
+   "ku": "ڕانیە لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Ranya از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Ranya is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Ranya, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Ranya مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ڕانیە",
+   "fa": "Ranya",
+   "en": "Ranya",
+   "tr": "Ranya",
+   "ar": "Ranya"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "ڕەواندز",
+  "attraction": "دەرەی ڕەواندز، پەلی کۆڕەک",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/rawandiz.svg"
+  ],
+  "description": {
+   "ku": "ڕەواندز لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Rawandiz از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Rawandiz is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Rawandiz, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Rawandiz مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ڕەواندز",
+   "fa": "Rawandiz",
+   "en": "Rawandiz",
+   "tr": "Rawandiz",
+   "ar": "Rawandiz"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "کۆیە",
+  "attraction": "بازاڕی کۆیە، قەڵای کۆیە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/koy-sanjaq.svg"
+  ],
+  "description": {
+   "ku": "کۆیە لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Koy Sanjaq از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Koy Sanjaq is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Koy Sanjaq, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Koy Sanjaq مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کۆیە",
+   "fa": "Koy Sanjaq",
+   "en": "Koy Sanjaq",
+   "tr": "Koy Sanjaq",
+   "ar": "Koy Sanjaq"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "شەقڵاوە",
+  "attraction": "سەفین، باغەکانی شەقڵاوە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/shaqlawa.svg"
+  ],
+  "description": {
+   "ku": "شەقڵاوە لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Shaqlawa از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Shaqlawa is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Shaqlawa, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Shaqlawa مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "شەقڵاوە",
+   "fa": "Shaqlawa",
+   "en": "Shaqlawa",
+   "tr": "Shaqlawa",
+   "ar": "Shaqlawa"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "کەلار",
+  "attraction": "دۆڵی کەلار، شوێنە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kalar.svg"
+  ],
+  "description": {
+   "ku": "کەلار لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kalar از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kalar is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kalar, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kalar مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کەلار",
+   "fa": "Kalar",
+   "en": "Kalar",
+   "tr": "Kalar",
+   "ar": "Kalar"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "چەمچەماڵ",
+  "attraction": "بازاڕ و ناوچە شاخاوییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/chamchamal.svg"
+  ],
+  "description": {
+   "ku": "چەمچەماڵ لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Chamchamal از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Chamchamal is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Chamchamal, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Chamchamal مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "چەمچەماڵ",
+   "fa": "Chamchamal",
+   "en": "Chamchamal",
+   "tr": "Chamchamal",
+   "ar": "Chamchamal"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "قەلادزێ",
+  "attraction": "شاخەکانی قەلادزێ، دەشتەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/qaladiza.svg"
+  ],
+  "description": {
+   "ku": "قەلادزێ لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Qaladiza از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Qaladiza is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Qaladiza, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Qaladiza مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "قەلادزێ",
+   "fa": "Qaladiza",
+   "en": "Qaladiza",
+   "tr": "Qaladiza",
+   "ar": "Qaladiza"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "دەربەندیخان",
+  "attraction": "دەریاچەی دەربەندیخان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/darbandikhan.svg"
+  ],
+  "description": {
+   "ku": "دەربەندیخان لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Darbandikhan از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Darbandikhan is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Darbandikhan, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Darbandikhan مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دەربەندیخان",
+   "fa": "Darbandikhan",
+   "en": "Darbandikhan",
+   "tr": "Darbandikhan",
+   "ar": "Darbandikhan"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "پێنجوێن",
+  "attraction": "شاخ و دەرەکانی پێنجوێن",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/penjwen.svg"
+  ],
+  "description": {
+   "ku": "پێنجوێن لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Penjwen از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Penjwen is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Penjwen, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Penjwen مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "پێنجوێن",
+   "fa": "Penjwen",
+   "en": "Penjwen",
+   "tr": "Penjwen",
+   "ar": "Penjwen"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "سێمێل",
+  "attraction": "دەرە و باغەکانی سێمێل",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/semel.svg"
+  ],
+  "description": {
+   "ku": "سێمێل لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Semel از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Semel is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Semel, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Semel مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سێمێل",
+   "fa": "Semel",
+   "en": "Semel",
+   "tr": "Semel",
+   "ar": "Semel"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "باتیفا",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/batifa.svg"
+  ],
+  "description": {
+   "ku": "باتیفا لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Batifa از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Batifa is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Batifa, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Batifa مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "باتیفا",
+   "fa": "Batifa",
+   "en": "Batifa",
+   "tr": "Batifa",
+   "ar": "Batifa"
+  }
+ },
+ {
+  "part": "باشوور",
+  "country": "عێراق",
+  "name": "خانەقین",
+  "attraction": "شوێنە مێژوویی و ناوچە سروشتییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/khanaqin.svg"
+  ],
+  "description": {
+   "ku": "خانەقین لە ناوچەی باشوور دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Khanaqin از شهرهای بخش باشوور است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Khanaqin is a city in باشوور and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Khanaqin, باشوور bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Khanaqin مدينة في باشوور، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "خانەقین",
+   "fa": "Khanaqin",
+   "en": "Khanaqin",
+   "tr": "Khanaqin",
+   "ar": "Khanaqin"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "قامیشلو",
+  "attraction": "بازاڕ و ناوچە کۆنەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/qamishli.svg"
+  ],
+  "description": {
+   "ku": "قامیشلو لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Qamishli از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Qamishli is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Qamishli, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Qamishli مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "قامیشلو",
+   "fa": "Qamishli",
+   "en": "Qamishli",
+   "tr": "Qamishli",
+   "ar": "Qamishli"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "حەسەکە",
+  "attraction": "شوێنە مێژووییەکان و دەشتەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/hasakah.svg"
+  ],
+  "description": {
+   "ku": "حەسەکە لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Hasakah از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Hasakah is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Hasakah, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Hasakah مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "حەسەکە",
+   "fa": "Hasakah",
+   "en": "Hasakah",
+   "tr": "Hasakah",
+   "ar": "Hasakah"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "کۆبانی",
+  "attraction": "دشت و ناوچەکانی کۆبانی",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/kobani.svg"
+  ],
+  "description": {
+   "ku": "کۆبانی لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Kobani از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Kobani is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Kobani, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Kobani مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "کۆبانی",
+   "fa": "Kobani",
+   "en": "Kobani",
+   "tr": "Kobani",
+   "ar": "Kobani"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "عەفرین",
+  "attraction": "زەیتوونستان و ناوچە شاخاوییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/afrin.svg"
+  ],
+  "description": {
+   "ku": "عەفرین لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Afrin از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Afrin is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Afrin, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Afrin مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "عەفرین",
+   "fa": "Afrin",
+   "en": "Afrin",
+   "tr": "Afrin",
+   "ar": "Afrin"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "دەریک",
+  "attraction": "دەرە و ناوچەکانی دەریک",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/al-malikiyah.svg"
+  ],
+  "description": {
+   "ku": "دەریک لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Al-Malikiyah از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Al-Malikiyah is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Al-Malikiyah, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Al-Malikiyah مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دەریک",
+   "fa": "Al-Malikiyah",
+   "en": "Al-Malikiyah",
+   "tr": "Al-Malikiyah",
+   "ar": "Al-Malikiyah"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "عامودێ",
+  "attraction": "شوێنە کۆنەکان و دەرەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/amuda.svg"
+  ],
+  "description": {
+   "ku": "عامودێ لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Amuda از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Amuda is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Amuda, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Amuda مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "عامودێ",
+   "fa": "Amuda",
+   "en": "Amuda",
+   "tr": "Amuda",
+   "ar": "Amuda"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "دەربەسیە",
+  "attraction": "دەشت و ناوچەکانی دەربەسیە",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/al-darbasiyah.svg"
+  ],
+  "description": {
+   "ku": "دەربەسیە لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Al-Darbasiyah از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Al-Darbasiyah is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Al-Darbasiyah, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Al-Darbasiyah مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "دەربەسیە",
+   "fa": "Al-Darbasiyah",
+   "en": "Al-Darbasiyah",
+   "tr": "Al-Darbasiyah",
+   "ar": "Al-Darbasiyah"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "سەرێ کانیێ",
+  "attraction": "ناوچەکانی سەرێ کانیێ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/ras-al-ayn.svg"
+  ],
+  "description": {
+   "ku": "سەرێ کانیێ لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Ras al-Ayn از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Ras al-Ayn is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Ras al-Ayn, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Ras al-Ayn مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "سەرێ کانیێ",
+   "fa": "Ras al-Ayn",
+   "en": "Ras al-Ayn",
+   "tr": "Ras al-Ayn",
+   "ar": "Ras al-Ayn"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "تەل تەمر",
+  "attraction": "دەرە و ناوچەکانی تەل تەمر",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/tal-tamr.svg"
+  ],
+  "description": {
+   "ku": "تەل تەمر لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Tal Tamr از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Tal Tamr is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Tal Tamr, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Tal Tamr مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "تەل تەمر",
+   "fa": "Tal Tamr",
+   "en": "Tal Tamr",
+   "tr": "Tal Tamr",
+   "ar": "Tal Tamr"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "منبج",
+  "attraction": "شوێنە مێژووییەکان و بازاڕ",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/manbij.svg"
+  ],
+  "description": {
+   "ku": "منبج لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Manbij از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Manbij is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Manbij, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Manbij مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "منبج",
+   "fa": "Manbij",
+   "en": "Manbij",
+   "tr": "Manbij",
+   "ar": "Manbij"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "عین عیسا",
+  "attraction": "دەشت و ناوچەکانی عین عیسا",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/ayn-issa.svg"
+  ],
+  "description": {
+   "ku": "عین عیسا لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Ayn Issa از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Ayn Issa is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Ayn Issa, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Ayn Issa مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "عین عیسا",
+   "fa": "Ayn Issa",
+   "en": "Ayn Issa",
+   "tr": "Ayn Issa",
+   "ar": "Ayn Issa"
+  }
+ },
+ {
+  "part": "ڕۆژئاوا",
+  "country": "سوریا",
+  "name": "ڕەس العین",
+  "attraction": "چاوە و شوێنە مێژووییەکان",
+  "population": "آمار رسمی وابسته به سال سرشماری",
+  "history": "قدمت و پیشینه: نیازمند منبع محلی/تاریخی تاییدشده",
+  "images": [
+   "assets/cities/ras-al-ayn-2.svg"
+  ],
+  "description": {
+   "ku": "ڕەس العین لە ناوچەی ڕۆژئاوا دایە و بە شوێنە مێژوویی، سروشت و ژیانی شارستانیی خۆی ناسراوە. ئەم کارتە زانیارییە سەرەکییەکانی شار و گرنگترین شوێنەکانی پیشان دەدات.",
+   "fa": "Ras al-Ayn از شهرهای بخش ڕۆژئاوا است و به پیشینه، طبیعت و زندگی شهری منطقه خود شناخته می‌شود. این کارت اطلاعات اصلی شهر و دیدنی‌های مهم آن را معرفی می‌کند.",
+   "en": "Ras al-Ayn is a city in ڕۆژئاوا and is presented through its local history, landscape and urban culture. This card introduces the city and its main points of interest.",
+   "tr": "Ras al-Ayn, ڕۆژئاوا bölgesindeki şehirlerden biridir; yerel tarihi, doğası ve şehir kültürüyle tanıtılır. Bu kart şehri ve başlıca görülecek yerleri sunar.",
+   "ar": "Ras al-Ayn مدينة في ڕۆژئاوا، وتُعرَف بتاريخها المحلي وطبيعتها وثقافتها الحضرية. تعرض هذه البطاقة معلومات أساسية عن المدينة وأهم معالمها."
+  },
+  "names": {
+   "ku": "ڕەس العین",
+   "fa": "Ras al-Ayn",
+   "en": "Ras al-Ayn",
+   "tr": "Ras al-Ayn",
+   "ar": "Ras al-Ayn"
+  }
+ }
 ];

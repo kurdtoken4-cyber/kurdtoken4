@@ -1,1 +1,12 @@
-All city images are bundled locally as PNG files under assets/cities. No external image URL is used.
+Each city now has exactly ONE local placeholder image (generated SVG) under
+assets/cities/<city-slug>.svg — no external image URL is used.
+
+These are auto-generated placeholders (a colored card with the city name),
+NOT real photographs — real, properly-licensed photographs were never
+supplied for this project, and none were downloaded from the internet to
+avoid using images without a license.
+
+To finish the project, replace each assets/cities/<slug>.svg reference in
+cities-data.js and assets/js/kurdtoken-101-cities-map.js with a real,
+licensed photo of that city (jpg/png/webp all work — just update the path
+in both files, since they are still two separate datasets).
