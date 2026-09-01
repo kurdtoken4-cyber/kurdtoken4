@@ -7,3 +7,8 @@ Why runtime loading? This avoids bundling 101 third-party images into the reposi
 The code requests a matching image for the selected city, shows the author/license/source credit, and falls back gracefully if no suitable image is returned.
 
 Wikimedia Commons licensing rules require checking each individual file and following its attribution/license requirements.
+
+
+## Hewlêr / Erbil
+- Erbil City.jpg — Wikimedia Commons — author: Akam Nawzad — CC BY-SA 4.0. Used via Wikimedia Commons redirect in the weekly-city feature.
+- Launch date mapping used by the site: Kurdish ۲۰ ڕه‌شه‌مێ ۲۷۲۶; Persian ۲۰ اسفند ۱۴۰۵; Gregorian 11 March 2027; Hijri ٢ شوال ١٤٤٨ هـ.

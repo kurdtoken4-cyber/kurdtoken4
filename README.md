@@ -15,7 +15,7 @@
 - زبان و شێوەزارەکان
 - Tokenomics، Roadmap، Community و Footer
 - تغییر زبان کامل برای متن‌های اصلی سایت در پنج زبان: کوردی، فارسی، English، Türkçe، العربية
-- شمارش معکوس روی همان ناحیه کارت لانچ بنر؛ هدف: ۲۰ ڕەشەمە ۲۷۲۶ / 11 March 2027
+- شمارش معکوس لانچ؛ تاریخ رسمی در هر زبان با تقویم همان زبان نمایش داده می‌شود: کوردی ۲۰ ڕه‌شه‌مێ ۲۷۲۶، فارسی ۲۰ اسفند ۱۴۰۵، English 11 March 2027، Türkçe 11 Mart 2027، العربية ٢ شوال ١٤٤٨ هـ. همه نسخه‌ها: مصادف با روز لباس کوردی.
 
 ## منابع تاریخی کلیدی
 1. The Cambridge History of the Kurds, Cambridge University Press (2021)
@@ -31,3 +31,9 @@
 
 ## Real city photos
 The city gallery now attempts to load up to two real photographs from Wikimedia Commons for each city, with local fallback images if the network or search is unavailable. Check each Commons file's license before commercial use.
+
+## Visual / city images
+- `assets/hero-main.jpg` از طرح ارسالی به‌عنوان تصویر اصلی بدون هدر/اعداد قدیمی بریده شده است.
+- `assets/kurd-logo.png` برای لوگوی واقعی هدر استفاده می‌شود.
+- تصاویر شهرها در صورت دسترسی شبکه از Wikimedia Commons بارگذاری می‌شوند و نام فایل/پدیدآورنده/مجوز کنار تصویر نمایش داده می‌شود؛ در صورت قطع شبکه، تصویر محلی جایگزین می‌شود.
+- شهر هەولێر دارای اطلاعات اختصاصی: تاریخ، جمعیت با سال، صنایع دستی، آداب، منابع درآمد و مکان‌های تاریخی.

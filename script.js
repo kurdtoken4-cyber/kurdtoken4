@@ -13,8 +13,8 @@
     ku:'KURDTOKEN | کوردستان', fa:'KURDTOKEN | کردستان', en:'KURDTOKEN | Kurdistan',
     tr:'KURDTOKEN | Kürdistan', ar:'KURDTOKEN | كردستان'
   };
-  let lang = localStorage.getItem(LANG_KEY);
-  if (!LANGS.includes(lang)) lang = document.documentElement.lang && LANGS.includes(document.documentElement.lang) ? document.documentElement.lang : 'ku';
+  let lang = localStorage.getItem(LANG_KEY) || 'ku';
+  if (!LANGS.includes(lang)) lang = 'ku';
   let activePart = null;
   let activeCity = null;
 
@@ -62,72 +62,68 @@
   };
 
   function renderFourPart(widget, key, region, scroll) {
-    const btn = widget.querySelector(`.four-part-btn[data-region="${region}"]`);
-    if (!btn) return;
-    widget.querySelectorAll('.four-part-btn').forEach(b => { b.classList.toggle('active', b === btn); b.setAttribute('aria-selected', b === btn ? 'true' : 'false'); });
-    const detail = widget.querySelector('.four-parts-detail');
-    widget.querySelector('.four-parts-detail-title').textContent = regionNames[region]?.[lang] || region;
-    widget.querySelector('.four-parts-detail-text').textContent = sectionText[key]?.[lang] || '';
-    detail.hidden = false;
-    if (scroll) widget.scrollIntoView({behavior:'smooth', block:'nearest'});
+    const btn = widget.querySelector(`.four-part-btn[data-region="${region}"]`); if (!btn) return;
+    widget.querySelectorAll('.four-part-btn').forEach(b=>{ b.classList.toggle('active',b===btn); b.setAttribute('aria-selected',b===btn?'true':'false'); });
+    const detail=widget.querySelector('.four-parts-detail');
+    widget.querySelector('.four-parts-detail-title').textContent=regionNames[region]?.[lang]||region;
+    widget.querySelector('.four-parts-detail-text').textContent=sectionText[key]?.[lang]||'';
+    detail.hidden=false; if(scroll) widget.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
-
-  function cityName(city) {
-    return city.names?.[lang] || city.names?.en || city.name;
+  function cityName(city){ return city.names?.[lang] || city.names?.en || city.name; }
+  function localFallback(city){ const n=(city?.names?.en||city?.name||'city').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); return `assets/cities/${n}.svg`; }
+  function genericFallback(){ return 'assets/city-placeholder.jpg'; }
+  const countryByPart={east:{ku:'ئێران',fa:'ایران',en:'Iran',tr:'İran',ar:'إيران'},north:{ku:'تورکیا',fa:'ترکیه',en:'Türkiye',tr:'Türkiye',ar:'تركيا'},south:{ku:'عێراق',fa:'عراق',en:'Iraq',tr:'Irak',ar:'العراق'},west:{ku:'سوریا',fa:'سوریه',en:'Syria',tr:'Suriye',ar:'سوريا'}};
+  const cityLabel={
+    ku:{population:'دانیشتووان',crafts:'پیشە و دەستکاری',customs:'نەریت و ڕێوڕەسم',income:'سەرچاوەکانی داهات',history:'مێژوو',attractions:'شوێنە مێژووییەکان',source:'سەرچاوەی وێنە'},
+    fa:{population:'جمعیت',crafts:'صنایع دستی',customs:'آداب و رسوم',income:'منابع درآمد',history:'تاریخ و قدمت',attractions:'مکان‌های تاریخی',source:'منبع تصویر'},
+    en:{population:'Population',crafts:'Handicrafts',customs:'Customs',income:'Main income sources',history:'History',attractions:'Historic places',source:'Image source'},
+    tr:{population:'Nüfus',crafts:'El sanatları',customs:'Gelenekler',income:'Başlıca gelir kaynakları',history:'Tarih',attractions:'Tarihî yerler',source:'Görsel kaynağı'},
+    ar:{population:'السكان',crafts:'الحرف اليدوية',customs:'العادات والتقاليد',income:'مصادر الدخل',history:'التاريخ',attractions:'المواقع التاريخية',source:'مصدر الصورة'}
+  };
+  function getRich(city){
+    if(city.name==='هەولێر' || city.names?.en==='Erbil') return {
+      population:{ku:'نزیکەی ٨٤٦ هەزار (ئاماری ٢٠١٥؛ ژمارەکە بە پێی سنووری ئاماری جیاواز دەگۆڕێت)',fa:'حدود ۸۴۶ هزار نفر (رقم شهری ۲۰۱۵؛ بسته به محدوده آماری متفاوت است)',en:'About 846,000 (2015 city figure; varies by statistical boundary)',tr:'Yaklaşık 846.000 (2015 şehir verisi; istatistiksel sınıra göre değişebilir)',ar:'نحو 846 ألف نسمة (رقم مديني لعام 2015؛ يختلف حسب الحدود الإحصائية)'},
+      history:{ku:'هەولێر شارێکی زۆر کۆنە و قەڵاکەی لە ٢٠١٤ لە میراتی جیهانی یونسکۆ تۆمارکرا.',fa:'هەولێر شهری بسیار کهن است و ارگ آن در سال ۲۰۱۴ در فهرست میراث جهانی یونسکو ثبت شد.',en:'Erbil is an ancient city; its citadel was inscribed as a UNESCO World Heritage Site in 2014.',tr:'Erbil çok eski bir şehirdir; kalesi 2014 yılında UNESCO Dünya Mirası Listesi’ne alındı.',ar:'أربيل مدينة عريقة؛ وأُدرجت قلعتها ضمن قائمة التراث العالمي لليونسكو عام 2014.'},
+      crafts:{ku:'قالین و بەرهەمی دەستی، نەساجی، زیوەر و کاری فلزی لە بازاڕە کۆنەکاندا ناسراون.',fa:'قالی و بافته‌ها، صنایع دستی، زیورآلات و فلزکاری در بازارهای سنتی شهر دیده می‌شوند.',en:'Carpets and textiles, crafts, jewelry and metalwork are associated with the city’s traditional markets.',tr:'Halı ve dokuma, el sanatları, takı ve metal işçiliği geleneksel çarşılarda görülür.',ar:'ترتبط السجاد والمنسوجات والحرف والمجوهرات والأعمال المعدنية بالأسواق التقليدية في المدينة.'},
+      customs:{ku:'میوانداری، بازاڕی قیصەری، بۆنە کوردییەکان و خواردنی ناوخۆیی بەشێکن لە ژیانی کەلتووری شار.',fa:'مهمان‌نوازی، بازار قیصری، آیین‌های کردی و غذاهای محلی از عناصر فرهنگی شهر هستند.',en:'Hospitality, the Qaysari Bazaar, Kurdish celebrations and local food are part of the city’s cultural life.',tr:'Misafirperverlik, Kayseri Çarşısı, Kürt kutlamaları ve yerel yemekler şehrin kültürel yaşamının parçalarıdır.',ar:'الضيافة والبازار القيصري والاحتفالات الكردية والأطعمة المحلية من عناصر الحياة الثقافية للمدينة.'},
+      income:{ku:'خزمەتگوزاری و دامەزراوە حکومییەکان، بازرگانی و بازاڕ، بیناسازی، گەشتیاری و هەندێک چالاکیی کشتوکاڵی لە ناوچەی دەوروبەر.',fa:'خدمات و بخش عمومی، بازرگانی و تجارت، ساخت‌وساز، گردشگری و بخشی از کشاورزی پیرامون شهر.',en:'Public services, trade and commerce, construction, tourism and some surrounding agriculture are important parts of the local economy.',tr:'Kamu hizmetleri, ticaret, inşaat, turizm ve çevredeki tarım yerel ekonominin önemli parçalarıdır.',ar:'تشكل الخدمات العامة والتجارة والبناء والسياحة وبعض الزراعة المحيطة أجزاء مهمة من الاقتصاد المحلي.'},
+      attractions:{ku:'قەڵای هەولێر، بازاڕی قیصەری، مینارەی مەظفەری و ناوچە کۆنەکانی شار.',fa:'ارگ اربیل، بازار قیصری، مناره مظفری و بافت تاریخی شهر.',en:'Erbil Citadel, Qaysari Bazaar, Mudhafaria Minaret and the historic urban core.',tr:'Erbil Kalesi, Kayseri Çarşısı, Mudhafaria Minaresi ve tarihî şehir merkezi.',ar:'قلعة أربيل والبازار القيصري ومنارة المظفرية والنواة التاريخية للمدينة.'}
+    };
+    return {
+      population:{ku:city.population||'زانیاریی دانیشتووان لە پەڕەی سەرچاوەدا نوێ دەکرێتەوە',fa:city.population||'آمار جمعیت باید با منبع و سال سرشماری ثبت شود',en:city.population||'Population figure should be tied to a cited census year',tr:city.population||'Nüfus verisi kaynak ve sayım yılıyla verilmelidir',ar:city.population||'يجب ربط رقم السكان بمصدر وسنة تعداد'},
+      history:{ku:city.description?.ku||'زانیاریی مێژوویی لە حالەتی پەرەپێدانە',fa:city.history||city.description?.fa||'اطلاعات تاریخی در حال تکمیل است',en:city.history||city.description?.en||'Historical details are being expanded',tr:city.history||city.description?.tr||'Tarih bilgileri geliştiriliyor',ar:city.history||city.description?.ar||'يجري توسيع المعلومات التاريخية'},
+      crafts:{ku:'پێویستی بە زانیاریی تایبەتی شارەکە هەیە',fa:'برای این شهر اطلاعات اختصاصی در حال تکمیل است',en:'City-specific information is being expanded',tr:'Şehre özel bilgiler geliştiriliyor',ar:'يجري استكمال المعلومات الخاصة بالمدينة'},
+      customs:{ku:'پێویستی بە زانیاریی تایبەتی شارەکە هەیە',fa:'برای این شهر اطلاعات اختصاصی در حال تکمیل است',en:'City-specific information is being expanded',tr:'Şehre özel bilgiler geliştiriliyor',ar:'يجري استكمال المعلومات الخاصة بالمدينة'},
+      income:{ku:'پێویستی بە سەرچاوەی ئابووری تایبەتی شارەکە هەیە',fa:'منابع درآمد اختصاصی شهر باید با منبع معتبر ثبت شود',en:'City-specific economic data should be tied to reliable sources',tr:'Şehre özgü ekonomik veriler güvenilir kaynaklara bağlanmalıdır',ar:'يجب ربط البيانات الاقتصادية الخاصة بالمدينة بمصادر موثوقة'},
+      attractions:{ku:city.attraction||'—',fa:city.attraction||'—',en:city.attraction||'—',tr:city.attraction||'—',ar:city.attraction||'—'}
+    };
   }
-  function cityImageFallback(city, variant) {
-    return `assets/cities/${encodeURIComponent(city.name)}-${variant}.png`;
-  }
-
-  function initCities() {
-    const host = document.getElementById('regionCities');
-    if (!host || !Array.isArray(window.KURD_CITIES)) return;
-    const buttons = [...document.querySelectorAll('.region-card')];
-    const grouped = {};
-    window.KURD_CITIES.forEach(city => (grouped[city.part] ||= []).push(city));
-
-    window.__showKurdPart = (part, scroll = true) => renderPart(part, scroll);
-    function renderPart(part, scroll = true) {
-      activePart = part;
-      host.hidden = false;
-      host.innerHTML = '';
-      const cities = grouped[part] || [];
-      const title = document.createElement('div'); title.className='region-cities-head';
-      const h = document.createElement('h3'); h.textContent = ({'ڕۆژهەڵات':regionNames.east,'باکوور':regionNames.north,'باشوور':regionNames.south,'ڕۆژئاوا':regionNames.west}[part]?.[lang] || part); title.appendChild(h);
-      const close = document.createElement('button'); close.type='button'; close.className='close-region'; close.textContent='×'; close.setAttribute('aria-label', labels[lang].close);
-      close.onclick=()=>{ activePart=null; activeCity=null; host.hidden=true; host.innerHTML=''; buttons.forEach(b=>b.classList.remove('active')); };
-      title.appendChild(close); host.appendChild(title);
-      const list=document.createElement('div'); list.className='city-list';
-      cities.forEach(city=>{
-        const b=document.createElement('button'); b.type='button'; b.className='city-name'; b.textContent=cityName(city);
-        if(activeCity && activeCity.name===city.name) b.classList.add('active');
-        b.onclick=()=>renderCity(city,b); list.appendChild(b);
-      });
-      host.appendChild(list);
-      buttons.forEach(b=>b.classList.toggle('active', b.dataset.part===part));
-      if(activeCity && activeCity.part===part) renderCity(activeCity, host.querySelector('.city-name.active'), false);
-      if(scroll) host.scrollIntoView({behavior:'smooth',block:'start'});
+  function initCities(){
+    const host=document.getElementById('regionCities'); if(!host||!Array.isArray(window.KURD_CITIES)) return;
+    const buttons=[...document.querySelectorAll('.region-card')]; const grouped={}; window.KURD_CITIES.forEach(c=>(grouped[c.part] ||= []).push(c));
+    window.__showKurdPart=(part,scroll=true)=>renderPart(part,scroll);
+    function renderPart(part,scroll=true){
+      activePart=part; activeCity=null; host.hidden=false; host.innerHTML='';
+      const cities=grouped[part]||[]; const title=document.createElement('div'); title.className='region-cities-head';
+      const h=document.createElement('h3'); const key=({ 'ڕۆژهەڵات':'east','باکوور':'north','باشوور':'south','ڕۆژئاوا':'west'})[part]; h.textContent=regionNames[key]?.[lang]||part; title.appendChild(h);
+      const count=document.createElement('span'); count.className='city-count'; count.textContent=`${cities.length}`; title.appendChild(count);
+      const close=document.createElement('button'); close.type='button'; close.className='close-region'; close.textContent='×'; close.setAttribute('aria-label',labels[lang].close); close.onclick=()=>{activePart=null;activeCity=null;host.hidden=true;host.innerHTML='';buttons.forEach(b=>b.classList.remove('active'));}; title.appendChild(close); host.appendChild(title);
+      const list=document.createElement('div'); list.className='city-list'; cities.forEach(city=>{ const b=document.createElement('button'); b.type='button'; b.className='city-name'; b.textContent=cityName(city); b.onclick=()=>renderCity(city,b); list.appendChild(b); }); host.appendChild(list);
+      buttons.forEach(b=>b.classList.toggle('active',b.dataset.part===part)); if(scroll) host.scrollIntoView({behavior:'smooth',block:'start'});
     }
-    function renderCity(city, clicked, scroll=true) {
-      activeCity=city;
-      const old=host.querySelector('.city-detail'); if(old) old.remove();
-      const detail=document.createElement('article'); detail.className='city-detail';
-      const gallery=document.createElement('div'); gallery.className='city-gallery';
-      [0,1].forEach(i=>{
-        const img=document.createElement('img');
-        const src=city.images?.[i] || cityImageFallback(city,i+1);
-        img.src=src; img.alt=`${labels[lang].image}: ${cityName(city)}`; img.loading='lazy';
-        img.onerror=()=>{ img.onerror=null; img.src=cityImageFallback(city,i+1); };
-        gallery.appendChild(img);
-      });
-      const body=document.createElement('div'); body.className='city-detail-body';
-      const h=document.createElement('h4'); h.textContent=cityName(city); body.appendChild(h);
-      const key={east:'east',north:'north',south:'south',west:'west'}[city.part] || Object.keys(regionNames).find(k=>regionNames[k].ku===city.part);
-      const p1=document.createElement('p'); p1.innerHTML=`<b>${labels[lang].country}:</b> ${({'east':{ku:'ئێران',fa:'ایران',en:'Iran',tr:'İran',ar:'إيران'},'north':{ku:'تورکیا',fa:'ترکیه',en:'Türkiye',tr:'Türkiye',ar:'تركيا'},'south':{ku:'عێراق',fa:'عراق',en:'Iraq',tr:'Irak',ar:'العراق'},'west':{ku:'سوریا',fa:'سوریه',en:'Syria',tr:'Suriye',ar:'سوريا'}}[key]||{})[lang] || city.country}`; body.appendChild(p1);
-      const p2=document.createElement('p'); p2.innerHTML=`<b>${labels[lang].history}:</b> ${city.description?.[lang] || city.description?.ku || '—'}`; body.appendChild(p2);
-      const p3=document.createElement('p'); p3.innerHTML=`<b>${labels[lang].attractions}:</b> ${city.attraction || '—'}`; body.appendChild(p3);
-      detail.append(gallery,body); host.appendChild(detail);
-      host.querySelectorAll('.city-name').forEach(x=>x.classList.remove('active')); if(clicked) clicked.classList.add('active');
+    async function renderCity(city,clicked,scroll=true){
+      activeCity=city; const old=host.querySelector('.city-detail'); if(old) old.remove();
+      const detail=document.createElement('article'); detail.className='city-detail'; const gallery=document.createElement('div'); gallery.className='city-gallery';
+      const loading=document.createElement('div'); loading.className='photo-loading'; loading.textContent=labels[lang].image+'…'; gallery.appendChild(loading);
+      const body=document.createElement('div'); body.className='city-detail-body'; const h=document.createElement('h4'); h.textContent=cityName(city); body.appendChild(h);
+      const key=({ 'ڕۆژهەڵات':'east','باکوور':'north','باشوور':'south','ڕۆژئاوا':'west'})[city.part]; const p0=document.createElement('p'); p0.innerHTML=`<b>${labels[lang].country}:</b> ${(countryByPart[key]||{})[lang]||city.country||'—'}`; body.appendChild(p0);
+      const rich=getRich(city); const rows=[['history',rich.history],['population',rich.population],['crafts',rich.crafts],['customs',rich.customs],['income',rich.income],['attractions',rich.attractions]];
+      rows.forEach(([k,v])=>{const p=document.createElement('p'); p.innerHTML=`<b>${cityLabel[lang][k]}:</b> ${v?.[lang]||v||'—'}`; body.appendChild(p);});
+      detail.append(gallery,body); host.appendChild(detail); host.querySelectorAll('.city-name').forEach(x=>x.classList.remove('active')); if(clicked) clicked.classList.add('active');
+      let photos=[]; if(window.KURDTOKEN_COMMONS) photos=await window.KURDTOKEN_COMMONS.searchMany(city,2);
+      gallery.innerHTML='';
+      if(!photos.length){ const img=document.createElement('img'); img.src=localFallback(city); img.onerror=()=>{img.onerror=null;img.src=genericFallback();}; img.alt=`${labels[lang].image}: ${cityName(city)}`; gallery.appendChild(img); const note=document.createElement('div'); note.className='photo-credit'; note.textContent=labels[lang].source+': KURDTOKEN local fallback'; gallery.appendChild(note); }
+      else photos.forEach(photo=>{ const wrap=document.createElement('figure'); const img=document.createElement('img'); img.src=photo.url; img.alt=`${labels[lang].image}: ${cityName(city)}`; img.loading='lazy'; img.onerror=()=>{img.src=localFallback(city); img.onerror=()=>{img.onerror=null;img.src=genericFallback();};}; wrap.appendChild(img); wrap.insertAdjacentHTML('beforeend',window.KURDTOKEN_COMMONS.attribution(photo)); gallery.appendChild(wrap); });
       if(scroll) detail.scrollIntoView({behavior:'smooth',block:'nearest'});
     }
     buttons.forEach(b=>b.addEventListener('click',()=>renderPart(b.dataset.part)));
@@ -141,19 +137,13 @@
   });
   document.addEventListener('keydown', e => { if((e.key==='Enter'||e.key===' ') && e.target.classList.contains('click-card')){e.preventDefault();e.target.click();} });
 
-  // Countdown: 20 Reşeme 2726 = 11 March 2027. Numbers stay English and do not change with language.
+  // 20 ڕه‌شه‌مێ 2726 = 20 اسفند 1405 = 11 March 2027.
   function initCountdown(){
     const target=Date.parse('2027-03-11T00:00:00+03:30');
-    const box=document.querySelector('.bannerCountdown');
     const ids={d:document.getElementById('cd-days'),h:document.getElementById('cd-hours'),m:document.getElementById('cd-minutes'),s:document.getElementById('cd-seconds')};
-    if(!box || !ids.d) return;
-    function tick(){
-      let diff=target-Date.now();
-      if(diff<=0){ ['d','h','m','s'].forEach(k=>ids[k].textContent='0'.repeat(k==='d'?3:2)); return; }
-      let total=Math.floor(diff/1000), d=Math.floor(total/86400); total%=86400; let h=Math.floor(total/3600); total%=3600; let m=Math.floor(total/60), s=total%60;
-      ids.d.textContent=String(d).padStart(3,'0'); ids.h.textContent=String(h).padStart(2,'0'); ids.m.textContent=String(m).padStart(2,'0'); ids.s.textContent=String(s).padStart(2,'0');
-    }
-    tick(); setInterval(tick,1000);
+    if(!ids.d) return;
+    function tick(){let diff=target-Date.now(); if(diff<=0){ids.d.textContent='000';ids.h.textContent='00';ids.m.textContent='00';ids.s.textContent='00';return;} let t=Math.floor(diff/1000),d=Math.floor(t/86400);t%=86400;let h=Math.floor(t/3600);t%=3600;let m=Math.floor(t/60),ss=t%60;ids.d.textContent=String(d).padStart(3,'0');ids.h.textContent=String(h).padStart(2,'0');ids.m.textContent=String(m).padStart(2,'0');ids.s.textContent=String(ss).padStart(2,'0');}
+    tick();setInterval(tick,1000);
   }
 
   document.addEventListener('DOMContentLoaded', () => {
