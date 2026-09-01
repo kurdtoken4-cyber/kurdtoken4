@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e8449" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#g)"/>
+  <circle cx="340" cy="40" r="70" fill="#ffffff" opacity="0.06"/>
+  <circle cx="40" cy="230" r="90" fill="#ffffff" opacity="0.05"/>
+  <text x="200" y="140" font-family="sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">Erbil</text>
+  <text x="200" y="170" font-family="sans-serif" font-size="13" fill="#ffffffb3" text-anchor="middle">KURDTOKEN — placeholder image</text>
+</svg>
