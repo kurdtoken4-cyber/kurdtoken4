@@ -1,12 +1,5 @@
-Each city now has exactly ONE local placeholder image (generated SVG) under
-assets/cities/<city-slug>.svg — no external image URL is used.
+KURDTOKEN CITY IMAGE SYSTEM
 
-These are auto-generated placeholders (a colored card with the city name),
-NOT real photographs — real, properly-licensed photographs were never
-supplied for this project, and none were downloaded from the internet to
-avoid using images without a license.
+Each city card keeps a local fallback image, and when the card opens the site attempts to load up to two real photographs from Wikimedia Commons using the city's English name. If Commons is unavailable or no suitable image is found, the bundled fallback remains visible.
 
-To finish the project, replace each assets/cities/<slug>.svg reference in
-cities-data.js and assets/js/kurdtoken-101-cities-map.js with a real,
-licensed photo of that city (jpg/png/webp all work — just update the path
-in both files, since they are still two separate datasets).
+Important: Wikimedia Commons files have individual licenses. Verify the source file and attribution requirements before commercial reuse.
