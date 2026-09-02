@@ -43,3 +43,7 @@ The city gallery now attempts to load up to two real photographs from Wikimedia 
 The City of the Week is date-driven and requires no weekly upload. The rotation starts on the official launch date (11 March 2027 / 20 Esfand 1405 / 20 Rêşemê 2726), starts with Hewlêr/Erbil, then rotates through the four regions in a balanced round-robin order using the 96-city dataset. It refreshes automatically when the 7-day period changes.
 
 Images are fetched from Wikimedia Commons when available and fall back to the local city artwork or placeholder.
+
+
+## Cultural content expansion
+Added dedicated multilingual sections for Kurdish clothing, food/cuisine, handicrafts, customs/celebrations, and Kurdish language/literature. Clothing includes women's and men's dress, regional diversity, textiles/embroidery, jewelry, and occasions, with selected source links.
