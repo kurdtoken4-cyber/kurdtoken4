@@ -47,3 +47,12 @@ Images are fetched from Wikimedia Commons when available and fall back to the lo
 
 ## Cultural content expansion
 Added dedicated multilingual sections for Kurdish clothing, food/cuisine, handicrafts, customs/celebrations, and Kurdish language/literature. Clothing includes women's and men's dress, regional diversity, textiles/embroidery, jewelry, and occasions, with selected source links.
+
+
+## Research edition — September 2026
+- Added a dedicated Knowledge & Sources Center with UNESCO and KRSO references.
+- Added a curated heritage gallery that retrieves Wikimedia Commons images at runtime and displays attribution/license metadata where supplied by Commons.
+- The site deliberately avoids inventing city population figures. City-level numbers should only be inserted when verified against a dated official or high-quality source.
+- Verified reference points include Erbil Citadel (UNESCO 2014), Hawraman/Uramanat (UNESCO 2021), Diyarbakır Fortress and Hevsel Gardens (UNESCO 2015), and Bisotun (UNESCO 2006).
+- KRSO reports 6,519,129 people for the Kurdistan Region of Iraq in the 2024 census; the site treats this as a dated statistic rather than a timeless figure.
+- All four-region language is framed as geographic/cultural scope and does not imply a single legal or political status for all areas.

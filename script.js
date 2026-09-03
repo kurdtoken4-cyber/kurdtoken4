@@ -191,6 +191,21 @@
       attractions:{ku:city.attraction||'—',fa:city.attraction||'—',en:city.attraction||'—',tr:city.attraction||'—',ar:city.attraction||'—'}
     };
   }
+
+  async function initResearchGallery(){
+    const host=document.getElementById('heritage-images'); if(!host) return;
+    const queries=['Erbil Citadel Iraq','Hawraman Uramanat Iran','Diyarbakir Hevsel Gardens','Bisotun Kermanshah'];
+    try{
+      const groups=await Promise.all(queries.map(async q=>{
+        const url='https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch='+encodeURIComponent(q+' filetype:bitmap')+'&gsrnamespace=6&gsrlimit=2&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=700&format=json&origin=*';
+        const r=await fetch(url); const j=await r.json(); return Object.values(j.query?.pages||{});
+      }));
+      const items=groups.flat();
+      if(!items.length) throw new Error('no images');
+      host.innerHTML=items.map(p=>{const i=p.imageinfo?.[0]||{}; const meta=i.extmetadata||{}; const title=(p.title||'').replace(/^File:/,''); const artist=(meta.Artist?.value||'').replace(/<[^>]+>/g,'').slice(0,180); const lic=(meta.LicenseShortName?.value||'').replace(/<[^>]+>/g,'').slice(0,100); return `<figure><img loading="lazy" src="${i.thumburl||i.url||''}" alt="${title.replace(/"/g,'&quot;')}"><figcaption><b>${title}</b><br>${artist?artist+' · ':''}${lic}</figcaption></figure>`}).join('');
+    }catch(e){ host.innerHTML='<div class="gallery-loading">Images are loaded from Wikimedia Commons when available; each file retains its own attribution and license.</div>'; }
+  }
+
   function initCities(){
     const host=document.getElementById('regionCities'); if(!host||!Array.isArray(window.KURD_CITIES)) return;
     const buttons=[...document.querySelectorAll('.region-card')]; const grouped={}; window.KURD_CITIES.forEach(c=>(grouped[c.part] ||= []).push(c));
@@ -256,6 +271,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const select=document.getElementById('language');
     if(select) select.addEventListener('change',e=>applyLanguage(e.target.value));
-    initCities(); initWeeklyCity(); initCountdown(); initTradeButtons(); applyLanguage(lang);
+    initCities(); initWeeklyCity(); initCountdown(); initTradeButtons(); initResearchGallery(); applyLanguage(lang);
   });
 })();
+
