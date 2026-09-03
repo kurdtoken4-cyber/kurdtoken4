@@ -1,4 +1,4 @@
-/* KURDTOKEN — single language system + local city browser + fixed countdown */
+/* KURD Token — single language system + local city browser + fixed countdown */
 (() => {
   const LANGS = ['ku','fa','en','tr','ar'];
   const LANG_KEY = 'kurdtoken-lang';
@@ -10,8 +10,8 @@
     ar:{close:'إغلاق',country:'الدولة',history:'التاريخ',attractions:'المعالم',image:'صورة المدينة'}
   };
   const titles = {
-    ku:'KURDTOKEN | کوردستان', fa:'KURDTOKEN | کردستان', en:'KURDTOKEN | Kurdistan',
-    tr:'KURDTOKEN | Kürdistan', ar:'KURDTOKEN | كردستان'
+    ku:'KURD Token | کوردستان', fa:'KURD Token | کردستان', en:'KURD Token | Kurdistan',
+    tr:'KURD Token | Kürdistan', ar:'KURD Token | كردستان'
   };
   let lang = localStorage.getItem(LANG_KEY) || 'ku';
   if (!LANGS.includes(lang)) lang = 'ku';
@@ -170,7 +170,7 @@
     if(loading) loading.textContent=weeklyText[lang].loading; if(credit) credit.textContent=''; if(image){image.hidden=true;image.removeAttribute('src');}
     let photos=[]; try{if(window.KURDTOKEN_COMMONS) photos=await window.KURDTOKEN_COMMONS.searchMany(city,1);}catch(_){photos=[];}
     if(photos.length && image){image.src=photos[0].url;image.alt=`${weeklyText[lang].week}: ${cityName(city)}`;image.hidden=false;image.onerror=()=>{image.onerror=null;image.src=localFallback(city);image.hidden=false;};if(credit)credit.innerHTML=window.KURDTOKEN_COMMONS.attribution(photos[0]);if(loading)loading.style.display='none';}
-    else if(image){image.src=localFallback(city);image.hidden=false;image.onerror=()=>{image.onerror=null;image.src=genericFallback();};if(loading)loading.style.display='none';if(credit)credit.textContent=`${weeklyText[lang].source}: KURDTOKEN local fallback`;}
+    else if(image){image.src=localFallback(city);image.hidden=false;image.onerror=()=>{image.onerror=null;image.src=genericFallback();};if(loading)loading.style.display='none';if(credit)credit.textContent=`${weeklyText[lang].source}: KURD Token local fallback`;}
   }
 
   function getRich(city){
@@ -215,7 +215,7 @@
       detail.append(gallery,body); host.appendChild(detail); host.querySelectorAll('.city-name').forEach(x=>x.classList.remove('active')); if(clicked) clicked.classList.add('active');
       let photos=[]; if(window.KURDTOKEN_COMMONS) photos=await window.KURDTOKEN_COMMONS.searchMany(city,2);
       gallery.innerHTML='';
-      if(!photos.length){ const img=document.createElement('img'); img.src=localFallback(city); img.onerror=()=>{img.onerror=null;img.src=genericFallback();}; img.alt=`${labels[lang].image}: ${cityName(city)}`; gallery.appendChild(img); const note=document.createElement('div'); note.className='photo-credit'; note.textContent=labels[lang].source+': KURDTOKEN local fallback'; gallery.appendChild(note); }
+      if(!photos.length){ const img=document.createElement('img'); img.src=localFallback(city); img.onerror=()=>{img.onerror=null;img.src=genericFallback();}; img.alt=`${labels[lang].image}: ${cityName(city)}`; gallery.appendChild(img); const note=document.createElement('div'); note.className='photo-credit'; note.textContent=labels[lang].source+': KURD Token local fallback'; gallery.appendChild(note); }
       else photos.forEach(photo=>{ const wrap=document.createElement('figure'); const img=document.createElement('img'); img.src=photo.url; img.alt=`${labels[lang].image}: ${cityName(city)}`; img.loading='lazy'; img.onerror=()=>{img.src=localFallback(city); img.onerror=()=>{img.onerror=null;img.src=genericFallback();};}; wrap.appendChild(img); wrap.insertAdjacentHTML('beforeend',window.KURDTOKEN_COMMONS.attribution(photo)); gallery.appendChild(wrap); });
       if(scroll) detail.scrollIntoView({behavior:'smooth',block:'nearest'});
     }
@@ -230,7 +230,7 @@
   });
   document.addEventListener('keydown', e => { if((e.key==='Enter'||e.key===' ') && e.target.classList.contains('click-card')){e.preventDefault();e.target.click();} });
 
-  // 20 ڕه‌شه‌مێ 2726 = 20 اسفند 1405 = 11 March 2027.
+  // Launch target: 20 ڕه‌شه‌مێ 2726 = 20 اسفند 1405 = 11 March 2027. National Clothing Day is 10 March in the Kurdistan Region calendar; the site does not claim the launch date is the clothing day.
   function initCountdown(){
     const target=Date.parse('2027-03-11T00:00:00+03:30');
     const ids={d:document.getElementById('cd-days'),h:document.getElementById('cd-hours'),m:document.getElementById('cd-minutes'),s:document.getElementById('cd-seconds')};
@@ -239,9 +239,23 @@
     tick();setInterval(tick,1000);
   }
 
+  // Trading links are intentionally inactive until the official KURD contract is deployed.
+  // Set the real BNB Smart Chain contract address here after deployment; never publish a placeholder.
+  const KURD_CONTRACT_ADDRESS = '';
+  function initTradeButtons(){
+    const buy=document.getElementById('buy-kurd'), sell=document.getElementById('sell-kurd'), status=document.getElementById('trade-status');
+    if(!buy||!sell) return;
+    if(/^0x[a-fA-F0-9]{40}$/.test(KURD_CONTRACT_ADDRESS)){
+      const base='https://pancakeswap.finance/swap?chain=bsc';
+      buy.disabled=false; sell.disabled=false;
+      buy.onclick=()=>window.open(base+'&inputCurrency=BNB&outputCurrency='+KURD_CONTRACT_ADDRESS,'_blank','noopener');
+      sell.onclick=()=>window.open(base+'&inputCurrency='+KURD_CONTRACT_ADDRESS+'&outputCurrency=BNB','_blank','noopener');
+      if(status) status.textContent='PancakeSwap trading is enabled for the deployed KURD contract on BNB Smart Chain.';
+    }
+  }
   document.addEventListener('DOMContentLoaded', () => {
     const select=document.getElementById('language');
     if(select) select.addEventListener('change',e=>applyLanguage(e.target.value));
-    initCities(); initWeeklyCity(); initCountdown(); applyLanguage(lang);
+    initCities(); initWeeklyCity(); initCountdown(); initTradeButtons(); applyLanguage(lang);
   });
 })();

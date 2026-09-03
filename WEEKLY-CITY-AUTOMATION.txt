@@ -1,7 +1,7 @@
 KURDESTAN — CITY OF THE WEEK
 
 Automatic rotation: every 7 days
-Anchor: 11 March 2027 (20 Esfand 1405 / 20 Rêşemê 2726)
+Anchor: 11 March 2027 (20 Esfand 1405 / 20 Rêşemê 2726) — launch target
 First featured city: Hewlêr / Erbil
 Dataset: 96 cities across Rojhelat, Bakur, Başûr and Rojava
 No weekly upload required. The browser calculates the current city from the calendar date.
