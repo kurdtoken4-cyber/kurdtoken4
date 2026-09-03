@@ -120,3 +120,24 @@
 .topic-images figure{margin:0;border-radius:14px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
 .topic-images img{width:100%;height:180px;object-fit:cover;display:block}.topic-images figcaption{padding:10px;font-size:.78rem;line-height:1.5}.gallery-loading{padding:30px;text-align:center;opacity:.75}
 @media(max-width:600px){.research-card{padding:16px}.topic-images img{height:150px}.gallery-head{align-items:flex-start;flex-direction:column}}
+
+/* Detailed language & dialect atlas */
+.language-atlas{margin-top:24px}.language-hero{display:grid;grid-template-columns:1.3fr .7fr;gap:24px;align-items:center}.language-hero h3{font-size:28px;margin:10px 0 12px}.language-hero p{line-height:2;margin:0}.language-map{width:100%;max-height:390px;object-fit:contain;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03)}
+.language-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}.fact-box{padding:18px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:rgba(0,0,0,.15);display:flex;flex-direction:column;gap:8px}.fact-box strong{color:#e8ad38}.fact-box span{line-height:1.8}.dialect-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}.dialect-detail{padding:20px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:rgba(0,0,0,.14)}.dialect-head{display:flex;align-items:center;gap:12px}.dialect-head span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(232,173,56,.5);color:#e8ad38;font-weight:800}.dialect-head h4{margin:0;font-size:21px}.dialect-detail>p{line-height:2;margin:14px 0}.dialect-detail ul{margin:0;padding-inline-start:22px;line-height:1.9}.related-language{border-style:dashed}.language-by-region,.orthography,.language-sources{margin-top:18px}.region-language-grid,.script-columns{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:14px}.region-language-grid>div,.script-columns>div{padding:16px;border-radius:14px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.025)}.region-language-grid h4,.script-columns h4{margin:0 0 8px;color:#e8ad38}.region-language-grid p,.script-columns p{line-height:1.9;margin:0}.language-note{margin-top:18px;padding:16px 18px;border-inline-start:3px solid #e8ad38;background:rgba(232,173,56,.07);line-height:1.9;border-radius:10px}.language-note strong{display:inline-block;margin-inline-end:7px}.source-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.source-links a{padding:10px 13px;border-radius:10px;border:1px solid rgba(255,255,255,.1);text-decoration:none}.source-links a:hover{border-color:#e8ad38}
+@media(max-width:800px){.language-hero{grid-template-columns:1fr}.language-facts,.dialect-detail-grid,.region-language-grid,.script-columns{grid-template-columns:1fr}.language-hero h3{font-size:23px}.language-map{max-height:300px}}
+/* KURDESTAN Complete Edition — Language Atlas */
+.language-atlas .atlas-intro{margin-bottom:20px}
+.atlas-map{overflow:hidden;text-align:center;margin:18px 0}
+.atlas-map img{width:100%;max-height:520px;object-fit:contain;border-radius:18px;display:block;background:#fff}
+.atlas-map small{display:block;padding:10px 4px;line-height:1.8}
+.atlas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:20px 0}
+.atlas-card{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:22px;background:rgba(255,255,255,.035);box-shadow:0 12px 35px rgba(0,0,0,.12)}
+.atlas-card.related{background:rgba(255,255,255,.045)}
+.atlas-num{font-weight:800;font-size:14px;opacity:.65;letter-spacing:.08em}
+.atlas-card h3{margin:7px 0 12px;font-size:22px}
+.atlas-card p{line-height:2;text-align:justify}
+.atlas-tags{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.atlas-tags span{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);font-size:12px}
+.atlas-card details{margin-top:12px}.atlas-card summary{cursor:pointer;font-weight:700;padding:8px 0}.atlas-card ul{line-height:1.9;padding-inline-start:22px}
+.comparison-wrap{margin-top:20px}.table-scroll{overflow-x:auto}.atlas-table{width:100%;border-collapse:collapse;min-width:760px}.atlas-table th,.atlas-table td{padding:12px;border-bottom:1px solid rgba(255,255,255,.12);text-align:start;vertical-align:top;line-height:1.65}.atlas-table th{font-weight:800;background:rgba(255,255,255,.06)}
+.atlas-sources ul{line-height:2.1}.atlas-sources a{text-decoration:underline}.evidence-note{line-height:1.9;opacity:.9}
+@media(max-width:800px){.atlas-grid{grid-template-columns:1fr}.atlas-card h3{font-size:19px}.atlas-map img{max-height:360px}}
