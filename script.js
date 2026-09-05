@@ -357,3 +357,20 @@
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initMasterCards); else initMasterCards();
 })();
+
+// Places card: four-region interactive tabs
+(function initPlacesRegionTabs(){
+  function bind(){
+    const root=document.querySelector('#places');
+    if(!root || root.dataset.placesTabsReady==='1') return;
+    root.dataset.placesTabsReady='1';
+    const buttons=[...root.querySelectorAll('.places-region-btn')];
+    const panels=[...root.querySelectorAll('.places-region-panel')];
+    buttons.forEach(btn=>btn.addEventListener('click',()=>{
+      const target=btn.dataset.regionPanel;
+      buttons.forEach(b=>b.classList.toggle('active',b===btn));
+      panels.forEach(p=>p.classList.toggle('active',p.dataset.regionContent===target));
+    }));
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bind); else bind();
+})();
