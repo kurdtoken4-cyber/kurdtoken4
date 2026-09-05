@@ -374,3 +374,20 @@
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bind); else bind();
 })();
+
+// Card 07 people archive filters
+(function(){
+  function initPeople(){
+    document.querySelectorAll('.people-filter-btn').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        document.querySelectorAll('.people-filter-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter=btn.dataset.peopleFilter;
+        document.querySelectorAll('.person-card').forEach(card=>{
+          card.classList.toggle('is-hidden', filter!=='all' && card.dataset.personCategory!==filter);
+        });
+      });
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initPeople); else initPeople();
+})();
