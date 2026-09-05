@@ -56,3 +56,7 @@ Added dedicated multilingual sections for Kurdish clothing, food/cuisine, handic
 - Verified reference points include Erbil Citadel (UNESCO 2014), Hawraman/Uramanat (UNESCO 2021), Diyarbakır Fortress and Hevsel Gardens (UNESCO 2015), and Bisotun (UNESCO 2006).
 - KRSO reports 6,519,129 people for the Kurdistan Region of Iraq in the 2024 census; the site treats this as a dated statistic rather than a timeless figure.
 - All four-region language is framed as geographic/cultural scope and does not imply a single legal or political status for all areas.
+
+
+## Latest structural merge — Card 01
+Cards 14 (Tokenomics), 15 (2% Tax), 16 (Roadmap) and 18 (Team & Transparency) were merged into Card 01 (KURD Token). Duplicate master cards were removed. The resulting master card count is 15. Card 12 remains the combined Kurdish Language + Scientific Atlas card.
