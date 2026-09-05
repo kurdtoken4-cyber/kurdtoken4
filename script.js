@@ -375,19 +375,20 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bind); else bind();
 })();
 
-// Card 07 people archive filters
+
+// Card 08 music filters
 (function(){
-  function initPeople(){
-    document.querySelectorAll('.people-filter-btn').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        document.querySelectorAll('.people-filter-btn').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter=btn.dataset.peopleFilter;
-        document.querySelectorAll('.person-card').forEach(card=>{
-          card.classList.toggle('is-hidden', filter!=='all' && card.dataset.personCategory!==filter);
-        });
+  function initMusicFilters(){
+    const root=document.querySelector('#music'); if(!root) return;
+    const buttons=root.querySelectorAll('.music-filter'); const artists=root.querySelectorAll('.artist-profile');
+    buttons.forEach(btn=>btn.addEventListener('click',()=>{
+      buttons.forEach(b=>b.classList.remove('active')); btn.classList.add('active');
+      const filter=btn.dataset.filter||'all';
+      artists.forEach(a=>{
+        const tags=(a.dataset.tags||'')+' '+(a.dataset.region||'');
+        a.style.display=(filter==='all'||tags.includes(filter))?'grid':'none';
       });
-    });
+    }));
   }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initPeople); else initPeople();
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initMusicFilters); else initMusicFilters();
 })();
