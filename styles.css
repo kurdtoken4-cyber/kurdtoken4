@@ -143,3 +143,34 @@
 @media(max-width:800px){.atlas-grid{grid-template-columns:1fr}.atlas-card h3{font-size:19px}.atlas-map img{max-height:360px}}
 /* Kurdish Clothing research section */
 .clothing-section{position:relative}.section-kicker{letter-spacing:.14em;font-size:.72rem;opacity:.65;margin-bottom:8px}.clothing-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}.clothing-photo-grid figure{margin:0;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden}.clothing-photo-grid img{width:100%;height:270px;object-fit:cover;display:block}.clothing-photo-grid figcaption{padding:12px}.clothing-photo-grid figcaption b,.clothing-photo-grid figcaption small{display:block}.clothing-photo-grid figcaption small{opacity:.65;margin-top:5px;font-size:.72rem}.clothing-tabs-grid,.region-clothing-grid,.when-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:18px 0}.clothing-card,.region-clothing-grid article,.when-grid>div,.clothing-materials,.clothing-source-note{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:20px}.clothing-card h3,.clothing-regions h3,.clothing-materials h3{margin-top:0}.clothing-card li{margin:.55rem 0}.clothing-regions{margin-top:24px}.region-clothing-grid h4{margin:0 0 8px}.when-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.when-grid b{font-size:1.05rem}.clothing-source-note{margin-top:18px}.clothing-source-note b{font-size:1rem}.clothing-section .box{margin-bottom:18px}@media(max-width:900px){.clothing-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.when-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.clothing-photo-grid,.clothing-tabs-grid,.region-clothing-grid,.when-grid{grid-template-columns:1fr}.clothing-photo-grid img{height:320px}}
+
+/* === KURDESTAN MASTER CARD NAVIGATION === */
+#site-sections{padding-top:18px}
+.master-card-intro{text-align:center;max-width:900px;margin:0 auto 26px}
+.master-card-intro h2{margin-bottom:10px}
+.master-card-intro p{opacity:.82}
+.master-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.master-nav-card{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:185px;padding:24px;border:1px solid rgba(255,255,255,.11);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.018));box-shadow:0 12px 35px rgba(0,0,0,.16);cursor:pointer;text-align:right;color:inherit;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.master-nav-card:hover,.master-nav-card:focus-visible{transform:translateY(-5px);border-color:rgba(255,255,255,.28);box-shadow:0 18px 45px rgba(0,0,0,.25);outline:none}
+.master-nav-card .card-number{font-size:12px;opacity:.55;letter-spacing:.08em}
+.master-nav-card .card-icon{font-size:30px;margin:8px 0 10px}
+.master-nav-card .card-title{font-size:20px;font-weight:800;margin-bottom:9px}
+.master-nav-card .card-desc{font-size:14px;line-height:1.9;opacity:.72;margin:0}
+.master-nav-card .card-open{margin-top:18px;font-size:13px;font-weight:700;opacity:.85}
+.master-nav-card .card-open::after{content:'  ↗'}
+
+.master-modal{position:fixed;inset:0;z-index:9999;display:none;background:rgba(0,0,0,.78);backdrop-filter:blur(12px);padding:20px}
+.master-modal.is-open{display:flex;align-items:center;justify-content:center}
+.master-modal-dialog{position:relative;width:min(1180px,100%);height:min(92vh,1000px);overflow:auto;background:var(--bg,#090909);border:1px solid rgba(255,255,255,.14);border-radius:26px;box-shadow:0 30px 100px rgba(0,0,0,.55);scroll-behavior:smooth}
+.master-modal-head{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:rgba(9,9,9,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.master-modal-title{font-weight:800;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.master-modal-actions{display:flex;gap:8px}
+.master-modal-back,.master-modal-close{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05);color:inherit;border-radius:12px;padding:9px 13px;cursor:pointer;font:inherit}
+.master-modal-back:hover,.master-modal-close:hover{background:rgba(255,255,255,.1)}
+.master-modal-body>.section{margin:0;padding:28px 26px 42px}
+.master-modal-body>.section h2{margin-top:0}
+body.master-modal-lock{overflow:hidden}
+.master-hidden-section{display:none!important}
+
+@media(max-width:980px){.master-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.master-card-grid{grid-template-columns:1fr}.master-nav-card{min-height:160px;padding:20px}.master-modal{padding:8px}.master-modal-dialog{height:96vh;border-radius:20px}.master-modal-body>.section{padding:22px 16px 34px}.master-modal-head{padding:12px}.master-modal-title{font-size:13px}}

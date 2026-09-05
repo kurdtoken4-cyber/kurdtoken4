@@ -275,3 +275,74 @@
   });
 })();
 
+
+/* === MASTER SECTION CARDS: every major site section opens as a focused detail view === */
+(function(){
+  function initMasterCards(){
+    const grid=document.getElementById('master-card-grid');
+    const modal=document.getElementById('master-modal');
+    const body=document.getElementById('master-modal-body');
+    const title=document.getElementById('master-modal-title');
+    if(!grid||!modal||!body) return;
+    const sections={};
+    const placeholders={};
+    document.querySelectorAll('main > section[data-master-section="true"]').forEach(sec=>{
+      sections[sec.id]=sec;
+      const ph=document.createComment('KURDESTAN-CARD-PLACEHOLDER-'+sec.id);
+      sec.parentNode.insertBefore(ph,sec); placeholders[sec.id]=ph;
+      sec.classList.add('master-hidden-section');
+    });
+    const restore=()=>{
+      const sec=body.querySelector(':scope > section[data-master-section="true"]');
+      if(!sec) return;
+      const id=sec.id;
+      const ph=placeholders[id];
+      if(ph && ph.parentNode) ph.parentNode.insertBefore(sec,ph.nextSibling);
+      else document.getElementById('site-sections').after(sec);
+      sec.classList.add('master-hidden-section');
+      body.innerHTML='';
+      modal.classList.remove('is-open'); modal.setAttribute('aria-hidden','true');
+      document.body.classList.remove('master-modal-lock');
+      window.scrollTo({top:document.getElementById('site-sections')?.offsetTop||0,behavior:'smooth'});
+    };
+    const open=(id)=>{
+      const sec=sections[id]||document.getElementById(id); if(!sec) return;
+      body.innerHTML=''; body.appendChild(sec); sec.classList.remove('master-hidden-section');
+      const h=sec.querySelector('h2');
+      title.textContent=(h?.getAttribute('data-'+(window.KURD_LANG||'ku'))||h?.textContent||id);
+      modal.classList.add('is-open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('master-modal-lock');
+      const close=modal.querySelector('.master-modal-close'); if(close) close.focus();
+      dialogScrollTop();
+    };
+    function dialogScrollTop(){const d=modal.querySelector('.master-modal-dialog'); if(d)d.scrollTop=0;}
+    grid.addEventListener('click',e=>{const card=e.target.closest('.master-nav-card');if(card)open(card.dataset.target);});
+    grid.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest('.master-nav-card')){e.preventDefault();e.target.closest('.master-nav-card').click();}});
+    modal.addEventListener('click',e=>{
+      if(e.target===modal || e.target.closest('.master-modal-close') || e.target.closest('.master-modal-back')) restore();
+    });
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('is-open'))restore();});
+    // Route all existing hash navigation to the corresponding card.
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      const id=a.getAttribute('href').slice(1); if(!sections[id]) return;
+      a.addEventListener('click',e=>{e.preventDefault();open(id);history.replaceState(null,'','#'+id);});
+    });
+    // Keep card titles/descriptions synchronized with the active language.
+    const sync=()=>{
+      const lang=window.KURD_LANG||document.documentElement.lang||'ku';
+      grid.querySelectorAll('.master-nav-card').forEach(c=>{
+        const t=c.querySelector('.card-title'),d=c.querySelector('.card-desc'),o=c.querySelector('.card-open');
+        if(t&&c.dataset['title'+lang.charAt(0).toUpperCase()+lang.slice(1)]) t.textContent=c.dataset['title'+lang.charAt(0).toUpperCase()+lang.slice(1)];
+        if(o&&o.getAttribute('data-'+lang)) o.textContent=o.getAttribute('data-'+lang);
+        if(d&&d.getAttribute('data-'+lang)) d.textContent=d.getAttribute('data-'+lang);
+      });
+      const active=body.querySelector('section[data-master-section="true"]');
+      if(active){const h=active.querySelector('h2');if(h)title.textContent=h.getAttribute('data-'+lang)||h.textContent;}
+    };
+    // applyLanguage in the original script updates data-* nodes; observe language changes safely.
+    const sel=document.getElementById('language'); if(sel) sel.addEventListener('change',()=>setTimeout(sync,0));
+    sync();
+    window.__openKurdSection=open;
+    window.__closeKurdSection=restore;
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initMasterCards); else initMasterCards();
+})();
