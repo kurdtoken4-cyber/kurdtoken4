@@ -280,6 +280,17 @@
 (function(){
   function initMasterCards(){
     const grid=document.getElementById('master-card-grid');
+    // Add the official KURD token image to every section card without changing the card content.
+    grid.querySelectorAll('.master-nav-card').forEach(card=>{
+      if(!card.querySelector('.card-token-logo')){
+        const img=document.createElement('img');
+        img.className='card-token-logo';
+        img.src='assets/kurd-logo.png';
+        img.alt='KURD Token';
+        img.loading='lazy';
+        card.prepend(img);
+      }
+    });
     const modal=document.getElementById('master-modal');
     const body=document.getElementById('master-modal-body');
     const title=document.getElementById('master-modal-title');
