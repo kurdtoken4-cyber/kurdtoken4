@@ -449,3 +449,43 @@ header{backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bott
 /* V5.0 Release Candidate — performance hardening. Hero/banner assets intentionally preserved. */
 .section:not(.hero){content-visibility:auto;contain-intrinsic-size:800px;}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+
+/* Mobile banner visibility fix — show the complete hero artwork without crop/zoom.
+   Desktop/tablet layout remains unchanged. */
+@media (max-width:700px){
+  .hero{
+    min-height:0!important;
+    height:auto!important;
+    overflow:hidden;
+    display:block;
+  }
+  .hero-art{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:auto!important;
+  }
+  .hero-art img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    max-width:100%!important;
+    object-fit:contain!important;
+    object-position:center top!important;
+    filter:none!important;
+  }
+  .hero-overlay{
+    position:relative!important;
+    min-height:0!important;
+    height:auto!important;
+    grid-template-columns:1fr!important;
+    padding:28px 5%!important;
+    background:#050505!important;
+  }
+}
+@media (max-width:420px){
+  .hero-overlay{
+    padding:24px 4%!important;
+  }
+}
