@@ -1,0 +1,6 @@
+Records: 96
+Unique IDs: 96
+IDs missing: 0
+Records with all 11 evidence keys: 96
+Records with researchPlan: 96
+Records with regionalSourceCandidates: 96

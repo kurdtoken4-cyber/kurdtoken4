@@ -1,0 +1,7 @@
+HTML IDs: 77; unique: 77; duplicates: 0
+City records: 96
+Population city-level status counts: {"city_level_verified": 32, "city_level_verified_secondary_transcription": 13, "city_level_documented_source_identified": 21, "city_level_not_verified": 18, "not_currently_verified": 12}
+Data status counts: {"documented": 22, "partial": 2, "baseline": 72}
+Images without alt: 72
+Research legend present: True
+External source registry present: True

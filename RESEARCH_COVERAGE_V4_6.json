@@ -1,0 +1,31 @@
+{
+  "version": "v4.6",
+  "reviewed": "2026-09-08",
+  "records": 96,
+  "regions": {
+    "ڕۆژهەڵات": {
+      "count": 32,
+      "populationVerified": 32,
+      "populationSecondary": 0,
+      "researchNeeded": 31
+    },
+    "باکوور": {
+      "count": 31,
+      "populationVerified": 0,
+      "populationSecondary": 2,
+      "researchNeeded": 31
+    },
+    "باشوور": {
+      "count": 21,
+      "populationVerified": 0,
+      "populationSecondary": 11,
+      "researchNeeded": 0
+    },
+    "ڕۆژئاوا": {
+      "count": 12,
+      "populationVerified": 0,
+      "populationSecondary": 0,
+      "researchNeeded": 12
+    }
+  }
+}

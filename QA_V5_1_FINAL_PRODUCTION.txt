@@ -1,0 +1,73 @@
+KURDESTAN V5.1 — FINAL PRODUCTION QA
+Date: 2026-09-08
+Source: KURDESTAN_V5_0_RELEASE_CANDIDATE.zip
+
+RESULT: PASS — static production package checks completed.
+
+1. GitHub Pages structure
+- Root index.html: PASS
+- Root .nojekyll: PASS
+- robots.txt: PASS
+- sitemap.xml: PASS
+- site.webmanifest: PASS
+- 404.html: PASS
+
+2. HTML integrity
+- h1 count: 1 — PASS
+- h2 count: 24 — PASS
+- IDs unique: 77 — PASS
+- images: 72 — PASS
+- images missing alt: 0 — PASS
+- buttons: 54 — PASS
+- buttons missing type: 0 — PASS
+- multilingual elements: 558 — PASS
+- multilingual elements missing one of data-ku/data-en/data-fa/data-tr/data-ar: 0 — PASS
+- local referenced assets missing: 0 — PASS
+
+3. JavaScript syntax
+- script.js: PASS
+- cities-data.js: PASS
+- research-registry.js: PASS
+- city-research-manifest.js: PASS
+
+4. City atlas
+- city records: 96 — PASS
+- unique city IDs: 96 — PASS
+- regional counts: Rojhelat 32 / Bakur 31 / Bashur 21 / Rojava 12 — PASS
+- population rule: city-level only — PASS
+- no province/district total promoted as a city population by the QA layer — PASS
+
+5. KURD token disclosure checks
+- total supply 4,444,444,444 — PASS
+- 2% tax — PASS
+- tax is described as not being sent to liquidity — PASS
+- 44% planned liquidity allocation — PASS
+- initial liquidity plan 4 BNB — PASS
+- four-year LP lock described as a plan, not as an already executed lock — PASS
+- contract address withheld until actual deployment — PASS
+- audit not claimed until actually completed — PASS
+- no fabricated BscScan contract link — PASS
+
+6. Performance / assets
+- hero-main.webp exists and is referenced — PASS
+- hero-banner.png exists and is preserved intentionally — PASS
+- hero image is not removed by this release — PASS
+- local image references resolve — PASS
+- no unnecessary HTTP asset references detected; the sole HTTP sitemap namespace is XML standard metadata — PASS
+- lazy loading used for non-critical imagery where applicable — PASS
+- reduced-motion handling present — PASS
+- content-visibility optimization present for non-hero sections — PASS
+
+7. Security / privacy hygiene
+- no obvious API key/private key/password patterns found in site source — PASS
+- no wallet credentials included — PASS
+- no secret deployment configuration included — PASS
+- project identity remains public-facing without exposing private credentials — PASS
+
+8. ZIP integrity
+- archive extraction: PASS
+- index at archive root: PASS
+- no nested release directory required for publishing: PASS
+
+9. Important limitation
+This is a static/package QA release. It does NOT certify live browser performance, live external image availability, GitHub Pages deployment status, DNS/HTTPS state, or on-chain contract execution. Those require the final deployed site and, for blockchain claims, actual on-chain evidence.

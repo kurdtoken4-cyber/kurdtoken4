@@ -1,0 +1,5 @@
+KURDTOKEN CITY IMAGE SYSTEM
+
+Each city card keeps a local fallback image, and when the card opens the site attempts to load up to two real photographs from Wikimedia Commons using the city's English name. If Commons is unavailable or no suitable image is found, the bundled fallback remains visible.
+
+Important: Wikimedia Commons files have individual licenses. Verify the source file and attribution requirements before commercial reuse.

@@ -1,0 +1,26 @@
+KURDESTAN V4.7 — CITY ATLAS QA
+Generated: 2026-09-08
+Records: 96
+Unique IDs: 96
+
+Data status: {'baseline': 24, 'partial': 72}
+Population status: {'city_level_verified': 32, 'city_level_verified_secondary_transcription': 13, 'city_level_documented_source_identified': 21, 'city_level_not_verified': 18, 'not_currently_verified': 12}
+
+Documented coverage by field:
+- identity: 96/96
+- geography: 76/96
+- population: 51/96
+- history: 96/96
+- heritage: 24/96
+- culture: 22/96
+- languages: 24/96
+- economy: 24/96
+- crafts: 21/96
+- images: 0/96
+- sources: 36/96
+
+Rules:
+- City-level population only; province/district totals are never promoted to city population.
+- Unverified language percentages and unsupported historical claims remain labeled for research.
+- Image evidence is tracked separately from text evidence.
+- dataStatus reflects 11 evidence dimensions, not merely presence of prose.

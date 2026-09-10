@@ -1,0 +1,8 @@
+اگر می‌خواهی فقط نقشه را داخل سایت فعلی قرار بدهی:
+1) Leaflet CSS را در <head> قرار بده.
+2) قبل از پایان body این سه فایل را اضافه کن:
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <script src="cities-data.js"></script>
+   <script src="script.js"></script>
+3) ظرف نقشه را با id="kurd-map" در محل دلخواه قرار بده.
+4) CSS مربوط به #kurd-map و بخش‌های نقشه را از styles.css نگه دار.

@@ -1,0 +1,10 @@
+KURDESTAN V5.0 RELEASE CANDIDATE QA
+====================================
+JavaScript syntax: PASS
+Hero main asset assets/hero-main.webp: PRESENT
+Original hero banner asset assets/hero-banner.png: PRESENT
+Hero-main references in index.html: verified
+Main hero preload/fetchpriority: verified
+Below-the-fold content-visibility: enabled
+Reduced motion handling: enabled
+External image preconnect: enabled

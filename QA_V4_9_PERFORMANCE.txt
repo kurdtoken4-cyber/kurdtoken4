@@ -1,0 +1,10 @@
+KURDESTAN V4.9 Performance QA
+- Local critical images converted to WebP: PASS
+- Duplicate root image copies removed: PASS
+- Hero remains eager/high priority: PASS
+- Non-critical images remain lazy where applicable: PASS
+- Intrinsic image dimensions retained: PASS
+- Visual CSS redesign: NONE
+- Five-language structure preserved: PASS
+- Contract/deployment claims unchanged: PASS
+- Runtime Lighthouse on live site: PENDING (requires live deployment)

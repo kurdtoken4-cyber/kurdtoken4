@@ -1,0 +1,34 @@
+KURDESTAN V4.3-C QA REPORT
+Generated: 2026-09-08
+
+SOURCE
+- Based on: KURDESTAN_V4_3B_HERO_ZOOMOUT.zip
+- Release scope: mobile + accessibility + performance hardening
+
+STATIC HTML QA
+- H1 count: 1
+- H2 count: 23
+- IMG count: 72
+- Images without alt: 0
+- Button count: 54
+- Buttons without explicit type: 0
+- IDs: 75
+- Duplicate IDs: 0
+- Broken internal hash anchors: 0
+- External links: 140
+- Hero image: eager + fetchpriority=high + decoding=async
+- Modal: role=dialog + aria-modal=true + aria-labelledby
+- Mobile menu: aria-controls + aria-expanded
+
+JAVASCRIPT QA
+- script.js Node syntax check: PASS
+- No new external dependency introduced.
+- Existing dynamic city/music image paths were hardened for async decoding/lazy loading.
+
+PACKAGE QA
+- ZIP archive test: PASS
+
+IMPORTANT NOTES
+- This is static/runtime-source QA; a full Lighthouse/real-device matrix requires a browser/device lab.
+- No claim of full WCAG conformance is made from static inspection alone.
+- Hero visual framing remains the V4.3-B zoom-out version.
