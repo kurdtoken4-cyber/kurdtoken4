@@ -1070,3 +1070,27 @@ footer strong,footer h3{font-family:Georgia,"Times New Roman",serif;color:var(--
   .master-nav-card .card-title{font-size:20px;}
   .master-nav-card .card-desc{font-size:13px;}
 }
+
+
+/* V5.49 — restore original black & gold card surfaces; no photographic card backgrounds */
+.master-nav-card{
+  background-image:radial-gradient(circle at 88% 12%,rgba(232,173,56,.16),transparent 28%),radial-gradient(circle at 12% 90%,rgba(255,255,255,.045),transparent 32%),linear-gradient(145deg,rgba(22,19,14,.98),rgba(7,7,7,.98))!important;
+  background-size:auto!important;
+  background-position:initial!important;
+  background-repeat:initial!important;
+  border:1px solid rgba(232,173,56,.32)!important;
+  box-shadow:0 16px 42px rgba(0,0,0,.30),inset 0 1px 0 rgba(255,255,255,.05)!important;
+}
+.master-nav-card:hover,.master-nav-card:focus-visible{
+  background-image:radial-gradient(circle at 88% 12%,rgba(232,173,56,.21),transparent 30%),radial-gradient(circle at 12% 90%,rgba(255,255,255,.05),transparent 34%),linear-gradient(145deg,rgba(25,21,15,.99),rgba(6,6,6,.99))!important;
+  background-size:auto!important;
+  background-position:initial!important;
+  background-repeat:initial!important;
+  border-color:rgba(232,173,56,.70)!important;
+  box-shadow:0 24px 55px rgba(0,0,0,.42),0 0 28px rgba(232,173,56,.10),inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+.master-nav-card::before{background:linear-gradient(135deg,transparent 35%,rgba(232,173,56,.045))!important;}
+.master-nav-card .card-title{color:#f5e9cf!important;}
+.master-nav-card .card-desc{color:#d7cbb4!important;}
+.master-nav-card .card-open,.master-nav-card .card-icon{color:#e8ad38!important;}
+@media(max-width:700px){.master-nav-card{min-height:225px!important;}}
