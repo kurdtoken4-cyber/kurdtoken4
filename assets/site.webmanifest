@@ -1,0 +1,13 @@
+{
+  "name": "KURDESTAN — KURD",
+  "short_name": "KURD",
+  "description": "KURDESTAN cultural and digital project",
+  "start_url": "/kurdtoken4/",
+  "scope": "/kurdtoken4/",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "ku",
+  "theme_color": "#050505",
+  "background_color": "#050505",
+  "icons": [{"src":"assets/kurd-logo.webp","sizes":"any","type":"image/png","purpose":"any maskable"}]
+}
