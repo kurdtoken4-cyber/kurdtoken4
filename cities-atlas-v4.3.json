@@ -3,10 +3,10 @@
   "reviewed": "2026-09-07",
   "count": 96,
   "regions": {
-    "rojhelat": 32,
-    "bakur": 31,
-    "bashur": 21,
-    "rojava": 12
+    "ڕۆژهەڵات": 32,
+    "باکوور": 31,
+    "باشوور": 21,
+    "ڕۆژئاوا": 12
   },
   "cities": [
     {
@@ -161,7 +161,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -321,7 +323,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -448,7 +452,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -575,7 +581,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -702,7 +710,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -829,7 +839,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -956,7 +968,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1091,7 +1105,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1226,7 +1242,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1361,7 +1379,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1488,7 +1508,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1615,7 +1637,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1742,7 +1766,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1869,7 +1895,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -1996,7 +2024,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2123,7 +2153,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2250,7 +2282,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2377,7 +2411,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2504,7 +2540,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2631,7 +2669,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2758,7 +2798,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -2885,7 +2927,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3012,7 +3056,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3139,7 +3185,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3266,7 +3314,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3401,7 +3451,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3536,7 +3588,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3671,7 +3725,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3806,7 +3862,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -3941,7 +3999,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -4076,7 +4136,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "ڕۆژهەڵات",
@@ -4211,7 +4273,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "primary_official",
-      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total."
+      "populationVerificationNote": "City-level population from the Statistical Center of Iran 2016 Urban Population Census workbook; not a province or district total.",
+      "region": "ڕۆژهەڵات",
+      "regionCountry": "ئێران"
     },
     {
       "part": "باکوور",
@@ -4360,7 +4424,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction."
+      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction.",
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -4495,7 +4561,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction."
+      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction.",
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -4629,7 +4697,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -4765,7 +4835,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction."
+      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction.",
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -4899,7 +4971,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5033,7 +5107,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5168,7 +5244,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction."
+      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction.",
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5302,7 +5380,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5435,7 +5515,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5568,7 +5650,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5702,7 +5786,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5837,7 +5923,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction."
+      "populationVerificationNote": "City-level figure retained as a traceable secondary transcription; official TÜİK/ADNKS remains the primary authority for future direct extraction.",
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -5970,7 +6058,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6103,7 +6193,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6236,7 +6328,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6369,7 +6463,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6502,7 +6598,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6636,7 +6734,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6769,7 +6869,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -6902,7 +7004,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7035,7 +7139,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7168,7 +7274,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7301,7 +7409,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7434,7 +7544,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7567,7 +7679,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7700,7 +7814,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7833,7 +7949,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -7966,7 +8084,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -8100,7 +8220,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -8234,7 +8356,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باکوور",
@@ -8367,7 +8491,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باکوور",
+      "regionCountry": "تورکیا"
     },
     {
       "part": "باشوور",
@@ -8560,7 +8686,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -8733,7 +8861,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -8906,7 +9036,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -9079,7 +9211,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -9247,7 +9381,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -9415,7 +9551,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -9583,7 +9721,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -9745,7 +9885,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -9913,7 +10055,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -10081,7 +10225,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -10243,7 +10389,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -10405,7 +10553,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -10567,7 +10717,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -10729,7 +10881,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -10897,7 +11051,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -11059,7 +11215,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -11221,7 +11379,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -11383,7 +11543,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -11551,7 +11713,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "secondary_traceable",
-      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available."
+      "populationVerificationNote": "City-level figure retained as a secondary transcription of the 2024 Iraq census/locality table; direct primary-table citation should be added when available.",
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -11713,7 +11877,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "باشوور",
@@ -11875,7 +12041,9 @@
         "regionalTotalsMayBeUsedAsCityPopulation": false,
         "unverifiedClaimsMustBeLabeled": true,
         "sourceDateRequiredForPopulation": true
-      }
+      },
+      "region": "باشوور",
+      "regionCountry": "عێراق"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12009,7 +12177,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12143,7 +12313,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12276,7 +12448,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12409,7 +12583,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12542,7 +12718,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12675,7 +12853,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12808,7 +12988,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -12941,7 +13123,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -13074,7 +13258,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -13207,7 +13393,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -13340,7 +13528,9 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     },
     {
       "part": "ڕۆژئاوا",
@@ -13473,7 +13663,11 @@
         "sourceDateRequiredForPopulation": true
       },
       "populationEvidenceLevel": "research_needed",
-      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source."
+      "populationVerificationNote": "No current city-level population is asserted because conflict, displacement and changing administrative conditions make a single current figure unreliable without a traceable city-level source.",
+      "region": "ڕۆژئاوا",
+      "regionCountry": "سوریا"
     }
-  ]
+  ],
+  "region_source": "cities-data.js:part",
+  "region_reviewed": "2026-09-15"
 }

@@ -121,26 +121,84 @@
       return new Intl.DateTimeFormat(locale,opts).format(date);
     }catch(_){return date.toLocaleDateString();}
   }
+  function weeklyLaunchDate(){
+    // Official project launch anchor: 11 March 2027. The weekly cycle is calendar-based
+    // and independent of the visitor's device clock formatting/time zone.
+    return Date.UTC(2027,2,11,0,0,0);
+  }
+  function weeklyState(nowMs, orderLength){
+    const launch=weeklyLaunchDate();
+    if(nowMs < launch){
+      return {preview:true,index:0,cycle:1,week:0,start:launch,next:launch};
+    }
+    const weekMs=7*86400000;
+    const elapsed=nowMs-launch;
+    const absoluteWeek=Math.floor(elapsed/weekMs);
+    return {
+      preview:false,
+      index: orderLength ? absoluteWeek%orderLength : 0,
+      cycle: orderLength ? Math.floor(absoluteWeek/orderLength)+1 : 1,
+      week: absoluteWeek+1,
+      start: launch+absoluteWeek*weekMs,
+      next: launch+(absoluteWeek+1)*weekMs
+    };
+  }
+  function weeklyDateTimeLabel(ms){
+    try{
+      const locale={ku:'ku',fa:'fa-IR',en:'en-US',tr:'tr-TR',ar:'ar'}[lang]||'en-US';
+      return new Intl.DateTimeFormat(locale,{year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(ms));
+    }catch(_){ return new Date(ms).toLocaleString(); }
+  }
+  function updateWeeklyCountdown(nextMs){
+    const el=document.getElementById('weekly-next-update');
+    if(!el) return;
+    const diff=Math.max(0,nextMs-Date.now());
+    const total=Math.floor(diff/1000), d=Math.floor(total/86400), h=Math.floor((total%86400)/3600), m=Math.floor((total%3600)/60), s=total%60;
+    const prefix=weeklyText[lang]?.next||'Next update';
+    el.textContent=`${prefix}: ${weeklyDateTimeLabel(nextMs)} · ${String(d).padStart(2,'0')}d ${String(h).padStart(2,'0')}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
+  }
   async function initWeeklyCity(){
     const section=document.getElementById('weekly-city');
     const image=document.getElementById('weekly-city-image');
     if(!section || !Array.isArray(window.KURD_CITIES) || !window.KURD_CITIES.length) return;
     const order=buildWeeklyOrder(); if(!order.length) return;
-    const launch=Date.parse('2027-03-11T00:00:00+03:00');
-    const now=Date.now();
-    let index=0, preview=true;
-    if(now>=launch){ index=Math.floor((now-launch)/(7*86400000)); preview=false; }
-    index=index%order.length;
-    const city=order[index];
-    const nextBoundary=preview?new Date(launch):new Date(launch+(Math.floor((now-launch)/(7*86400000))+1)*7*86400000);
+    const state=weeklyState(Date.now(),order.length);
+    await renderWeeklyCityByIndex(state.index,order,state);
+    updateWeeklyCountdown(state.next);
+
+    // Automatic live rotation: the city changes while the page remains open.
+    // No weekly upload, deployment, cache clear or manual click is required.
+    if(window.__kurdWeeklyTimer) clearInterval(window.__kurdWeeklyTimer);
+    window.__kurdWeeklyTimer=setInterval(async()=>{
+      const current=weeklyState(Date.now(),order.length);
+      const currentIndex=Number(section.dataset.weeklyIndex||-1);
+      const currentCycle=Number(section.dataset.weeklyCycle||-1);
+      if(current.index!==currentIndex || current.cycle!==currentCycle || section.dataset.weeklyPreview==='true'){
+        await renderWeeklyCityByIndex(current.index,order,current);
+      }
+      updateWeeklyCountdown(current.next);
+    },1000);
+    document.addEventListener('visibilitychange',()=>{
+      if(document.visibilityState==='visible'){
+        const current=weeklyState(Date.now(),order.length);
+        if(current.index!==Number(section.dataset.weeklyIndex||-1) || current.cycle!==Number(section.dataset.weeklyCycle||-1)) renderWeeklyCityByIndex(current.index,order,current);
+        updateWeeklyCountdown(current.next);
+      }
+    },{passive:true});
+  }
+  async function renderWeeklyCityByIndex(index,order,state){
+    const section=document.getElementById('weekly-city');
+    const city=order[index%order.length];
+    const image=document.getElementById('weekly-city-image');
     const key=weeklyRegionKey(city.part);
     const info=weeklyInfoText(city);
     const set=(id,text)=>{const el=document.getElementById(id);if(el)el.textContent=text;};
-    set('weekly-city-badge',preview?weeklyText[lang].preview:'CITY OF THE WEEK');
+    const officialWeek=state?.preview?0:(state.week||1);
+    set('weekly-city-badge',state?.preview?weeklyText[lang].preview:'CITY OF THE WEEK');
     set('weekly-week-label',weeklyText[lang].week);
-    set('weekly-week-number',String(index+1));
+    set('weekly-week-number',state?.preview?'—':String(officialWeek));
     set('weekly-region-label',`${weeklyText[lang].region}: ${regionNames[key]?.[lang]||city.part}`);
-    set('weekly-next-update',`${weeklyText[lang].next}: ${weeklyDateLabel(nextBoundary)}`);
+    set('weekly-next-update',`${weeklyText[lang].next}: ${weeklyDateTimeLabel(state?.next||weeklyLaunchDate())}`);
     set('weekly-city-name',cityName(city));
     set('weekly-city-description',city.description?.[lang]||city.description?.en||'');
     set('weekly-note',weeklyText[lang].note);
@@ -152,18 +210,13 @@
     const open=document.getElementById('weekly-open-city');
     if(open){open.textContent=weeklyText[lang].details;open.onclick=()=>{window.__showKurdPart?.(city.part,true); setTimeout(()=>{const names=[...document.querySelectorAll('.city-name')]; const target=names.find(b=>b.textContent===cityName(city)); if(target) target.click();},350);};}
     const next=document.getElementById('weekly-next-city');
-    if(next){next.textContent=weeklyText[lang].nextCity;next.onclick=()=>{const nextIndex=(index+1)%order.length; renderWeeklyCityByIndex(nextIndex,order,launch);};}
+    if(next){next.textContent=weeklyText[lang].nextCity;next.onclick=()=>{const nextIndex=(index+1)%order.length; renderWeeklyCityByIndex(nextIndex,order,{preview:false,index:nextIndex,cycle:state?.cycle||1,week:state?.week||1,next:Date.now()});};}
     await loadWeeklyImage(city,image);
     section.classList.remove('is-loading'); section.classList.add('flash'); setTimeout(()=>section.classList.remove('flash'),500);
-    section.dataset.weeklyIndex=String(index); section.dataset.weeklyCity=city.names?.en||city.name;
-  }
-  async function renderWeeklyCityByIndex(index,order,launch){
-    const section=document.getElementById('weekly-city'); const city=order[index%order.length]; const image=document.getElementById('weekly-city-image'); const key=weeklyRegionKey(city.part); const info=weeklyInfoText(city); const set=(id,text)=>{const el=document.getElementById(id);if(el)el.textContent=text;};
-    set('weekly-city-badge','CITY OF THE WEEK');set('weekly-week-label',weeklyText[lang].week);set('weekly-week-number',String(index%order.length+1));set('weekly-region-label',`${weeklyText[lang].region}: ${regionNames[key]?.[lang]||city.part}`);set('weekly-city-name',cityName(city));set('weekly-city-description',city.description?.[lang]||city.description?.en||'');
-    const facts=document.getElementById('weekly-facts'); if(facts) facts.innerHTML=[['history',info.history],['population',info.population],['crafts',info.crafts],['customs',info.customs],['income',info.income],['attractions',info.attractions]].map(([k,v])=>`<div class="weekly-fact"><b>${weeklyText[lang][k]}</b><span>${String(v).replace(/</g,'&lt;').replace(/>/g,'&gt;')}</span></div>`).join('');
-    const open=document.getElementById('weekly-open-city');if(open)open.onclick=()=>{window.__showKurdPart?.(city.part,true);setTimeout(()=>{const b=[...document.querySelectorAll('.city-name')].find(x=>x.textContent===cityName(city));if(b)b.click();},350)};
-    const next=document.getElementById('weekly-next-city');if(next)next.onclick=()=>renderWeeklyCityByIndex((index+1)%order.length,order,launch);
-    await loadWeeklyImage(city,image); section.classList.add('flash');setTimeout(()=>section.classList.remove('flash'),500);
+    section.dataset.weeklyIndex=String(index);
+    section.dataset.weeklyCycle=String(state?.cycle||1);
+    section.dataset.weeklyCity=city.names?.en||city.name;
+    section.dataset.weeklyPreview=String(!!state?.preview);
   }
   async function loadWeeklyImage(city,image){
     const loading=document.getElementById('weekly-photo-loading'),credit=document.getElementById('weekly-photo-credit');
@@ -599,4 +652,23 @@ function initCities(){
     });
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hardenImages); else hardenImages();
+})();
+
+/* V5.8 — Card 7 audited notable-figures filters */
+(function(){
+  function initPeopleFilters(){
+    const buttons=[...document.querySelectorAll('.people-filter-btn')];
+    const cards=[...document.querySelectorAll('.person-card')];
+    if(!buttons.length||!cards.length||buttons[0].dataset.peopleReady==='1') return;
+    buttons.forEach(b=>b.dataset.peopleReady='1');
+    buttons.forEach(btn=>btn.addEventListener('click',()=>{
+      const key=btn.dataset.peopleFilter||'all';
+      buttons.forEach(x=>x.classList.toggle('active',x===btn));
+      cards.forEach(card=>{
+        const cats=(card.dataset.personCategory||'').split(/\s+/);
+        card.hidden=key!=='all'&&!cats.includes(key);
+      });
+    }));
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initPeopleFilters); else initPeopleFilters();
 })();
