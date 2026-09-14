@@ -672,3 +672,16 @@ function initCities(){
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',initPeopleFilters); else initPeopleFilters();
 })();
+
+
+/* V5.45 — bind thematic photography to master cards */
+(function(){
+  const cards=[...document.querySelectorAll('.master-nav-card[data-card-image]')];
+  cards.forEach(card=>{ const u=card.getAttribute('data-card-image'); if(u) card.style.setProperty('--card-image', `url("${u.replace(/"/g,'\\"')}")`); });
+  const weekly=document.getElementById('weekly-city-image');
+  const weeklyCard=document.querySelector('.master-nav-card[data-target="weekly-city"]');
+  if(weekly && weeklyCard){
+    const sync=()=>{ if(weekly.src && !weekly.hidden && weekly.naturalWidth>0) weeklyCard.style.setProperty('--card-image',`url("${weekly.currentSrc || weekly.src}")`); };
+    weekly.addEventListener('load',sync); sync();
+  }
+})();
