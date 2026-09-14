@@ -1,0 +1,11 @@
+{
+  "version": "V5.43",
+  "base": "V5.42",
+  "checks": [
+    "16 cards preserved",
+    "signature visual layer added",
+    "no content files removed",
+    "mobile countdown refinement",
+    "reduced motion support"
+  ]
+}

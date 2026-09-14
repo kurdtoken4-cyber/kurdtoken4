@@ -1,0 +1,12 @@
+
+/* KURDESTAN V5.43 — Signature Edition visual layer */
+:root{--ks-ink:#111312;--ks-deep:#17231e;--ks-bronze:#b08a55;--ks-paper:#e9dfcb;--ks-muted:#b7b09f}
+body{background:radial-gradient(circle at 50% -10%,rgba(176,138,85,.08),transparent 34%),linear-gradient(180deg,var(--ks-ink),#0c0e0d 55%,#111512);}
+main > section[data-master-section="true"]{position:relative;overflow:hidden;border-color:rgba(176,138,85,.22);box-shadow:0 18px 50px rgba(0,0,0,.22)}
+main > section[data-master-section="true"]::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.045;background-image:linear-gradient(45deg,transparent 46%,#b08a55 47%,#b08a55 53%,transparent 54%),linear-gradient(-45deg,transparent 46%,#b08a55 47%,#b08a55 53%,transparent 54%);background-size:38px 38px;mask-image:linear-gradient(to bottom,black,transparent 55%)}
+.card-grid{gap:18px}
+.card-grid article,.cards-grid article{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}
+.card-grid article:hover,.cards-grid article:hover{transform:translateY(-3px);border-color:rgba(176,138,85,.5);box-shadow:0 18px 38px rgba(0,0,0,.3)}
+.bannerCountdown{backdrop-filter:blur(8px);border-color:rgba(176,138,85,.48)}
+@media(max-width:700px){main > section[data-master-section="true"]{border-radius:18px}.card-grid{gap:12px}.bannerCountdown{top:64%!important;transform:translateY(-50%) scale(.94);}.card-grid article,.cards-grid article{transform:none!important}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

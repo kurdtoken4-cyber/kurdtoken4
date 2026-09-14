@@ -651,3 +651,159 @@ footer::before{content:"";display:block;width:150px;height:6px;margin:0 auto 18p
   .section:not(.hero)::before{left:6%;right:6%}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* V5.41 mobile countdown safety */
+@media (max-width: 720px){
+  .bannerCountdown{
+    top: 60% !important;
+    transform: translateY(4px);
+    z-index: 3;
+  }
+}
+
+/* =====================================================================
+   V5.42 AUTHENTIC KURDESTAN VISUAL IDENTITY
+   Editorial / museum / textile-inspired direction — restrained, not crypto.
+   ===================================================================== */
+:root{
+  --k-ink:#0d100e;
+  --k-ink-2:#151916;
+  --k-green:#1c2a22;
+  --k-green-2:#26372c;
+  --k-bronze:#a9824a;
+  --k-bronze-soft:#c5a875;
+  --k-parchment:#e7dece;
+  --k-muted:#b6ab98;
+  --k-line:rgba(197,168,117,.24);
+  --k-line-soft:rgba(231,222,206,.09);
+  --k-shadow:0 18px 55px rgba(0,0,0,.28);
+}
+html{background:var(--k-ink)}
+body{
+  background:
+    radial-gradient(circle at 50% -10%,rgba(42,61,48,.24),transparent 34%),
+    linear-gradient(180deg,#0b0e0c 0%,#101411 48%,#0b0e0c 100%);
+  color:var(--k-parchment);
+  letter-spacing:.005em;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.055;
+  background-image:
+    linear-gradient(45deg,transparent 46%,#c5a875 47%,#c5a875 53%,transparent 54%),
+    linear-gradient(-45deg,transparent 46%,#c5a875 47%,#c5a875 53%,transparent 54%);
+  background-size:34px 34px;
+  mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 90%,transparent);
+}
+header{
+  background:rgba(11,14,12,.94);
+  border-bottom:1px solid var(--k-line);
+  box-shadow:0 8px 30px rgba(0,0,0,.18);
+}
+.logo{font-family:Georgia,serif;color:var(--k-bronze-soft);letter-spacing:.08em}
+.logo img{filter:saturate(.72) sepia(.08);opacity:.94}
+nav a,.tools a{color:#d8cfbf}
+nav a{position:relative;padding:7px 2px}
+nav a::after{content:"";position:absolute;right:0;left:0;bottom:0;height:1px;background:var(--k-bronze-soft);transform:scaleX(0);transform-origin:center;transition:transform .22s ease}
+nav a:hover::after,nav a:focus-visible::after{transform:scaleX(1)}
+.tools a{border-color:var(--k-line);background:rgba(255,255,255,.02)}
+.tools select{background:#121612;color:var(--k-parchment);border-color:var(--k-line)}
+.hero{background:#080a09;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:12px;pointer-events:none;border:1px solid rgba(231,222,206,.12);z-index:2}
+.hero-art img{filter:saturate(.84) contrast(1.03);}
+.hero-overlay{background:linear-gradient(180deg,rgba(5,7,6,.05) 20%,rgba(5,7,6,.25) 55%,rgba(5,7,6,.94) 100%)}
+.hero-copy h1,.hero-copy h2{font-family:Georgia,"Times New Roman",serif;letter-spacing:.02em;text-shadow:0 4px 24px rgba(0,0,0,.55)}
+.hero-copy p{color:#e0d6c5}
+.hero-social-links a{border-color:var(--k-line);background:rgba(11,14,12,.76);box-shadow:0 10px 28px rgba(0,0,0,.2)}
+.hero-social-links a:hover{border-color:var(--k-bronze-soft);background:rgba(22,31,25,.88)}
+.hero-social-links span{background:rgba(197,168,117,.1);color:var(--k-bronze-soft)}
+.btn{border-radius:4px;letter-spacing:.02em}
+.btn.primary{background:var(--k-bronze);border-color:var(--k-bronze);color:#11140f}
+.btn.secondary{background:rgba(11,14,12,.55);border-color:var(--k-bronze-soft);color:var(--k-parchment)}
+.bannerCountdown{background:rgba(12,16,13,.92);border:1px solid var(--k-line);box-shadow:0 18px 55px rgba(0,0,0,.32);border-radius:6px}
+.bc-title,.bc-date,.bc-time{color:var(--k-bronze-soft)}
+.bc-time small,.bc-note{color:#d2c7b5}
+
+#site-sections{position:relative;padding-top:64px;padding-bottom:78px}
+#site-sections::before,#site-sections::after{
+  content:"";display:block;width:min(520px,72%);height:1px;margin:0 auto 28px;
+  background:linear-gradient(90deg,transparent,var(--k-bronze),transparent);
+}
+#site-sections::after{margin:34px auto 0}
+.master-card-intro h2,.section h2{font-family:Georgia,"Times New Roman",serif;color:var(--k-parchment);font-weight:700;letter-spacing:.015em}
+.master-card-intro h2::after,.section h2::after{content:"";display:block;width:44px;height:2px;background:var(--k-bronze);margin:12px auto 0}
+.master-card-intro p{color:var(--k-muted)}
+.v3-category-rail{border-top:1px solid var(--k-line-soft);border-bottom:1px solid var(--k-line-soft);padding:10px 0;margin:0 auto 30px}
+.v3-category-rail a{color:#cfc4b2!important;background:transparent!important;border-color:transparent!important}
+.v3-category-rail a:hover{color:var(--k-bronze-soft)!important}
+.master-card-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.master-nav-card{
+  min-height:205px;padding:23px 22px;
+  border:1px solid var(--k-line);
+  border-radius:6px;
+  background:
+    linear-gradient(135deg,rgba(255,255,255,.035),rgba(255,255,255,.012)),
+    rgba(18,23,19,.92);
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
+  text-align:right;
+}
+.master-nav-card::before{opacity:.65;background:linear-gradient(135deg,transparent 55%,rgba(197,168,117,.055))}
+.master-nav-card::after{
+  content:"";position:absolute;right:0;left:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,transparent 5%,var(--k-bronze) 50%,transparent 95%);
+  opacity:.55;transform:scaleX(.42);transition:transform .25s ease,opacity .25s ease;
+}
+.master-nav-card:hover,.master-nav-card:focus-visible{
+  transform:translateY(-3px);
+  border-color:rgba(197,168,117,.5);
+  background:linear-gradient(135deg,rgba(35,49,40,.96),rgba(16,21,17,.98));
+  box-shadow:var(--k-shadow);
+}
+.master-nav-card:hover::after,.master-nav-card:focus-visible::after{transform:scaleX(1);opacity:1}
+.master-nav-card .card-number{color:var(--k-bronze-soft);opacity:.72;font-family:Georgia,serif}
+.master-nav-card .card-icon{color:var(--k-bronze-soft);font-size:25px}
+.master-nav-card .card-title{font-family:Georgia,"Times New Roman",serif;font-size:20px;color:#eee5d6}
+.master-nav-card .card-desc{color:#bcb2a1;opacity:.92}
+.master-nav-card .card-open{color:var(--k-bronze-soft);opacity:.95}
+.master-nav-card .card-open::after{content:'  ←'}
+.master-nav-card .card-token-logo{border-color:rgba(197,168,117,.28);box-shadow:none;opacity:.55;filter:saturate(.55)}
+
+/* Give the four-part atlas a carved-map / archive character. */
+.four-parts-widget,.atlas-card,.region-panel,.sources,.research-card,.detail-card{
+  background:rgba(22,28,23,.82)!important;
+  border-color:var(--k-line)!important;
+  box-shadow:0 10px 30px rgba(0,0,0,.14);
+}
+.four-part-btn,.city-name{background:#121813!important;border-color:var(--k-line)!important;color:#d8cfbf!important}
+.four-part-btn:hover,.four-part-btn.active,.city-name:hover,.city-name.active{background:#1c2a22!important;border-color:var(--k-bronze)!important;color:#e5d3ad!important}
+
+/* Academic surfaces: quiet, paper-like, with less dashboard chrome. */
+.academic-dossier,.academic-item,.box,.timeline>div,.sources,.atlas-card,.clothing-card,.religion-card,.research-card{
+  border-color:var(--k-line-soft)!important;
+}
+.academic-dossier{background:rgba(22,27,23,.62)!important;border-radius:6px}
+.academic-item{border-top-color:var(--k-line-soft)!important}
+.academic-item h4,.box h3,.research-card h3{font-family:Georgia,"Times New Roman",serif;color:var(--k-bronze-soft)}
+
+.master-modal{background:rgba(4,6,5,.82);backdrop-filter:blur(16px)}
+.master-modal-dialog{background:#101511;border-color:var(--k-line);border-radius:8px;box-shadow:0 35px 110px rgba(0,0,0,.62)}
+.master-modal-head{background:rgba(13,17,14,.96);border-bottom-color:var(--k-line-soft)}
+.master-modal-title{font-family:Georgia,"Times New Roman",serif;color:#eee5d6}
+.master-modal-back,.master-modal-close{border-radius:4px;border-color:var(--k-line);background:#151b17;color:#d8cfbf}
+.master-modal-back:hover,.master-modal-close:hover{background:#213025;border-color:var(--k-bronze)}
+
+footer{background:#0a0d0b;border-top-color:var(--k-line);color:#9f9687}
+footer strong,footer h3{font-family:Georgia,"Times New Roman",serif;color:var(--k-bronze-soft)}
+
+@media(max-width:1100px){.master-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:820px){.master-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+  .hero::after{inset:7px}
+  #site-sections{padding-top:42px;padding-bottom:52px}
+  .master-card-grid{grid-template-columns:1fr;gap:12px}
+  .master-nav-card{min-height:164px;padding:20px;border-radius:6px}
+  .master-nav-card .card-title{font-size:19px}
+  .master-nav-card .card-token-logo{opacity:.42}
+  .bannerCountdown{top:61%!important;right:4%;width:43%;}
+}
+@media(prefers-reduced-motion:reduce){.master-nav-card::after,nav a::after{transition:none}}
