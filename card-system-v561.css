@@ -1,4 +1,4 @@
-/* KURDESTAN V5.63 — Premium Bold Soft-Light Card Refinement
+/* KURDESTAN V5.64 — Premium Gold Soft-Light Card Refinement
    One canonical visual system for all 16 master cards.
    No topic/background photography; the only card image is the KURD token logo. */
 .master-card-grid{
@@ -24,7 +24,7 @@
   cursor:pointer!important;
   color:#f5ead5!important;
   background:
-    linear-gradient(145deg,rgba(255,255,255,.135),rgba(255,255,255,.040) 34%,rgba(5,5,5,.78) 100%),
+    linear-gradient(145deg,rgba(244,196,92,.13),rgba(244,196,92,.035) 34%,rgba(5,5,5,.78) 100%),
     radial-gradient(circle at 18% 8%,rgba(230,177,68,.18),transparent 32%),
     radial-gradient(circle at 88% 86%,rgba(230,177,68,.075),transparent 38%),
     rgba(7,7,7,.90)!important;
@@ -32,7 +32,7 @@
     0 20px 48px rgba(0,0,0,.48),
     0 8px 28px rgba(230,177,68,.055),
     0 0 26px rgba(230,177,68,.065),
-    inset 0 1px 0 rgba(255,255,255,.16),
+    inset 0 1px 0 rgba(244,196,92,.14),
     inset 0 -1px 0 rgba(230,177,68,.17),
     inset 0 0 0 1px rgba(230,177,68,.055),
     inset 0 0 34px rgba(230,177,68,.018)!important;
@@ -48,8 +48,8 @@
   z-index:-1!important;
   pointer-events:none!important;
   background:
-    linear-gradient(118deg,transparent 0%,rgba(255,255,255,.10) 30%,rgba(230,177,68,.045) 43%,transparent 57%),
-    radial-gradient(circle at 72% 0%,rgba(255,255,255,.10),transparent 28%),
+    linear-gradient(118deg,transparent 0%,rgba(244,196,92,.085) 30%,rgba(230,177,68,.045) 43%,transparent 57%),
+    radial-gradient(circle at 72% 0%,rgba(244,196,92,.085),transparent 28%),
     repeating-linear-gradient(135deg,rgba(230,177,68,.020) 0 1px,transparent 1px 14px)!important;
   opacity:1!important;
 }
@@ -66,8 +66,8 @@
 }
 .master-nav-card:hover::before,.master-nav-card:focus-visible::before{
   background:
-    linear-gradient(118deg,transparent 0%,rgba(255,255,255,.13) 30%,rgba(230,177,68,.055) 43%,transparent 57%),
-    radial-gradient(circle at 72% 0%,rgba(255,255,255,.12),transparent 28%),
+    linear-gradient(118deg,transparent 0%,rgba(244,196,92,.11) 30%,rgba(230,177,68,.055) 43%,transparent 57%),
+    radial-gradient(circle at 72% 0%,rgba(244,196,92,.10),transparent 28%),
     repeating-linear-gradient(135deg,rgba(230,177,68,.022) 0 1px,transparent 1px 14px)!important;
 }
 .master-nav-card::after{
@@ -79,7 +79,7 @@
   width:250px!important;
   height:250px!important;
   border-radius:50%!important;
-  background:radial-gradient(circle,rgba(255,244,210,.13) 0%,rgba(230,177,68,.075) 24%,rgba(230,177,68,.025) 44%,transparent 72%)!important;
+  background:radial-gradient(circle,rgba(244,196,92,.12) 0%,rgba(230,177,68,.075) 24%,rgba(230,177,68,.025) 44%,transparent 72%)!important;
   pointer-events:none!important;
   z-index:-1!important;
 }
@@ -90,7 +90,7 @@
     0 28px 66px rgba(0,0,0,.54),
     0 10px 34px rgba(230,177,68,.075),
     0 0 38px rgba(230,177,68,.15),
-    inset 0 1px 0 rgba(255,255,255,.20),
+    inset 0 1px 0 rgba(244,196,92,.17),
     inset 0 0 28px rgba(230,177,68,.045)!important;
   outline:none!important;
 }
@@ -147,7 +147,7 @@
   font-size:20px!important;
   line-height:1!important;
   text-shadow:0 0 16px rgba(230,177,68,.24)!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.13),0 4px 18px rgba(0,0,0,.22),0 0 18px rgba(230,177,68,.075)!important;
+  box-shadow:inset 0 1px 0 rgba(244,196,92,.11),0 4px 18px rgba(0,0,0,.22),0 0 18px rgba(230,177,68,.075)!important;
   transform:none!important;
 }
 .master-nav-card:hover .card-icon,.master-nav-card:focus-visible .card-icon{transform:none!important}
