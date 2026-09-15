@@ -992,7 +992,7 @@ footer strong,footer h3{font-family:Georgia,"Times New Roman",serif;color:var(--
   backdrop-filter:blur(6px)!important;
 }
 .master-nav-card .card-open::before{display:none!important}
-.master-nav-card .card-token-logo{display:none!important}
+.master-nav-card .card-token-logo{display:block!important;visibility:visible!important}
 .master-nav-card:hover,.master-nav-card:focus-visible{
   transform:translateY(-8px)!important;
   border-color:color-mix(in srgb,var(--card-accent,#d7a64a) 100%,#fff 5%)!important;

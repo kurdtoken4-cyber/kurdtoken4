@@ -96,6 +96,8 @@
 }
 .master-nav-card:focus-visible{box-shadow:0 0 0 3px rgba(230,177,68,.22),0 24px 58px rgba(0,0,0,.44)!important}
 .master-nav-card .card-token-logo{
+  display:block!important;
+  visibility:visible!important;
   position:absolute!important;
   top:17px!important;
   left:17px!important;
