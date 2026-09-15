@@ -1070,3 +1070,27 @@ footer strong,footer h3{font-family:Georgia,"Times New Roman",serif;color:var(--
   .master-nav-card .card-title{font-size:20px;}
   .master-nav-card .card-desc{font-size:13px;}
 }
+
+/* V5.55 — exact black/gold initial master-card presentation restored.
+   Deliberately neutralizes later photographic/card-gallery overrides. */
+#site-sections{background:linear-gradient(180deg,#050505 0%,#080706 55%,#050505 100%)!important;}
+.master-card-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:20px!important;margin-top:30px!important;}
+.master-nav-card{
+  min-height:270px!important;height:auto!important;padding:22px 22px 20px!important;border-radius:20px!important;position:relative!important;overflow:hidden!important;isolation:isolate!important;
+  border:1px solid rgba(224,177,67,.42)!important;
+  background:linear-gradient(180deg,rgba(3,3,3,.78) 0%,rgba(5,5,5,.90) 58%,rgba(3,3,3,.98) 100%)!important;
+  background-image:linear-gradient(180deg,rgba(3,3,3,.78) 0%,rgba(5,5,5,.90) 58%,rgba(3,3,3,.98) 100%)!important;
+  box-shadow:0 14px 38px rgba(0,0,0,.52),inset 0 0 0 1px rgba(255,255,255,.025),inset 0 1px 0 rgba(255,219,126,.12)!important;
+  transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease!important;
+}
+.master-nav-card::before{content:""!important;position:absolute!important;inset:0!important;z-index:-1!important;pointer-events:none!important;background:linear-gradient(135deg,rgba(218,170,54,.15),transparent 28%,transparent 70%,rgba(218,170,54,.08))!important;}
+.master-nav-card::after{content:""!important;position:absolute!important;left:18px!important;right:18px!important;top:0!important;height:2px!important;z-index:2!important;background:linear-gradient(90deg,transparent,#e3b54c 20%,#ffe39a 50%,#e3b54c 80%,transparent)!important;opacity:.9!important;transform:none!important;}
+.master-nav-card:hover,.master-nav-card:focus-visible{transform:translateY(-8px)!important;border-color:#e5b94e!important;box-shadow:0 24px 58px rgba(0,0,0,.68),0 0 26px rgba(226,179,69,.13),inset 0 0 0 1px rgba(255,224,143,.10)!important;outline:none!important;}
+.master-nav-card .card-token-logo{display:none!important;}
+.master-nav-card .card-number{margin-inline-start:0!important;padding-top:3px!important;font-size:11px!important;font-weight:800!important;letter-spacing:.14em!important;opacity:.55!important;}
+.master-nav-card .card-icon{margin-top:24px!important;margin-bottom:12px!important;font-size:27px!important;color:#e8ad38!important;text-shadow:0 0 18px rgba(232,173,56,.22)!important;}
+.master-nav-card .card-title{font-size:20px!important;line-height:1.45!important;font-weight:900!important;letter-spacing:-.01em!important;color:#f5e9cf!important;}
+.master-nav-card .card-desc{font-size:13px!important;line-height:1.9!important;color:rgba(245,239,226,.72)!important;}
+.master-nav-card .card-open{margin-top:18px!important;font-size:13px!important;font-weight:700!important;color:#e8ad38!important;opacity:.9!important;}
+@media(max-width:1100px){.master-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+@media(max-width:700px){.master-card-grid{grid-template-columns:1fr!important;gap:14px!important}.master-nav-card{min-height:235px!important;padding:20px!important;border-radius:18px!important}.master-nav-card .card-title{font-size:20px!important}.master-nav-card .card-desc{font-size:13px!important}}

@@ -258,7 +258,7 @@
       customs:ml(city.culture,{ku:'کەلتووری شار بە سەرچاوەی ناوخۆیی پێشکەش دەکرێت.',en:'City culture and customs are documented from local or scholarly sources.'}),
       crafts:ml(city.crafts,{ku:'زانیاریی پیشە و دەستکاری بە سەرچاوەی ناوخۆیی پێشکەش دەکرێت.',en:'City-specific handicrafts are documented from regional sources.'}),
       income:ml(city.economy,{ku:'زانیاریی ئابووری بە سەرچاوەی شار پەیوەست دەکرێت.',en:'City-specific economic information is tied to cited sources.'}),
-      attractions:ml(city.heritage||city.attraction,{ku:'شوێن و میرات بە سەرچاوەی دیاریکراو پێشکەش دەکرێن.',en:'Heritage places are listed with identified sources.'}),
+      attractions:ml(city.heritage,{ku:'ئەم خانەیە هێشتا پێویستی بە توێژینەوە و سەرچاوەی دیاریکراوی شار هەیە.',en:'This field still requires city-level research and a traceable source.',fa:'این بخش هنوز به پژوهش در سطح شهر و منبع قابل ردیابی نیاز دارد.',tr:'Bu alan hâlâ şehir düzeyinde araştırma ve izlenebilir bir kaynak gerektiriyor.',ar:'يحتاج هذا الحقل إلى بحث على مستوى المدينة ومصدر قابل للتتبع.'}),
       languages:ml(city.languages,{ku:'زانیاریی زمان بە سەرچاوەی زانستی/شارستانی پشتڕاست دەکرێتەوە.',en:'City-level language information is verified against scholarly and local sources.'})
     };
   }
@@ -298,8 +298,8 @@ function initCities(){
     function cityResearchStatus(city){
       const fields=[city.population,city.history,city.attraction,city.description?.en,city.description?.ku];
       const filled=fields.filter(v=>v && !/needs|should be|being expanded|در حال|پێویستی|نوێ دەکرێتەوە/i.test(String(v))).length;
-      if(city.dataStatus==='verified-core') return {key:'verified-core',ku:'بەڵگەدار / پڕتر',fa:'مستند / تکمیل‌تر',en:'Documented / richer profile',tr:'Belgeli / daha kapsamlı',ar:'موثق / ملف أوسع'};
-      if(filled>=3) return {key:'partial',ku:'پروفایلی بنەڕەتی',fa:'پروفایل پایه',en:'Baseline profile',tr:'Temel profil',ar:'ملف أساسي'};
+      if(city.dataStatus==='documented') return {key:'verified-core',ku:'بەڵگەدار / پڕتر',fa:'مستند / تکمیل‌تر',en:'Documented / richer profile',tr:'Belgeli / daha kapsamlı',ar:'موثق / ملف أوسع'};
+      if(city.dataStatus==='partial') return {key:'partial',ku:'پڕۆفایلی بەشێکی',fa:'پروفایل ناقص',en:'Partial profile',tr:'Kısmi profil',ar:'ملف جزئي'};
       return {key:'needs',ku:'پێویستی بە توێژینەوەی زیاتر هەیە',fa:'نیازمند پژوهش بیشتر',en:'Further research required',tr:'Ek araştırma gerekli',ar:'يحتاج إلى بحث إضافي'};
     }
     const cityDetailLabels={
