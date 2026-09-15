@@ -205,71 +205,59 @@
   .master-nav-card,.master-nav-card:hover,.master-nav-card:focus-visible,.master-nav-card .card-token-logo{transition:none!important;transform:none!important}
 }
 
-
-/* KURDESTAN V5.71 — Warm Rich Card Finish
-   Visual-only refinement: warmer, deeper, more saturated premium palette.
-   Structure, typography, spacing, card content and layout remain unchanged. */
-.master-nav-card{
-  color:#fff0d2!important;
-  background:
-    linear-gradient(145deg,rgba(205,126,25,.24),rgba(120,55,10,.115) 34%,rgba(10,6,3,.91) 100%),
-    radial-gradient(circle at 14% 8%,rgba(255,184,66,.28),transparent 34%),
-    radial-gradient(circle at 88% 88%,rgba(166,73,11,.20),transparent 40%),
-    rgba(10,6,3,.94)!important;
-  border-color:rgba(238,170,62,.72)!important;
-  box-shadow:
-    0 22px 50px rgba(0,0,0,.54),
-    0 9px 30px rgba(188,92,15,.13),
-    0 0 30px rgba(238,170,62,.10),
-    inset 0 1px 0 rgba(255,205,108,.20),
-    inset 0 -1px 0 rgba(180,82,12,.28),
-    inset 0 0 0 1px rgba(238,170,62,.08),
-    inset 0 0 38px rgba(196,91,15,.035)!important;
-  backdrop-filter:blur(18px) saturate(135%)!important;
-  -webkit-backdrop-filter:blur(18px) saturate(135%)!important;
-}
-.master-nav-card::before{
-  background:
-    linear-gradient(118deg,transparent 0%,rgba(255,190,70,.15) 28%,rgba(210,103,18,.095) 46%,transparent 61%),
-    radial-gradient(circle at 72% 0%,rgba(255,191,74,.14),transparent 30%),
-    repeating-linear-gradient(135deg,rgba(238,170,62,.028) 0 1px,transparent 1px 14px)!important;
-}
-.master-nav-card::after{
-  background:radial-gradient(circle,rgba(255,190,70,.19) 0%,rgba(214,105,18,.115) 27%,rgba(166,73,11,.045) 48%,transparent 74%)!important;
-}
-.master-nav-card:hover,.master-nav-card:focus-visible{
-  border-color:rgba(255,194,76,.98)!important;
-  box-shadow:
-    0 30px 70px rgba(0,0,0,.60),
-    0 12px 38px rgba(196,92,13,.18),
-    0 0 44px rgba(255,184,61,.18),
-    inset 0 1px 0 rgba(255,215,126,.24),
-    inset 0 0 32px rgba(208,98,14,.065)!important;
-}
+/* KURDESTAN V5.71 — Card Logo Top-Right Signature Placement
+   Professional black/gold treatment matched to the hero banner. */
 .master-nav-card .card-token-logo{
-  border-color:rgba(245,183,69,.82)!important;
-  background:rgba(9,5,2,.90)!important;
+  display:block!important;
+  visibility:visible!important;
+  position:absolute!important;
+  top:16px!important;
+  right:16px!important;
+  left:auto!important;
+  width:64px!important;
+  height:64px!important;
+  object-fit:cover!important;
+  border-radius:50%!important;
+  border:1px solid rgba(244,196,92,.78)!important;
+  background:
+    radial-gradient(circle at 35% 28%,rgba(255,225,151,.16),transparent 34%),
+    rgba(4,4,4,.88)!important;
   box-shadow:
-    0 0 0 5px rgba(238,170,62,.075),
-    0 10px 28px rgba(0,0,0,.55),
-    0 0 30px rgba(232,146,31,.20)!important;
+    0 0 0 4px rgba(230,177,68,.055),
+    0 8px 24px rgba(0,0,0,.52),
+    0 0 24px rgba(230,177,68,.18),
+    inset 0 1px 0 rgba(255,226,157,.18)!important;
+  opacity:1!important;
+  z-index:5!important;
+  transition:transform .25s ease,box-shadow .25s ease!important;
 }
-.master-nav-card .card-number{color:#f0ae3f!important;text-shadow:0 0 10px rgba(236,156,37,.16)!important}
-.master-nav-card .card-icon{
-  border-color:rgba(238,170,62,.52)!important;
-  background:linear-gradient(145deg,rgba(238,170,62,.19),rgba(161,67,9,.09))!important;
-  color:#ffd37a!important;
-  text-shadow:0 0 18px rgba(255,178,48,.34)!important;
-  box-shadow:inset 0 1px 0 rgba(255,214,123,.17),0 5px 20px rgba(0,0,0,.25),0 0 22px rgba(224,125,20,.12)!important;
+.master-nav-card .card-token-logo::after{content:"";}
+.master-nav-card:hover .card-token-logo,
+.master-nav-card:focus-visible .card-token-logo{
+  transform:scale(1.045)!important;
+  box-shadow:
+    0 0 0 5px rgba(230,177,68,.075),
+    0 10px 30px rgba(0,0,0,.58),
+    0 0 32px rgba(230,177,68,.28),
+    inset 0 1px 0 rgba(255,226,157,.22)!important;
 }
-.master-nav-card .card-title{color:#fff5df!important;text-shadow:0 1px 18px rgba(237,153,35,.08)!important}
-.master-nav-card .card-title::after{
-  background:linear-gradient(90deg,#efb34d,rgba(198,91,13,.45),transparent)!important;
-  box-shadow:0 0 12px rgba(238,158,38,.18)!important;
+.master-nav-card .card-number{
+  align-self:stretch!important;
+  margin:4px 0 0!important;
+  text-align:left!important;
+  padding-right:76px!important;
 }
-.master-nav-card .card-desc{color:#ead8bb!important;opacity:.96!important}
-.master-nav-card .card-open{
-  color:#f4b94f!important;
-  border-top-color:rgba(238,170,62,.25)!important;
-  text-shadow:0 0 12px rgba(236,150,27,.12)!important;
+@media(max-width:700px){
+  .master-nav-card .card-token-logo{
+    top:14px!important;
+    right:14px!important;
+    left:auto!important;
+    width:56px!important;
+    height:56px!important;
+  }
+  .master-nav-card .card-number{
+    margin:4px 0 0!important;
+    padding-right:68px!important;
+    text-align:left!important;
+  }
 }
