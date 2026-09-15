@@ -1183,3 +1183,17 @@ footer strong,footer h3{font-family:Georgia,"Times New Roman",serif;color:var(--
   .master-nav-card .card-desc{font-size:13px!important;line-height:1.82!important}
 }
 @media(prefers-reduced-motion:reduce){.master-nav-card,.master-nav-card:hover,.master-nav-card:focus-visible,.master-nav-card .card-token-logo{transition:none!important;transform:none!important}}
+
+
+/* V5.68 — NEW CINEMATIC HERO INTEGRATION */
+.hero{min-height:0!important;height:auto!important;overflow:hidden!important;background:#050505!important}
+.hero-art{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;background:#050505!important}
+.hero-art img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;transform:none!important;filter:none!important}
+.hero-overlay{position:absolute!important;inset:0!important;min-height:0!important;height:100%!important;display:block!important;padding:0!important;background:transparent!important;pointer-events:none!important}
+.hero-copy{display:none!important}
+.launch-card{position:absolute!important;right:4%!important;bottom:5%!important;width:min(360px,30vw)!important;margin:0!important;z-index:4!important;pointer-events:auto!important;background:rgba(7,7,7,.78)!important;backdrop-filter:blur(10px)!important;box-shadow:0 12px 40px rgba(0,0,0,.48)!important}
+.hero-stats{margin-top:0!important}
+@media(max-width:700px){
+  .hero-art img{width:100%!important;height:auto!important;object-fit:contain!important}
+  .launch-card{right:3%!important;bottom:3%!important;width:42%!important;max-width:280px!important}
+}
