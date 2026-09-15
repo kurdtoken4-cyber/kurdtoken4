@@ -1181,3 +1181,88 @@ footer strong,footer h3{font-family:Georgia,"Times New Roman",serif;color:var(--
   .master-nav-card .card-desc{font-size:13px!important;line-height:1.82!important}
 }
 @media(prefers-reduced-motion:reduce){.master-nav-card,.master-nav-card:hover,.master-nav-card:focus-visible,.master-nav-card .card-token-logo{transition:none!important;transform:none!important}}
+
+/* =====================================================================
+   V5.72 — KURD BANNER THEME CARD SYSTEM
+   Unify all master cards with the exact warm black / antique-gold visual
+   language of the main KURD banner. The token mark uses the original
+   banner-matching KURD logo artwork without colour filtering.
+   ===================================================================== */
+.master-nav-card{
+  --card-accent:#e0aa45!important;
+  --card-deep:#24170b!important;
+  position:relative!important;
+  background:
+    radial-gradient(circle at 50% -12%,rgba(232,173,56,.20),transparent 36%),
+    radial-gradient(circle at 92% 86%,rgba(139,78,18,.16),transparent 30%),
+    linear-gradient(145deg,#24180d 0%,#120d08 48%,#070706 100%)!important;
+  border:1px solid rgba(224,170,69,.52)!important;
+  box-shadow:0 18px 46px rgba(0,0,0,.44),inset 0 1px 0 rgba(255,224,161,.08)!important;
+}
+.master-nav-card::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  border:0!important;
+  border-radius:inherit!important;
+  background:
+    linear-gradient(135deg,rgba(255,207,112,.075),transparent 34%,transparent 67%,rgba(224,170,69,.055)),
+    repeating-linear-gradient(135deg,transparent 0 28px,rgba(224,170,69,.018) 28px 29px)!important;
+  opacity:1!important;
+}
+.master-nav-card::after{
+  left:24px!important;right:24px!important;bottom:17px!important;height:2px!important;
+  background:linear-gradient(90deg,transparent,#e0aa45 25%,#f2c66d 50%,#e0aa45 75%,transparent)!important;
+  opacity:.82!important;
+}
+.master-nav-card:hover,.master-nav-card:focus-visible{
+  transform:translateY(-6px)!important;
+  border-color:rgba(242,198,109,.86)!important;
+  background:
+    radial-gradient(circle at 50% -10%,rgba(232,173,56,.25),transparent 38%),
+    radial-gradient(circle at 92% 86%,rgba(139,78,18,.20),transparent 30%),
+    linear-gradient(145deg,#2b1b0d 0%,#151009 50%,#080807 100%)!important;
+  box-shadow:0 24px 58px rgba(0,0,0,.52),0 0 28px rgba(224,170,69,.10),inset 0 1px 0 rgba(255,224,161,.12)!important;
+}
+.master-nav-card .card-number{
+  background:rgba(7,6,4,.72)!important;
+  border-color:rgba(224,170,69,.42)!important;
+  color:#f0c36b!important;
+}
+.master-nav-card .card-icon{
+  background:rgba(7,6,4,.66)!important;
+  border-color:rgba(224,170,69,.48)!important;
+  color:#f3c66d!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.35),0 0 18px rgba(224,170,69,.08)!important;
+}
+.master-nav-card .card-title{color:#fff1d2!important;text-shadow:0 3px 18px rgba(0,0,0,.95)!important}
+.master-nav-card .card-desc{color:#e6d8bd!important}
+.master-nav-card .card-open{
+  color:#f1c56c!important;
+  border-color:rgba(224,170,69,.46)!important;
+  background:rgba(5,5,4,.68)!important;
+}
+.master-nav-card .card-token-logo{
+  top:17px!important;left:17px!important;
+  width:68px!important;height:68px!important;
+  padding:0!important;
+  object-fit:cover!important;
+  border:0!important;
+  border-radius:50%!important;
+  background:transparent!important;
+  box-shadow:0 0 0 2px rgba(224,170,69,.18),0 8px 28px rgba(0,0,0,.52),0 0 26px rgba(224,170,69,.16)!important;
+  opacity:1!important;
+  filter:none!important;
+  z-index:6!important;
+}
+.master-nav-card:hover .card-token-logo,.master-nav-card:focus-visible .card-token-logo{
+  transform:scale(1.05)!important;
+  box-shadow:0 0 0 3px rgba(242,198,109,.22),0 10px 34px rgba(0,0,0,.58),0 0 34px rgba(224,170,69,.24)!important;
+}
+/* Remove the previous multi-colour card palette: every card now shares the banner identity. */
+.master-nav-card:nth-child(n){--card-accent:#e0aa45!important;--card-deep:#24170b!important;--card-glow:rgba(224,170,69,.18)!important}
+@media(max-width:700px){
+  .master-nav-card .card-token-logo{top:15px!important;left:15px!important;width:60px!important;height:60px!important}
+}
