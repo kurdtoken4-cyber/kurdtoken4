@@ -9,5 +9,5 @@
   "lang": "ku",
   "theme_color": "#050505",
   "background_color": "#050505",
-  "icons": [{"src":"assets/kurd-logo.webp","sizes":"500x500","type":"image/webp","purpose":"any maskable"}]
+  "icons": [{"src":"assets/kurd-logo.webp","sizes":"any","type":"image/png","purpose":"any maskable"}]
 }

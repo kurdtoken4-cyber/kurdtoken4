@@ -21,23 +21,11 @@
   function applyLanguage(next) {
     lang = LANGS.includes(next) ? next : 'ku';
     localStorage.setItem(LANG_KEY, lang);
-    window.KURD_LANG = lang;
-    window.currentLang = lang;
     document.documentElement.lang = lang;
     document.documentElement.dir = (lang === 'en' || lang === 'tr') ? 'ltr' : 'rtl';
     document.title = titles[lang];
     document.querySelectorAll(`[data-${lang}]`).forEach(el => el.textContent = el.getAttribute(`data-${lang}`));
-    // If a translation is not yet available, use English rather than leaking Kurdish/Persian text.
-    document.querySelectorAll('[data-ku]').forEach(el => {
-      if (!el.hasAttribute(`data-${lang}`)) {
-        const fallback = el.getAttribute('data-en') || el.getAttribute('data-ku');
-        if (fallback) el.textContent = fallback;
-      }
-    });
     document.querySelectorAll(`[data-alt-${lang}]`).forEach(el => el.alt = el.getAttribute(`data-alt-${lang}`));
-    document.querySelectorAll('[data-alt-ku]').forEach(el => {
-      if (!el.hasAttribute(`data-alt-${lang}`)) el.alt = el.getAttribute('data-alt-en') || el.getAttribute('data-alt-ku') || el.alt;
-    });
     const select = document.getElementById('language');
     if (select) select.value = lang;
     refreshFourParts();
@@ -239,17 +227,7 @@
   }
 
   function getRich(city){
-    const ml=(v, fallback)=>{
-      if(v && typeof v==='object') return v;
-      if(v) return {
-        ku: fallback?.ku || 'زانیاریی ورد بە زمانی کوردی لە پەرەپێدانە.',
-        fa: String(v),
-        en: fallback?.en || 'Detailed city-level information is being expanded.',
-        tr: fallback?.tr || 'Şehir düzeyindeki ayrıntılı bilgi geliştiriliyor.',
-        ar: fallback?.ar || 'يجري توسيع المعلومات التفصيلية على مستوى المدينة.'
-      };
-      return fallback||{};
-    };
+    const ml=(v, fallback)=>{ if(v && typeof v==='object') return v; if(v) return {ku:String(v),fa:String(v),en:String(v),tr:String(v),ar:String(v)}; return fallback||{}; };
     const defaultPop={ku:city.population||'ژمارەی وردی دانیشتووان پێویستی بە ساڵ و سەرچاوەی دیاریکراو هەیە.',fa:city.population||'عدد جمعیت فقط با سال و منبع مشخص نمایش داده می‌شود.',en:city.population||'A precise population figure is shown only when a year and source are identified.',tr:city.population||'Kesin nüfus yalnızca yıl ve kaynak belirlendiğinde gösterilir.',ar:city.population||'يُعرض الرقم السكاني الدقيق عند تحديد السنة والمصدر.'};
     return {
       population:defaultPop,
@@ -258,7 +236,7 @@
       customs:ml(city.culture,{ku:'کەلتووری شار بە سەرچاوەی ناوخۆیی پێشکەش دەکرێت.',en:'City culture and customs are documented from local or scholarly sources.'}),
       crafts:ml(city.crafts,{ku:'زانیاریی پیشە و دەستکاری بە سەرچاوەی ناوخۆیی پێشکەش دەکرێت.',en:'City-specific handicrafts are documented from regional sources.'}),
       income:ml(city.economy,{ku:'زانیاریی ئابووری بە سەرچاوەی شار پەیوەست دەکرێت.',en:'City-specific economic information is tied to cited sources.'}),
-      attractions:ml(city.heritage,{ku:'ئەم خانەیە هێشتا پێویستی بە توێژینەوە و سەرچاوەی دیاریکراوی شار هەیە.',en:'This field still requires city-level research and a traceable source.',fa:'این بخش هنوز به پژوهش در سطح شهر و منبع قابل ردیابی نیاز دارد.',tr:'Bu alan hâlâ şehir düzeyinde araştırma ve izlenebilir bir kaynak gerektiriyor.',ar:'يحتاج هذا الحقل إلى بحث على مستوى المدينة ومصدر قابل للتتبع.'}),
+      attractions:ml(city.heritage||city.attraction,{ku:'شوێن و میرات بە سەرچاوەی دیاریکراو پێشکەش دەکرێن.',en:'Heritage places are listed with identified sources.'}),
       languages:ml(city.languages,{ku:'زانیاریی زمان بە سەرچاوەی زانستی/شارستانی پشتڕاست دەکرێتەوە.',en:'City-level language information is verified against scholarly and local sources.'})
     };
   }
@@ -298,8 +276,8 @@ function initCities(){
     function cityResearchStatus(city){
       const fields=[city.population,city.history,city.attraction,city.description?.en,city.description?.ku];
       const filled=fields.filter(v=>v && !/needs|should be|being expanded|در حال|پێویستی|نوێ دەکرێتەوە/i.test(String(v))).length;
-      if(city.dataStatus==='documented') return {key:'verified-core',ku:'بەڵگەدار / پڕتر',fa:'مستند / تکمیل‌تر',en:'Documented / richer profile',tr:'Belgeli / daha kapsamlı',ar:'موثق / ملف أوسع'};
-      if(city.dataStatus==='partial') return {key:'partial',ku:'پڕۆفایلی بەشێکی',fa:'پروفایل ناقص',en:'Partial profile',tr:'Kısmi profil',ar:'ملف جزئي'};
+      if(city.dataStatus==='verified-core') return {key:'verified-core',ku:'بەڵگەدار / پڕتر',fa:'مستند / تکمیل‌تر',en:'Documented / richer profile',tr:'Belgeli / daha kapsamlı',ar:'موثق / ملف أوسع'};
+      if(filled>=3) return {key:'partial',ku:'پروفایلی بنەڕەتی',fa:'پروفایل پایه',en:'Baseline profile',tr:'Temel profil',ar:'ملف أساسي'};
       return {key:'needs',ku:'پێویستی بە توێژینەوەی زیاتر هەیە',fa:'نیازمند پژوهش بیشتر',en:'Further research required',tr:'Ek araştırma gerekli',ar:'يحتاج إلى بحث إضافي'};
     }
     const cityDetailLabels={
@@ -358,7 +336,7 @@ function initCities(){
   });
   document.addEventListener('keydown', e => { if((e.key==='Enter'||e.key===' ') && e.target.classList.contains('click-card')){e.preventDefault();e.target.click();} });
 
-  // Launch target: 20 ڕه‌شەمی 2726 = 20 اسفند 1405 = 11 March 2027. The official KRG calendar lists National Clothing Day on 10 March; the launch date is kept as the project-approved date.
+  // Launch target: 20 ڕه‌شه‌مێ 2726 = 20 اسفند 1405 = 11 March 2027. This aligns the planned launch date with National Clothing Day listed by the Kurdistan Region official calendar.
   function initCountdown(){
     const target=Date.parse('2027-03-11T00:00:00+03:00');
     const ids={d:document.getElementById('cd-days'),h:document.getElementById('cd-hours'),m:document.getElementById('cd-minutes'),s:document.getElementById('cd-seconds')};
@@ -438,7 +416,7 @@ function initCities(){
       previousFocus=document.activeElement;
       body.innerHTML=''; body.appendChild(sec); sec.classList.remove('master-hidden-section');
       const h=sec.querySelector('h2');
-      title.textContent=(h?.getAttribute('data-'+(window.KURD_LANG||'ku'))||h?.getAttribute('data-en')||h?.textContent||id);
+      title.textContent=(h?.getAttribute('data-'+(window.KURD_LANG||'ku'))||h?.textContent||id);
       modal.classList.add('is-open'); modal.setAttribute('aria-hidden','false'); document.body.classList.add('master-modal-lock');
       const close=modal.querySelector('.master-modal-close'); if(close) close.focus();
       dialogScrollTop();
@@ -470,13 +448,12 @@ function initCities(){
       const lang=window.KURD_LANG||document.documentElement.lang||'ku';
       grid.querySelectorAll('.master-nav-card').forEach(c=>{
         const t=c.querySelector('.card-title'),d=c.querySelector('.card-desc'),o=c.querySelector('.card-open');
-        const suffix=lang.charAt(0).toUpperCase()+lang.slice(1);
-        if(t) t.textContent=c.dataset['title'+suffix] || c.dataset.titleEn || t.textContent;
-        if(o) o.textContent=o.getAttribute('data-'+lang) || o.getAttribute('data-en') || o.textContent;
-        if(d) d.textContent=d.getAttribute('data-'+lang) || d.getAttribute('data-en') || d.textContent;
+        if(t&&c.dataset['title'+lang.charAt(0).toUpperCase()+lang.slice(1)]) t.textContent=c.dataset['title'+lang.charAt(0).toUpperCase()+lang.slice(1)];
+        if(o&&o.getAttribute('data-'+lang)) o.textContent=o.getAttribute('data-'+lang);
+        if(d&&d.getAttribute('data-'+lang)) d.textContent=d.getAttribute('data-'+lang);
       });
       const active=body.querySelector('section[data-master-section="true"]');
-      if(active){const h=active.querySelector('h2');if(h)title.textContent=h.getAttribute('data-'+lang)||h.getAttribute('data-en')||h.textContent;}
+      if(active){const h=active.querySelector('h2');if(h)title.textContent=h.getAttribute('data-'+lang)||h.textContent;}
     };
     // applyLanguage in the original script updates data-* nodes; observe language changes safely.
     const sel=document.getElementById('language'); if(sel) sel.addEventListener('change',()=>setTimeout(sync,0));
